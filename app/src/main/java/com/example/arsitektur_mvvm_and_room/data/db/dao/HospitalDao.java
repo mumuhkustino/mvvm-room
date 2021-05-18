@@ -1,5 +1,6 @@
-package com.example.arsitektur_mvvm_and_room.data.db.model.dao;
+package com.example.arsitektur_mvvm_and_room.data.db.dao;
 
+import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;

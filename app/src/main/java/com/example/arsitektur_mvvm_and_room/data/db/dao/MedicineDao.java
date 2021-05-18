@@ -1,4 +1,4 @@
-package com.example.arsitektur_mvvm_and_room.data.db.model.dao;
+package com.example.arsitektur_mvvm_and_room.data.db.dao;
 
 import androidx.room.Delete;
 import androidx.room.Insert;

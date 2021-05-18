@@ -3,8 +3,7 @@ package com.example.arsitektur_mvvm_and_room.utils;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.databinding.BindingAdapter;
 
-import com.example.arsitektur_mvvm_and_room.data.db.model.Medical;
-import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
+import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 
 import java.util.List;
 

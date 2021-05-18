@@ -1,4 +1,4 @@
-package com.example.arsitektur_mvvm_and_room.data.db.model;
+package com.example.arsitektur_mvvm_and_room.data.db.others;
 
 public class Medical {
 
