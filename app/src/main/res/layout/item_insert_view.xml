@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.projek_tugas_akhir.arsitektur_mvvm_dan_greendao.ui.crud.insert.InsertItemViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+
+            android:orientation="vertical"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/hospitalIdTextView"
+                    style="@style/TextStyle.Heading"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@{viewModel.id.toString()}"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/hospitalNameTextView"
+                    style="@style/TextStyle.Heading"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@{viewModel.hospitalName}"
+                    tools:text="A" />
+
+                <TextView
+                    android:id="@+id/medicineNameTextView"
+                    style="@style/TextStyle.Heading"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@{viewModel.medicineName}"
+                    tools:text="B" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/diseaseNameTextView"-->
+<!--                    style="@style/TextStyle.Heading"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginHorizontal="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@{viewModel.diseaseName}"-->
+<!--                    tools:text="A" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/symptomNameTextView"-->
+<!--                    style="@style/TextStyle.Heading"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginHorizontal="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@{viewModel.symptomName}"-->
+<!--                    tools:text="B" />-->
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</layout>
