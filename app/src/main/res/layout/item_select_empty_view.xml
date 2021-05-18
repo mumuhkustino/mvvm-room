@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.projek_tugas_akhir.arsitektur_mvvm_dan_greendao.ui.crud.select.SelectEmptyItemViewModel" />
+            type="com.example.arsitektur_mvvm_and_room.ui.crud.select.SelectEmptyItemViewModel" />
 
     </data>
 

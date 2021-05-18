@@ -1,12 +1,17 @@
 package com.example.arsitektur_mvvm_and_room.data.db;
 
+import androidx.constraintlayout.helper.widget.Flow;
+
 import com.example.arsitektur_mvvm_and_room.data.db.model.Hospital;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 
 import java.util.List;
 import java.util.Observable;
+import java.util.concurrent.Callable;
 
 import javax.inject.Inject;
+
+import io.reactivex.Flowable;
 
 public class AppDbHelper implements DbHelper{
 
@@ -17,81 +22,135 @@ public class AppDbHelper implements DbHelper{
         this.mAppDatabase = appDatabase;
     }
 
+
     @Override
-    public io.reactivex.Observable<Long> insertHospital(Hospital hospital) {
-        return null;
+    public Flowable<Boolean> insertHospital(final Hospital hospital) {
+        return Flowable.fromCallable(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                try {
+                    mAppDatabase.hospitalDao().insert(hospital);
+                    return true;
+                } catch (Exception e){
+                    e.printStackTrace();
+                    return false;
+            }
+        }
+    });
     }
 
     @Override
-    public io.reactivex.Observable<Long> insertMedicine(Medicine medicine) {
-        return null;
+    public Flowable<Boolean> insertMedicine(final Medicine medicine) {
+        return Flowable.fromCallable(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                try {
+                    mAppDatabase.medicineDao().insert(medicine);
+                    return true;
+                } catch (Exception e){
+                    e.printStackTrace();
+                    return false;
+                }
+            }
+        });
     }
 
     @Override
-    public io.reactivex.Observable<Boolean> deleteHospital(Hospital hospital) {
-        return null;
+    public Flowable<Boolean> deleteHospital(final Hospital hospital) {
+        return Flowable.fromCallable(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                try {
+                    mAppDatabase.hospitalDao().delete(hospital);
+                    return true;
+                } catch (Exception e){
+                    e.printStackTrace();
+                    return false;
+                }
+            }
+        });
     }
 
     @Override
-    public io.reactivex.Observable<Boolean> deleteMedicine(Medicine medicine) {
-        return null;
+    public Flowable<Boolean> deleteMedicine(final Medicine medicine) {
+        return Flowable.fromCallable(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                try {
+                    mAppDatabase.medicineDao().delete(medicine);
+                    return true;
+                } catch (Exception e){
+                    e.printStackTrace();
+                    return false;
+                }
+            }
+        });
     }
 
     @Override
-    public io.reactivex.Observable<Hospital> loadHospital(Hospital hospital) {
-        return null;
+    public Flowable<Hospital> loadHospital(Hospital hospital) {
+        return mAppDatabase.hospitalDao().load(hospital.id);
     }
 
     @Override
-    public io.reactivex.Observable<Medicine> loadMedicine(Medicine medicine) {
-        return null;
+    public Flowable<Medicine> loadMedicine(Medicine medicine) {
+        return mAppDatabase.medicineDao().load(medicine.id);
     }
 
     @Override
-    public io.reactivex.Observable<List<Hospital>> getAllHospital() {
-        return null;
+    public Flowable<List<Hospital>> getAllHospital() {
+        return mAppDatabase.hospitalDao().loadAll();
     }
 
     @Override
-    public io.reactivex.Observable<List<Medicine>> getAllMedicine() {
-        return null;
+    public Flowable<List<Hospital>> getAllHospital(Long numOfData) {
+        return mAppDatabase.hospitalDao().loadList(numOfData);
     }
 
     @Override
-    public io.reactivex.Observable<List<Medicine>> getMedicineForHospitalId(Long hospitalId) {
-        return null;
+    public Flowable<List<Medicine>> getAllMedicine() {
+        return mAppDatabase.medicineDao().loadAll();
     }
 
     @Override
-    public io.reactivex.Observable<Boolean> isHospitalEmpty() {
-        return null;
+    public Flowable<List<Medicine>> getAllMedicine(Long numOfData) {
+        return mAppDatabase.medicineDao().loadList(numOfData);
     }
 
     @Override
-    public io.reactivex.Observable<Boolean> isMedicineEmpty() {
-        return null;
+    public Flowable<List<Medicine>> getMedicinesForHospitalId(Long hospitalId) {
+        return mAppDatabase.medicineDao().loadAllByHospitalId(hospitalId);
     }
 
     @Override
-    public io.reactivex.Observable<Boolean> saveHospital(Hospital hospital) {
-        return null;
+    public Flowable<Boolean> saveHospital(final Hospital hospital) {
+        return Flowable.fromCallable(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                try {
+                    mAppDatabase.hospitalDao().save(hospital);
+                    return true;
+                } catch (Exception e){
+                    e.printStackTrace();
+                    return false;
+                }
+            }
+        });
     }
 
     @Override
-    public io.reactivex.Observable<Boolean> saveMedicine(Medicine medicine) {
-        return null;
+    public Flowable<Boolean> saveMedicine(final Medicine medicine) {
+        return Flowable.fromCallable(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                try {
+                    mAppDatabase.medicineDao().save(medicine);
+                    return true;
+                } catch (Exception e){
+                    e.printStackTrace();
+                    return false;
+                }
+            }
+        });
     }
-
-    @Override
-    public io.reactivex.Observable<Boolean> saveHospitalList(List<Hospital> hospitalList) {
-        return null;
-    }
-
-    @Override
-    public io.reactivex.Observable<Boolean> saveMedicineList(List<Medicine> medicineList) {
-        return null;
-    }
-
-    @Override
-    public Observable
 }

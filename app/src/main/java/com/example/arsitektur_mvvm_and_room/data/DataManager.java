@@ -4,27 +4,22 @@ import com.example.arsitektur_mvvm_and_room.data.db.DbHelper;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Hospital;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 
+import java.util.List;
+
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 
 public interface DataManager extends DbHelper {
 
-    //    Single<List<Medical>> getMedical();
+    Flowable<List<Hospital>> seedDatabaseHospital(Long numOfData);
 
-//    Single<List<Medical>> getMedical(Long numOfData);
+    Flowable<Boolean> updateDatabaseHospital(Hospital hospital);
 
-//    Observable<Boolean> seedDatabaseHospital();
+    Flowable<Boolean> deleteDatabaseHospital(Hospital hospital);
 
-    Observable<Boolean> seedDatabaseHospital(Long numOfData);
+    Flowable<List<Medicine>> seedDatabaseMedicine(Long numOfData);
 
-    Observable<Boolean> updateDatabaseHospital(Hospital hospital);
+    Flowable<Boolean> updateDatabaseMedicine(Medicine medicine);
 
-    Observable<Boolean> deleteDatabaseHospital(Hospital hospital);
-
-//    Observable<Boolean> seedDatabaseMedicine();
-
-    Observable<Boolean> seedDatabaseMedicine(Long numOfData);
-
-    Observable<Boolean> updateDatabaseMedicine(Medicine medicine);
-
-    Observable<Boolean> deleteDatabaseMedicine(Medicine medicine);
+    Flowable<Boolean> deleteDatabaseMedicine(Medicine medicine);
 }

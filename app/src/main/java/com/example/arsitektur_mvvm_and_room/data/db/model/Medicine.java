@@ -12,7 +12,7 @@ import com.google.gson.annotations.SerializedName;
         foreignKeys = @ForeignKey(
                 entity =Hospital.class,
                 parentColumns = "id",
-                childColumns = "hospital_id"
+                childColumns = "hospitalId"
         )
 )
 
@@ -20,6 +20,11 @@ public class Medicine {
         @Expose
         @PrimaryKey
         public Long id;
+
+        @Expose
+        @SerializedName("hospitalId")
+        @ColumnInfo(name = "hospitalId")
+        public Long hospitalId;
 
         @Expose
         @SerializedName("medicineName")

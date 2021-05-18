@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.projek_tugas_akhir.arsitektur_mvvm_dan_greendao.ui.crud.insert.InsertViewModel" />
+            type="com.example.arsitektur_mvvm_and_room.ui.crud.insert.InsertViewModel" />
 
     </data>
 

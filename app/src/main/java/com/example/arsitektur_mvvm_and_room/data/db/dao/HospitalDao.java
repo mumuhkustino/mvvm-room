@@ -12,33 +12,25 @@ import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 
 import java.util.List;
 
-import io.reactivex.Single;
+import io.reactivex.Flowable;
 
 public interface HospitalDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void InsertHospital(Hospital hospital);
+    void insert(Hospital hospital);
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void InsertAllHospital(List<Hospital> hospitals);
-
-    @Query("SELECT * FROM hospital")
-    Single<List<Hospital>> loadAllHospital();
-
-    //save medicine
-    @Update
-    void saveMedicine(Hospital hospital);
-
-    //save medicine list
-    @Update
-    void saveMedicineList(List<Hospital> hospitals);
-
-    //delete medicine
     @Delete
-    void deleteMedicine(Hospital hospital);
+    void delete(Hospital hospital);
 
-    //delete all medicine
-    @Delete
-    void deleteAllMedicine(List<Hospital> hospitals);
+    @Query("SELECT * FROM hospitals WHERE id = :hospitalId")
+    Flowable<Hospital> load(long hospitalId);
 
+    @Query("SELECT * FROM hospitals")
+    Flowable<List<Hospital>> loadAll();
+
+    @Query("SELECT * FROM hospitals LIMIT :numofData")
+    Flowable<List<Hospital>> loadList(Long numofData);
+
+    @Update
+    void save(Hospital hospital);
 }

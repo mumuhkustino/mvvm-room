@@ -4,42 +4,36 @@ import com.example.arsitektur_mvvm_and_room.data.db.model.Hospital;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 
 import java.util.List;
+
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 
 public interface DbHelper {
 
-    Observable<Long> insertHospital(Hospital hospital);
+    Flowable<Boolean> insertHospital(Hospital hospital);
 
-    Observable<Long> insertMedicine( Medicine medicine);
+    Flowable<Boolean> insertMedicine(Medicine medicine);
 
-    Observable<Boolean> deleteHospital(Hospital hospital);
+    Flowable<Boolean> deleteHospital(Hospital hospital);
 
-    Observable<Boolean> deleteMedicine(Medicine medicine);
+    Flowable<Boolean> deleteMedicine(Medicine medicine);
 
-    Observable<Hospital> loadHospital(Hospital hospital);
+    Flowable<Hospital> loadHospital(Hospital hospital);
 
-    Observable<Medicine> loadMedicine(Medicine medicine);
+    Flowable<Medicine> loadMedicine(Medicine medicine);
 
-    Observable<List<Hospital>> getAllHospital();
+    Flowable<List<Hospital>> getAllHospital();
 
-    Observable<List<Medicine>> getAllMedicine();
+    Flowable<List<Hospital>> getAllHospital(Long numOfData);
 
-    Observable<List<Medicine>> getMedicineForHospitalId(Long hospitalId);
+    Flowable<List<Medicine>> getAllMedicine();
 
-    Observable<Boolean> isHospitalEmpty();
+    Flowable<List<Medicine>> getAllMedicine(Long numOfData);
 
-    Observable<Boolean> isMedicineEmpty();
+    Flowable<List<Medicine>> getMedicinesForHospitalId(Long hospitalId);
 
-//    Observable<Boolean> isDiseaseEmpty();
+    Flowable<Boolean> saveHospital(Hospital hospital);
 
-//    Observable<Boolean> isSymptomEmpty();
-
-    Observable<Boolean> saveHospital(Hospital hospital);
-
-    Observable<Boolean> saveMedicine(Medicine medicine);
-
-    Observable<Boolean> saveHospitalList(List<Hospital> hospitalList);
-
-    Observable<Boolean> saveMedicineList(List<Medicine> medicineList);
+    Flowable<Boolean> saveMedicine(Medicine medicine);
 
 }
