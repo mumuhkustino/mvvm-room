@@ -1,0 +1,4002 @@
+[
+  {
+    "id": 1,
+    "hospitalName": "ABBEVILLE AREA MEDICAL CENTER"
+  },
+  {
+    "id": 2,
+    "hospitalName": "ABILENE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 3,
+    "hospitalName": "ABINGTON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 4,
+    "hospitalName": "ABRAHAM LINCOLN MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 5,
+    "hospitalName": "ABRAZO ARIZONA HEART HOSPITAL"
+  },
+  {
+    "id": 6,
+    "hospitalName": "ABRAZO ARROWHEAD CAMPUS"
+  },
+  {
+    "id": 7,
+    "hospitalName": "ABRAZO CENTRAL CAMPUS"
+  },
+  {
+    "id": 8,
+    "hospitalName": "ABRAZO MARYVALE CAMPUS"
+  },
+  {
+    "id": 9,
+    "hospitalName": "ABRAZO SCOTTSDALE CAMPUS"
+  },
+  {
+    "id": 10,
+    "hospitalName": "ABRAZO WEST CAMPUS"
+  },
+  {
+    "id": 11,
+    "hospitalName": "ADVANCED CARE HOSPITAL OF SOUTHERN NEW MEXICO"
+  },
+  {
+    "id": 12,
+    "hospitalName": "ADVANCED CARE HOSPITAL OF WHITE COUNTY"
+  },
+  {
+    "id": 13,
+    "hospitalName": "ADVANCED SPECIALTY HOSPITAL OF TOLEDO"
+  },
+  {
+    "id": 14,
+    "hospitalName": "ADVANCED SURGICAL HOSPITAL"
+  },
+  {
+    "id": 15,
+    "hospitalName": "ADVENTIST BEHAVIORAL HEALTH EASTERN SHORE"
+  },
+  {
+    "id": 16,
+    "hospitalName": "ADVENTIST BOLINGBROOK HOSPITAL"
+  },
+  {
+    "id": 17,
+    "hospitalName": "ADVENTIST GLENOAKS"
+  },
+  {
+    "id": 18,
+    "hospitalName": "ADVENTIST HEALTH MEDICAL CENTER TEHACHAPI VALLEY"
+  },
+  {
+    "id": 19,
+    "hospitalName": "ADVENTIST HEALTH WALLA WALLA GENERAL HOSPITAL"
+  },
+  {
+    "id": 20,
+    "hospitalName": "ADVENTIST HEALTHCARE BEHAVIORAL HEALTH & WELLNESS"
+  },
+  {
+    "id": 21,
+    "hospitalName": "ADVENTIST HEALTHCARE SHADY GROVE MEDICAL CENTER"
+  },
+  {
+    "id": 22,
+    "hospitalName": "ADVENTIST HEALTHCARE WASHINGTON ADVENTIST HOSPITAL"
+  },
+  {
+    "id": 23,
+    "hospitalName": "ADVENTIST HINSDALE HOSPITAL"
+  },
+  {
+    "id": 24,
+    "hospitalName": "ADVENTIST LA GRANGE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 25,
+    "hospitalName": "ALEXANDER HOSPITAL"
+  },
+  {
+    "id": 26,
+    "hospitalName": "ALEXANDRIA VA HEALTH CARE SYSTEM"
+  },
+  {
+    "id": 27,
+    "hospitalName": "ALEXIAN BROTHERS BEHAVIORAL HEALTH HOSPITAL"
+  },
+  {
+    "id": 28,
+    "hospitalName": "ALEXIAN BROTHERS MEDICAL CENTER"
+  },
+  {
+    "id": 29,
+    "hospitalName": "ALFRED I. DUPONT HOSPITAL FOR CHILDREN"
+  },
+  {
+    "id": 30,
+    "hospitalName": "ALHAMBRA HOSPITAL"
+  },
+  {
+    "id": 31,
+    "hospitalName": "ALICE HYDE MEDICAL CENTER"
+  },
+  {
+    "id": 32,
+    "hospitalName": "ALICE PECK DAY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 33,
+    "hospitalName": "ALL CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 34,
+    "hospitalName": "ALLEGAN GENERAL HOSPITAL"
+  },
+  {
+    "id": 35,
+    "hospitalName": "ALLEGHANY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 36,
+    "hospitalName": "ALLEGHENY GENERAL HOSPITAL"
+  },
+  {
+    "id": 37,
+    "hospitalName": "ANGEL MEDICAL CENTER"
+  },
+  {
+    "id": 38,
+    "hospitalName": "ANIMAS SURGICAL HOSPITAL, LLC"
+  },
+  {
+    "id": 39,
+    "hospitalName": "ANMED HEALTH MEDICAL CENTER"
+  },
+  {
+    "id": 40,
+    "hospitalName": "ANMED HEALTH NORTH WOMEN'S AND CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 41,
+    "hospitalName": "ANMED HEALTH REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 42,
+    "hospitalName": "ANN & ROBERT H LURIE CHILDREN'S HOSPITAL OF CHICAGO"
+  },
+  {
+    "id": 43,
+    "hospitalName": "ANN KLEIN FORENSIC CENTER"
+  },
+  {
+    "id": 44,
+    "hospitalName": "ANNA JAQUES HOSPITAL"
+  },
+  {
+    "id": 45,
+    "hospitalName": "ANNE ARUNDEL MEDICAL CENTER"
+  },
+  {
+    "id": 46,
+    "hospitalName": "ANNE BATES LEACH EYE HOSPITAL"
+  },
+  {
+    "id": 47,
+    "hospitalName": "ANNIE JEFFREY MEMORIAL COUNTY HEALTH CENTER"
+  },
+  {
+    "id": 48,
+    "hospitalName": "ANNIE PENN HOSPITAL"
+  },
+  {
+    "id": 49,
+    "hospitalName": "ANSON COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 50,
+    "hospitalName": "ANSON GENERAL HOSPITAL"
+  },
+  {
+    "id": 51,
+    "hospitalName": "ANTELOPE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 52,
+    "hospitalName": "ARROWHEAD BEHAVIORAL HEALTH"
+  },
+  {
+    "id": 53,
+    "hospitalName": "ARROWHEAD REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 54,
+    "hospitalName": "ARTESIA GENERAL HOSPITAL"
+  },
+  {
+    "id": 55,
+    "hospitalName": "ASANTE ASHLAND COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 56,
+    "hospitalName": "ASANTE ROGUE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 57,
+    "hospitalName": "ASANTE THREE RIVERS MEDICAL CENTER"
+  },
+  {
+    "id": 58,
+    "hospitalName": "ASCENSION CRITTENTON HOSPITAL MEDICAL CENTER"
+  },
+  {
+    "id": 59,
+    "hospitalName": "ASCENSION GONZALES REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 60,
+    "hospitalName": "ASHE MEMORIAL HOSPITAL, INC."
+  },
+  {
+    "id": 61,
+    "hospitalName": "ASHEVILLE SPECIALTY HOSPITAL"
+  },
+  {
+    "id": 62,
+    "hospitalName": "ASHFORD PRESBYTERIAN COMMUNITY HOSPITAL INC"
+  },
+  {
+    "id": 63,
+    "hospitalName": "ASHLAND HEALTH CENTER"
+  },
+  {
+    "id": 64,
+    "hospitalName": "ASHLEY COUNTY MEDICAL CENTER"
+  },
+  {
+    "id": 65,
+    "hospitalName": "ASHLEY MEDICAL CENTER"
+  },
+  {
+    "id": 66,
+    "hospitalName": "ATRIUM MEDICAL CENTER AT CORINTH"
+  },
+  {
+    "id": 67,
+    "hospitalName": "AU MEDICAL CENTER"
+  },
+  {
+    "id": 68,
+    "hospitalName": "AUBURN COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 69,
+    "hospitalName": "AUDIE L. MURPHY VA HOSPITAL, STVHCS"
+  },
+  {
+    "id": 70,
+    "hospitalName": "AUDUBON COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 71,
+    "hospitalName": "AUGUSTA MEDICAL CENTER"
+  },
+  {
+    "id": 72,
+    "hospitalName": "AULTMAN HOSPITAL"
+  },
+  {
+    "id": 73,
+    "hospitalName": "AULTMAN HOSPITAL WEST"
+  },
+  {
+    "id": 74,
+    "hospitalName": "AULTMAN ORRVILLE HOSPITAL"
+  },
+  {
+    "id": 75,
+    "hospitalName": "AURELIA OSBORN FOX MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 76,
+    "hospitalName": "AURORA BAYCARE MED CTR"
+  },
+  {
+    "id": 77,
+    "hospitalName": "AURORA CHARTER OAK"
+  },
+  {
+    "id": 78,
+    "hospitalName": "AURORA LAKELAND MED CTR"
+  },
+  {
+    "id": 79,
+    "hospitalName": "AURORA LAS ENCINAS HOSPITAL, LLC"
+  },
+  {
+    "id": 80,
+    "hospitalName": "AVERA SACRED HEART HOSPITAL"
+  },
+  {
+    "id": 81,
+    "hospitalName": "AVERA SAINT BENEDICT HEALTH CENTER"
+  },
+  {
+    "id": 82,
+    "hospitalName": "AVERA SAINT LUKES HOSPITAL"
+  },
+  {
+    "id": 83,
+    "hospitalName": "AVERA ST ANTHONY'S HOSPITAL"
+  },
+  {
+    "id": 84,
+    "hospitalName": "AVERA ST MARY'S HOSPITAL"
+  },
+  {
+    "id": 85,
+    "hospitalName": "AVERA TYLER HOSPITAL"
+  },
+  {
+    "id": 86,
+    "hospitalName": "AVERA WESKOTA MEMORIAL MEDICAL CENTER"
+  },
+  {
+    "id": 87,
+    "hospitalName": "AVITA ONTARIO"
+  },
+  {
+    "id": 88,
+    "hospitalName": "AVOYELLES HOSPITAL"
+  },
+  {
+    "id": 89,
+    "hospitalName": "BACHARACH INSTITUTE FOR REHABILITATION"
+  },
+  {
+    "id": 90,
+    "hospitalName": "BACON COUNTY HOSPITAL"
+  },
+  {
+    "id": 91,
+    "hospitalName": "BAILEY MEDICAL CENTER, LLC"
+  },
+  {
+    "id": 92,
+    "hospitalName": "BAKERSFIELD BEHAVORIAL HEALTHCARE HOSPITAL, LLC"
+  },
+  {
+    "id": 93,
+    "hospitalName": "BAKERSFIELD HEART HOSPITAL"
+  },
+  {
+    "id": 94,
+    "hospitalName": "BALDPATE HOSPITAL"
+  },
+  {
+    "id": 95,
+    "hospitalName": "BALDWIN AREA MED CTR"
+  },
+  {
+    "id": 96,
+    "hospitalName": "BALLARD REHABILITATION HOSP"
+  },
+  {
+    "id": 97,
+    "hospitalName": "BALLINGER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 98,
+    "hospitalName": "BALTIMORE VA MEDICAL CENTER"
+  },
+  {
+    "id": 99,
+    "hospitalName": "BAPTIST MEDICAL CENTER YAZOO"
+  },
+  {
+    "id": 100,
+    "hospitalName": "BAPTIST MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 101,
+    "hospitalName": "BAPTIST MEMORIAL HOSPITAL FOR WOMEN"
+  },
+  {
+    "id": 102,
+    "hospitalName": "BARTON COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 103,
+    "hospitalName": "BARTON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 104,
+    "hospitalName": "BAYLOR MEDICAL CENTER AT UPTOWN"
+  },
+  {
+    "id": 105,
+    "hospitalName": "BAYLOR MEDICAL CENTER AT WAXAHACHIE"
+  },
+  {
+    "id": 106,
+    "hospitalName": "BAYLOR ORTHOPEDIC AND SPINE HOSPITAL AT ARLINGTON"
+  },
+  {
+    "id": 107,
+    "hospitalName": "BAYLOR SCOTT & WHITE ALL SAINTS MEDICAL CENTER FORT WORTH"
+  },
+  {
+    "id": 108,
+    "hospitalName": "BAYLOR SCOTT & WHITE CONTINUING CARE HOSPITAL"
+  },
+  {
+    "id": 109,
+    "hospitalName": "BAYLOR SCOTT & WHITE EMERGENCY HOSPITAL AT CEDAR PARK"
+  },
+  {
+    "id": 110,
+    "hospitalName": "BAYLOR SCOTT & WHITE MCLANE CHILDREN'S MEDICAL CENTER"
+  },
+  {
+    "id": 111,
+    "hospitalName": "BAYLOR SCOTT & WHITE MEDICAL CENTER AT GRAPEVINE"
+  },
+  {
+    "id": 112,
+    "hospitalName": "BAYLOR SCOTT & WHITE MEDICAL CENTER AT WAXAHACHIE"
+  },
+  {
+    "id": 113,
+    "hospitalName": "BEACON BEHAVIORAL HOSPITAL"
+  },
+  {
+    "id": 114,
+    "hospitalName": "BEACON BEHAVIORAL HOSPITAL NORTHSHORE"
+  },
+  {
+    "id": 115,
+    "hospitalName": "BEACON CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 116,
+    "hospitalName": "BEAR LAKE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 117,
+    "hospitalName": "BEAR RIVER VALLEY HOSPITAL"
+  },
+  {
+    "id": 118,
+    "hospitalName": "BELMONT CENTER FOR COMPREHENSIVE TREATMENT"
+  },
+  {
+    "id": 119,
+    "hospitalName": "BELMONT COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 120,
+    "hospitalName": "BELMONT PINES HOSPITAL"
+  },
+  {
+    "id": 121,
+    "hospitalName": "BELOIT HEALTH SYSTEM"
+  },
+  {
+    "id": 122,
+    "hospitalName": "BELTON REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 123,
+    "hospitalName": "BENCHMARK REGIONAL HOSPITAL"
+  },
+  {
+    "id": 124,
+    "hospitalName": "BENEFIS HEALTH CARE (EAST CAMPUS)"
+  },
+  {
+    "id": 125,
+    "hospitalName": "BENEFIS HEALTH CARE (WEST CAMPUS)"
+  },
+  {
+    "id": 126,
+    "hospitalName": "BENEFIS TETON MEDICAL CENTER"
+  },
+  {
+    "id": 127,
+    "hospitalName": "BENEWAH COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 128,
+    "hospitalName": "BENNETT COUNTY HEALTH CENTER"
+  },
+  {
+    "id": 129,
+    "hospitalName": "BENSON HOSPITAL"
+  },
+  {
+    "id": 130,
+    "hospitalName": "BERGEN REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 131,
+    "hospitalName": "BETSY JOHNSON HOSPITAL"
+  },
+  {
+    "id": 132,
+    "hospitalName": "BEVERLY HOSPITAL"
+  },
+  {
+    "id": 133,
+    "hospitalName": "BHC ALHAMBRA HOSPITAL"
+  },
+  {
+    "id": 134,
+    "hospitalName": "BHC FAIRFAX HOSPITAL"
+  },
+  {
+    "id": 135,
+    "hospitalName": "BHC FAIRFAX HOSPITAL NORTH"
+  },
+  {
+    "id": 136,
+    "hospitalName": "BHC MESILLA VALLEY HOSPITAL"
+  },
+  {
+    "id": 137,
+    "hospitalName": "BHC VALLE VISTA HOSPITAL"
+  },
+  {
+    "id": 138,
+    "hospitalName": "BHC WEST HILLS HOSPITAL"
+  },
+  {
+    "id": 139,
+    "hospitalName": "BIBB MEDICAL CENTER"
+  },
+  {
+    "id": 140,
+    "hospitalName": "BIENVILLE MEDICAL CENTER"
+  },
+  {
+    "id": 141,
+    "hospitalName": "BIG BEND REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 142,
+    "hospitalName": "BIG HORN COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 143,
+    "hospitalName": "BIG SANDY MEDICAL CENTER"
+  },
+  {
+    "id": 144,
+    "hospitalName": "BON SECOURS DEPAUL MEDICAL CENTER"
+  },
+  {
+    "id": 145,
+    "hospitalName": "BON SECOURS HEALTH CENTER AT HARBOUR VIEW"
+  },
+  {
+    "id": 146,
+    "hospitalName": "BON SECOURS HOSPITAL"
+  },
+  {
+    "id": 147,
+    "hospitalName": "BON SECOURS MARY IMMACULATE HOSPITAL"
+  },
+  {
+    "id": 148,
+    "hospitalName": "BON SECOURS MARYVIEW MEDICAL CENTER"
+  },
+  {
+    "id": 149,
+    "hospitalName": "BON SECOURS MEMORIAL REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 150,
+    "hospitalName": "BON SECOURS RAPPAHANNOCK GENERAL HOSPITAL"
+  },
+  {
+    "id": 151,
+    "hospitalName": "BON SECOURS RICHMOND COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 152,
+    "hospitalName": "BON SECOURS ST FRANCIS WATKINS CENTRE"
+  },
+  {
+    "id": 153,
+    "hospitalName": "BRISTOL HOSPITAL"
+  },
+  {
+    "id": 154,
+    "hospitalName": "BRISTOL MYERS SQUIBB CHILDRENS HOSPITAL"
+  },
+  {
+    "id": 155,
+    "hospitalName": "BRISTOW MEDICAL CENTER"
+  },
+  {
+    "id": 156,
+    "hospitalName": "BROADDUS HOSPITAL"
+  },
+  {
+    "id": 157,
+    "hospitalName": "BROADLAWNS MEDICAL CENTER"
+  },
+  {
+    "id": 158,
+    "hospitalName": "BROADWATER HEALTH CENTER"
+  },
+  {
+    "id": 159,
+    "hospitalName": "BRODSTONE MEMORIAL HOSP"
+  },
+  {
+    "id": 160,
+    "hospitalName": "BROMENN HEALTHCARE"
+  },
+  {
+    "id": 161,
+    "hospitalName": "BRONSON BATTLE CREEK HOSPITAL"
+  },
+  {
+    "id": 162,
+    "hospitalName": "BRONSON LAKEVIEW HOSPITAL"
+  },
+  {
+    "id": 163,
+    "hospitalName": "BRONSON METHODIST HOSPITAL"
+  },
+  {
+    "id": 164,
+    "hospitalName": "BRONSON SOUTH HAVEN HOSPITAL"
+  },
+  {
+    "id": 165,
+    "hospitalName": "BRONX PSYCHIATRIC CENTER"
+  },
+  {
+    "id": 166,
+    "hospitalName": "BROOK LANE HEALTH SERVICES"
+  },
+  {
+    "id": 167,
+    "hospitalName": "BROOKDALE HOSPITAL MEDICAL CENTER"
+  },
+  {
+    "id": 168,
+    "hospitalName": "BROOKE ARMY MEDICAL CENTER"
+  },
+  {
+    "id": 169,
+    "hospitalName": "BROWNSVILLE DOCTORS HOSPITAL"
+  },
+  {
+    "id": 170,
+    "hospitalName": "BROWNWOOD REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 171,
+    "hospitalName": "BRUNSWICK COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 172,
+    "hospitalName": "BRUNSWICK HOSPITAL CENTER, INC"
+  },
+  {
+    "id": 173,
+    "hospitalName": "BRYAN MEDICAL CENTER"
+  },
+  {
+    "id": 174,
+    "hospitalName": "BRYAN W. WHITFIELD MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 175,
+    "hospitalName": "BRYCE HOSPITAL"
+  },
+  {
+    "id": 176,
+    "hospitalName": "BRYLIN HOSPITAL"
+  },
+  {
+    "id": 177,
+    "hospitalName": "BRYNN MARR HOSPITAL"
+  },
+  {
+    "id": 178,
+    "hospitalName": "BUCHANAN COUNTY HEALTH CENTER"
+  },
+  {
+    "id": 179,
+    "hospitalName": "BUCHANAN GENERAL HOSPITAL"
+  },
+  {
+    "id": 180,
+    "hospitalName": "BUCKHEAD AMBULATORY SURGICAL CENTER"
+  },
+  {
+    "id": 181,
+    "hospitalName": "BUCKTAIL MEDICAL CENTER"
+  },
+  {
+    "id": 182,
+    "hospitalName": "BUCYRUS COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 183,
+    "hospitalName": "BUENA VISTA REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 184,
+    "hospitalName": "BUFFALO GENERAL MEDICAL CENTER"
+  },
+  {
+    "id": 185,
+    "hospitalName": "BUFFALO HOSPITAL"
+  },
+  {
+    "id": 186,
+    "hospitalName": "BUFFALO PSYCHIATRIC CENTER"
+  },
+  {
+    "id": 187,
+    "hospitalName": "BULLOCK COUNTY HOSPITAL"
+  },
+  {
+    "id": 188,
+    "hospitalName": "CAMC GENERAL HOSPITAL"
+  },
+  {
+    "id": 189,
+    "hospitalName": "CAMC MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 190,
+    "hospitalName": "CAMC TEAYS VALLEY HOSPITAL"
+  },
+  {
+    "id": 191,
+    "hospitalName": "CANYON RIDGE HOSPITAL"
+  },
+  {
+    "id": 192,
+    "hospitalName": "CANYON VISTA MEDICAL CENTER"
+  },
+  {
+    "id": 193,
+    "hospitalName": "CAPE CANAVERAL HOSPITAL"
+  },
+  {
+    "id": 194,
+    "hospitalName": "CAPE COD & ISLANDS COMMUNITY MENTAL HEALTH CENTER"
+  },
+  {
+    "id": 195,
+    "hospitalName": "CAPE COD HOSPITAL"
+  },
+  {
+    "id": 196,
+    "hospitalName": "CAPE CORAL HOSPITAL"
+  },
+  {
+    "id": 197,
+    "hospitalName": "CAPE FEAR VALLEY HOKE HOSPITAL"
+  },
+  {
+    "id": 198,
+    "hospitalName": "CAPE FEAR VALLEY MEDICAL CENTER"
+  },
+  {
+    "id": 199,
+    "hospitalName": "CAPE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 200,
+    "hospitalName": "CAROLINAS HEALTHCARE SYSTEM PINEVILLE"
+  },
+  {
+    "id": 201,
+    "hospitalName": "CAROLINAS HEALTHCARE SYSTEM STANLY"
+  },
+  {
+    "id": 202,
+    "hospitalName": "CARRUS SPECIALTY HOSPITAL"
+  },
+  {
+    "id": 203,
+    "hospitalName": "CARSON TAHOE CONTINUING CARE HOSPITAL"
+  },
+  {
+    "id": 204,
+    "hospitalName": "CARSON TAHOE DAYTON HOSPITAL"
+  },
+  {
+    "id": 205,
+    "hospitalName": "CARSON TAHOE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 206,
+    "hospitalName": "CENTRAL MONTANA MEDICAL CENTER"
+  },
+  {
+    "id": 207,
+    "hospitalName": "CENTRAL NEW YORK PSYCHIATRIC CENTER"
+  },
+  {
+    "id": 208,
+    "hospitalName": "CENTRAL PENINSULA GENERAL HOSPITAL"
+  },
+  {
+    "id": 209,
+    "hospitalName": "CENTRAL STATE HOSPITAL"
+  },
+  {
+    "id": 210,
+    "hospitalName": "CHARLIE NORWOOD VA MEDICAL CENTER"
+  },
+  {
+    "id": 211,
+    "hospitalName": "CHARLOTTE HUNGERFORD HOSPITAL"
+  },
+  {
+    "id": 212,
+    "hospitalName": "CHARLTON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 213,
+    "hospitalName": "CHILDRENS HOSPITAL OF PHILADELPHIA"
+  },
+  {
+    "id": 214,
+    "hospitalName": "CHILDRENS HOSPITAL OF PITTSBURGH"
+  },
+  {
+    "id": 215,
+    "hospitalName": "CHILDRENS HSPTL OF WISCONSIN"
+  },
+  {
+    "id": 216,
+    "hospitalName": "CIBOLA GENERAL HOSPITAL"
+  },
+  {
+    "id": 217,
+    "hospitalName": "CIMARRON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 218,
+    "hospitalName": "CINCINNATI CHILDREN'S HOSPITAL MEDICAL CENTER AT LINDNER CENTER"
+  },
+  {
+    "id": 219,
+    "hospitalName": "CINCINNATI CHILDREN'S LIBERTY"
+  },
+  {
+    "id": 220,
+    "hospitalName": "CINCINNATI VA MEDICAL CENTER"
+  },
+  {
+    "id": 221,
+    "hospitalName": "CIRCLES OF CARE"
+  },
+  {
+    "id": 222,
+    "hospitalName": "CITADEL INFIRMARY"
+  },
+  {
+    "id": 223,
+    "hospitalName": "CLAY COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 224,
+    "hospitalName": "COLEMAN COUNTY MEDICAL CENTER"
+  },
+  {
+    "id": 225,
+    "hospitalName": "COLISEUM MEDICAL CENTERS"
+  },
+  {
+    "id": 226,
+    "hospitalName": "COLISEUM NORTHSIDE HOSPITAL"
+  },
+  {
+    "id": 227,
+    "hospitalName": "COLISEUM PSYCHIATRIC HOSPITAL"
+  },
+  {
+    "id": 228,
+    "hospitalName": "COLLEGE HOSPITAL"
+  },
+  {
+    "id": 229,
+    "hospitalName": "COLLEGE HOSPITAL COSTA MESA"
+  },
+  {
+    "id": 230,
+    "hospitalName": "COLLEGE MEDICAL CENTER"
+  },
+  {
+    "id": 231,
+    "hospitalName": "COLLEGE MEDICAL CENTER HAWTHORNE CAMPUS"
+  },
+  {
+    "id": 232,
+    "hospitalName": "COLLEGE MEDICAL CENTER SOUTH CAMPUS D/P APH"
+  },
+  {
+    "id": 233,
+    "hospitalName": "COLLEGE STATION MEDICAL CENTER"
+  },
+  {
+    "id": 234,
+    "hospitalName": "COLLETON MEDICAL CENTER"
+  },
+  {
+    "id": 235,
+    "hospitalName": "COLLINGSWORTH GENERAL HOSPITAL"
+  },
+  {
+    "id": 236,
+    "hospitalName": "COLORADO ACUTE LONG TERM HOSPITAL"
+  },
+  {
+    "id": 237,
+    "hospitalName": "COLORADO CANYONS HOSPITAL AND MEDICAL CENTER"
+  },
+  {
+    "id": 238,
+    "hospitalName": "COLORADO MENTAL HEALTH INSTITUTE AT FT LOGAN"
+  },
+  {
+    "id": 239,
+    "hospitalName": "COLORADO PLAINS MEDICAL CENTER"
+  },
+  {
+    "id": 240,
+    "hospitalName": "COLORADO RIVER MEDICAL CENTER"
+  },
+  {
+    "id": 241,
+    "hospitalName": "COLQUITT REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 242,
+    "hospitalName": "COLUMBIA BASIN HOSPITAL"
+  },
+  {
+    "id": 243,
+    "hospitalName": "COMMUNITY MEDICAL CENTER INC"
+  },
+  {
+    "id": 244,
+    "hospitalName": "COOSA VALLEY MEDICAL CENTER"
+  },
+  {
+    "id": 245,
+    "hospitalName": "COPIAH COUNTY MEDICAL CENTER"
+  },
+  {
+    "id": 246,
+    "hospitalName": "COPLEY HOSPITAL"
+  },
+  {
+    "id": 247,
+    "hospitalName": "COPLEY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 248,
+    "hospitalName": "COPPER BASIN MEDICAL CENTER"
+  },
+  {
+    "id": 249,
+    "hospitalName": "COPPER HILLS YOUTH CENTER"
+  },
+  {
+    "id": 250,
+    "hospitalName": "CRANE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 251,
+    "hospitalName": "CROOK COUNTY MEDICAL SERVICES DISTRICT"
+  },
+  {
+    "id": 252,
+    "hospitalName": "CROSBYTON CLINIC HOSPITAL"
+  },
+  {
+    "id": 253,
+    "hospitalName": "CROSS CREEK HOSPITAL"
+  },
+  {
+    "id": 254,
+    "hospitalName": "CROSS ROAD MEDICAL CENTER"
+  },
+  {
+    "id": 255,
+    "hospitalName": "CROSSBRIDGE BEHAVIORAL HEALTH A BAPTIST SOUTH FACILITY"
+  },
+  {
+    "id": 256,
+    "hospitalName": "CROSSING RIVERS HEALTH MEDICAL CENTER"
+  },
+  {
+    "id": 257,
+    "hospitalName": "CROSSRIDGE COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 258,
+    "hospitalName": "CROSSROADS COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 259,
+    "hospitalName": "CROTCHED MOUNTAIN REHABILITATION CENTER"
+  },
+  {
+    "id": 260,
+    "hospitalName": "CROUSE HOSPITAL"
+  },
+  {
+    "id": 261,
+    "hospitalName": "CROW HOSPITAL"
+  },
+  {
+    "id": 262,
+    "hospitalName": "CROWLEY REHAB HOSPITAL, LLC"
+  },
+  {
+    "id": 263,
+    "hospitalName": "CROWNPOINT PUBLIC HEALTH SERVICES INDIAN HOSPITAL"
+  },
+  {
+    "id": 264,
+    "hospitalName": "CRYSTAL CLINIC ORTHOPAEDIC CENTER"
+  },
+  {
+    "id": 265,
+    "hospitalName": "CUBA MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 266,
+    "hospitalName": "CUERO COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 267,
+    "hospitalName": "CULBERSON HOSPITAL"
+  },
+  {
+    "id": 268,
+    "hospitalName": "DALLAS REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 269,
+    "hospitalName": "DAMERON HOSPITAL"
+  },
+  {
+    "id": 270,
+    "hospitalName": "DANBURY HOSPITAL"
+  },
+  {
+    "id": 271,
+    "hospitalName": "DANIELS MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 272,
+    "hospitalName": "DANVILLE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 273,
+    "hospitalName": "DANVILLE STATE HOSPITAL"
+  },
+  {
+    "id": 274,
+    "hospitalName": "DAUTERIVE HOSPITAL"
+  },
+  {
+    "id": 275,
+    "hospitalName": "DAVIE COUNTY HOSPITAL"
+  },
+  {
+    "id": 276,
+    "hospitalName": "DAVIE MEDICAL CENTER"
+  },
+  {
+    "id": 277,
+    "hospitalName": "DAVIESS COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 278,
+    "hospitalName": "DAVIS COUNTY HOSPITAL"
+  },
+  {
+    "id": 279,
+    "hospitalName": "DAVIS HOSPITAL AND MEDICAL CENTER"
+  },
+  {
+    "id": 280,
+    "hospitalName": "DAVIS MEDICAL CENTER"
+  },
+  {
+    "id": 281,
+    "hospitalName": "DAVIS REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 282,
+    "hospitalName": "DAY KIMBALL HOSPITAL"
+  },
+  {
+    "id": 283,
+    "hospitalName": "DAYBREAK OF SPOKANE"
+  },
+  {
+    "id": 284,
+    "hospitalName": "DAYTON CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 285,
+    "hospitalName": "DAYTON GENERAL HOSPITAL"
+  },
+  {
+    "id": 286,
+    "hospitalName": "DELL SETON MEDICAL CENTER AT THE UNIVERSITY OF TEXAS"
+  },
+  {
+    "id": 287,
+    "hospitalName": "DELNOR COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 288,
+    "hospitalName": "DELRAY MEDICAL CENTER"
+  },
+  {
+    "id": 289,
+    "hospitalName": "DELTA COMMUNITY MEDICAL CENTER"
+  },
+  {
+    "id": 290,
+    "hospitalName": "DELTA COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 291,
+    "hospitalName": "DELTA MEDICAL CENTER"
+  },
+  {
+    "id": 292,
+    "hospitalName": "DELTA MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 293,
+    "hospitalName": "DOCTOR DAN C TRIGG MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 294,
+    "hospitalName": "DOCTOR'S HOSPITAL AT DEER CREEK"
+  },
+  {
+    "id": 295,
+    "hospitalName": "DOCTOR'S HOSPITAL AT RENAISSANCE"
+  },
+  {
+    "id": 296,
+    "hospitalName": "DOCTORS HOSPITAL"
+  },
+  {
+    "id": 297,
+    "hospitalName": "DOCTORS HOSPITAL LLC"
+  },
+  {
+    "id": 298,
+    "hospitalName": "DOCTORS HOSPITAL OF LAREDO"
+  },
+  {
+    "id": 299,
+    "hospitalName": "DOCTORS HOSPITAL OF MANTECA"
+  },
+  {
+    "id": 300,
+    "hospitalName": "DOUGLAS COUNTY HOSPITAL"
+  },
+  {
+    "id": 301,
+    "hospitalName": "DOUGLAS COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 302,
+    "hospitalName": "DOUGLAS GARDENS HOSPITAL"
+  },
+  {
+    "id": 303,
+    "hospitalName": "DOVER BEHAVIORAL HEALTH SYSTEM"
+  },
+  {
+    "id": 304,
+    "hospitalName": "DOWN EAST COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 305,
+    "hospitalName": "DOYLESTOWN HOSPITAL"
+  },
+  {
+    "id": 306,
+    "hospitalName": "DR JOHN C CORRIGAN MENTAL HEALTH CENTER"
+  },
+  {
+    "id": 307,
+    "hospitalName": "DR JOHN WARNER HOSPITAL"
+  },
+  {
+    "id": 308,
+    "hospitalName": "DR P PHILLIPS HOSPITAL"
+  },
+  {
+    "id": 309,
+    "hospitalName": "DR SOLOMON CARTER FULLER MENTAL HEALTH CENTER"
+  },
+  {
+    "id": 310,
+    "hospitalName": "DR. PILA'S HOSPITAL"
+  },
+  {
+    "id": 311,
+    "hospitalName": "DRAKE CENTER INC"
+  },
+  {
+    "id": 312,
+    "hospitalName": "DREW MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 313,
+    "hospitalName": "DRISCOLL CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 314,
+    "hospitalName": "DRUMRIGHT REGIONAL HOSPITAL"
+  },
+  {
+    "id": 315,
+    "hospitalName": "DUBLIN METHODIST HOSPITAL"
+  },
+  {
+    "id": 316,
+    "hospitalName": "EDWARD MCCREADY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 317,
+    "hospitalName": "EDWARD PLAINFIELD"
+  },
+  {
+    "id": 318,
+    "hospitalName": "EDWARD W SPARROW HOSPITAL"
+  },
+  {
+    "id": 319,
+    "hospitalName": "EDWARD WHITE HOSPITAL"
+  },
+  {
+    "id": 320,
+    "hospitalName": "EDWARDS COUNTY HOSPITAL"
+  },
+  {
+    "id": 321,
+    "hospitalName": "EDWIN SHAW REHABILITATION INSTITUTE"
+  },
+  {
+    "id": 322,
+    "hospitalName": "EFFICACY HEALTH SERVICES LLC"
+  },
+  {
+    "id": 323,
+    "hospitalName": "EFFINGHAM HOSPITAL"
+  },
+  {
+    "id": 324,
+    "hospitalName": "EIELSON MEDICAL CLINIC"
+  },
+  {
+    "id": 325,
+    "hospitalName": "EINSTEIN MEDICAL CENTER MONTGOMERY"
+  },
+  {
+    "id": 326,
+    "hospitalName": "EISENHOWER ARMY MEDICAL CENTER"
+  },
+  {
+    "id": 327,
+    "hospitalName": "EISENHOWER MEDICAL CENTER"
+  },
+  {
+    "id": 328,
+    "hospitalName": "EL CAMINO HOSPITAL"
+  },
+  {
+    "id": 329,
+    "hospitalName": "EL CAMINO HOSPITAL LOS GATOS"
+  },
+  {
+    "id": 330,
+    "hospitalName": "EL CAMPO MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 331,
+    "hospitalName": "ELLWOOD CITY HOSPITAL"
+  },
+  {
+    "id": 332,
+    "hospitalName": "ELMENDORF AFB HOSPITAL"
+  },
+  {
+    "id": 333,
+    "hospitalName": "ELMHURST HOSPITAL CENTER"
+  },
+  {
+    "id": 334,
+    "hospitalName": "ELMHURST MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 335,
+    "hospitalName": "EMINENT MEDICAL CENTER"
+  },
+  {
+    "id": 336,
+    "hospitalName": "EMMA PENDLETON BRADLEY HOSPITAL"
+  },
+  {
+    "id": 337,
+    "hospitalName": "EMORY DUNWOODY MEDICAL CENTER"
+  },
+  {
+    "id": 338,
+    "hospitalName": "EMORY JOHNS CREEK HOSPITAL"
+  },
+  {
+    "id": 339,
+    "hospitalName": "EMORY REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 340,
+    "hospitalName": "EMORY UNIVERSITY HOSPITAL"
+  },
+  {
+    "id": 341,
+    "hospitalName": "EMORY UNIVERSITY HOSPITAL MIDTOWN"
+  },
+  {
+    "id": 342,
+    "hospitalName": "ESSENTIA HEALTH VIRGINIA"
+  },
+  {
+    "id": 343,
+    "hospitalName": "ESSENTIA HLTH HOLY TRINITY HOS"
+  },
+  {
+    "id": 344,
+    "hospitalName": "ESSENTIA HLTH ST MARYS DETROIT"
+  },
+  {
+    "id": 345,
+    "hospitalName": "ESSEX COUNTY HOSPITAL CENTER"
+  },
+  {
+    "id": 346,
+    "hospitalName": "ESTES PARK MEDICAL CENTER"
+  },
+  {
+    "id": 347,
+    "hospitalName": "EUCLID HOSPITAL"
+  },
+  {
+    "id": 348,
+    "hospitalName": "EUGENE J. TOWBIN VETERAN'S HEALTHCARE CENTER"
+  },
+  {
+    "id": 349,
+    "hospitalName": "EUNICE EXTENDED CARE HOSPITAL"
+  },
+  {
+    "id": 350,
+    "hospitalName": "EUREKA COMMUNITY HEALTH SERVICES"
+  },
+  {
+    "id": 351,
+    "hospitalName": "FAIRVIEW SOUTHDALE HOSPITAL"
+  },
+  {
+    "id": 352,
+    "hospitalName": "FAIRWAY MEDICAL SURGICAL HOSPITAL"
+  },
+  {
+    "id": 353,
+    "hospitalName": "FAITH COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 354,
+    "hospitalName": "FAITH REGIONAL HEALTH SERVICES"
+  },
+  {
+    "id": 355,
+    "hospitalName": "FAITH REGIONAL HEALTH SERVICES EAST CAMPUS"
+  },
+  {
+    "id": 356,
+    "hospitalName": "FALL RIVER HEALTH SERVICES"
+  },
+  {
+    "id": 357,
+    "hospitalName": "FALL RIVER HOSPITAL"
+  },
+  {
+    "id": 358,
+    "hospitalName": "FALLBROOK HOSP DISTRICT SKILLED NURSING FACILITY"
+  },
+  {
+    "id": 359,
+    "hospitalName": "FALLBROOK HOSPITAL DISTRICT"
+  },
+  {
+    "id": 360,
+    "hospitalName": "FALLON MEDICAL COMPLEX HOSPITAL"
+  },
+  {
+    "id": 361,
+    "hospitalName": "FALLS COMMUNITY HOSPITAL AND CLINIC"
+  },
+  {
+    "id": 362,
+    "hospitalName": "FALMOUTH HOSPITAL"
+  },
+  {
+    "id": 363,
+    "hospitalName": "FANNIN REGIONAL HOSPITAL"
+  },
+  {
+    "id": 364,
+    "hospitalName": "FARGO VA MEDICAL CENTER"
+  },
+  {
+    "id": 365,
+    "hospitalName": "FAULKNER HOSPITAL"
+  },
+  {
+    "id": 366,
+    "hospitalName": "FAULKTON AREA MEDICAL CENTER"
+  },
+  {
+    "id": 367,
+    "hospitalName": "FAUQUIER HOSPITAL"
+  },
+  {
+    "id": 368,
+    "hospitalName": "FAWCETT MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 369,
+    "hospitalName": "FAYETTE COUNTY HOSPITAL"
+  },
+  {
+    "id": 370,
+    "hospitalName": "FAYETTE COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 371,
+    "hospitalName": "FIRSTLIGHT HEALTH SYSTEM"
+  },
+  {
+    "id": 372,
+    "hospitalName": "FISHER COUNTY HOSPITAL DISTRICT"
+  },
+  {
+    "id": 373,
+    "hospitalName": "FISHERMEN'S HOSPITAL"
+  },
+  {
+    "id": 374,
+    "hospitalName": "FITZGIBBON HOSPITAL"
+  },
+  {
+    "id": 375,
+    "hospitalName": "FIVE RIVER MEDICAL CENTER"
+  },
+  {
+    "id": 376,
+    "hospitalName": "FLAGET MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 377,
+    "hospitalName": "FLAGLER HOSPITAL"
+  },
+  {
+    "id": 378,
+    "hospitalName": "FLAGSTAFF MEDICAL CENTER"
+  },
+  {
+    "id": 379,
+    "hospitalName": "FLAMBEAU HSPTL"
+  },
+  {
+    "id": 380,
+    "hospitalName": "FLORIDA STATE HOSPITAL"
+  },
+  {
+    "id": 381,
+    "hospitalName": "FORT MADISON COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 382,
+    "hospitalName": "FORT SANDERS REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 383,
+    "hospitalName": "FORT VALLEY STATE UNIVERSITY HEALTH SYSTEM"
+  },
+  {
+    "id": 384,
+    "hospitalName": "FORT WALTON BEACH MEDICAL CENTER"
+  },
+  {
+    "id": 385,
+    "hospitalName": "FORT WASHINGTON HOSPITAL"
+  },
+  {
+    "id": 386,
+    "hospitalName": "FOSTORIA COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 387,
+    "hospitalName": "FRANKLIN FOUNDATION HOSPITAL"
+  },
+  {
+    "id": 388,
+    "hospitalName": "FRANKLIN GENERAL HOSPITAL"
+  },
+  {
+    "id": 389,
+    "hospitalName": "FRANKLIN HOSPITAL"
+  },
+  {
+    "id": 390,
+    "hospitalName": "FRANKLIN MEDICAL CENTER"
+  },
+  {
+    "id": 391,
+    "hospitalName": "FRANKLIN MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 392,
+    "hospitalName": "FULTON MEDICAL CENTER"
+  },
+  {
+    "id": 393,
+    "hospitalName": "FULTON STATE HOSPITAL"
+  },
+  {
+    "id": 394,
+    "hospitalName": "G WERBER BRYAN PSYCHIATRIC HOSPITAL"
+  },
+  {
+    "id": 395,
+    "hospitalName": "G.V. (SONNY) MONTGOMERY VA MEDICAL CENTER"
+  },
+  {
+    "id": 396,
+    "hospitalName": "GADSDEN REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 397,
+    "hospitalName": "GALESBURG COTTAGE HOSPITAL"
+  },
+  {
+    "id": 398,
+    "hospitalName": "GALION COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 399,
+    "hospitalName": "GALLUP INDIAN MEDICAL CENTER"
+  },
+  {
+    "id": 400,
+    "hospitalName": "GARDEN CITY HOSPITAL"
+  },
+  {
+    "id": 401,
+    "hospitalName": "GARDEN GROVE HOSPITAL AND MEDICAL CENTER"
+  },
+  {
+    "id": 402,
+    "hospitalName": "GENESIS MEDICAL CENTER ALEDO"
+  },
+  {
+    "id": 403,
+    "hospitalName": "GENESIS MEDICAL CENTER ILLINI CAMPUS"
+  },
+  {
+    "id": 404,
+    "hospitalName": "GENEVA GENERAL HOSPITAL"
+  },
+  {
+    "id": 405,
+    "hospitalName": "GENOA COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 406,
+    "hospitalName": "GEORGE C GRAPE COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 407,
+    "hospitalName": "GOOD HANDS MEDICAL"
+  },
+  {
+    "id": 408,
+    "hospitalName": "GRAND ITASCA CLINIC & HOSP"
+  },
+  {
+    "id": 409,
+    "hospitalName": "GRAND RIVER MEDICAL CENTER"
+  },
+  {
+    "id": 410,
+    "hospitalName": "GRAND STRAND REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 411,
+    "hospitalName": "GRAND VIEW HOSPITAL"
+  },
+  {
+    "id": 412,
+    "hospitalName": "GRANDE RONDE HOSPITAL"
+  },
+  {
+    "id": 413,
+    "hospitalName": "GRANDVIEW HOSPITAL & MEDICAL CENTER"
+  },
+  {
+    "id": 414,
+    "hospitalName": "GRANDVIEW MEDICAL CENTER"
+  },
+  {
+    "id": 415,
+    "hospitalName": "GRANITE COUNTY MEDICAL CENTER"
+  },
+  {
+    "id": 416,
+    "hospitalName": "GRANT MEDICAL CENTER"
+  },
+  {
+    "id": 417,
+    "hospitalName": "GRANT MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 418,
+    "hospitalName": "GRANT REG HLTH CTR"
+  },
+  {
+    "id": 419,
+    "hospitalName": "GRANVILLE HEALTH SYSTEM"
+  },
+  {
+    "id": 420,
+    "hospitalName": "GRAYS HARBOR COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 421,
+    "hospitalName": "GREENE COUNTY MEDICAL CENTER"
+  },
+  {
+    "id": 422,
+    "hospitalName": "GREENE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 423,
+    "hospitalName": "GREENLEAF CENTER"
+  },
+  {
+    "id": 424,
+    "hospitalName": "GREENVIEW REGIONAL HOSPITAL"
+  },
+  {
+    "id": 425,
+    "hospitalName": "GREENVILLE REGIONAL HOSPITAL"
+  },
+  {
+    "id": 426,
+    "hospitalName": "GREENWICH HOSPITAL ASSOCIATION"
+  },
+  {
+    "id": 427,
+    "hospitalName": "GREENWOOD AMG SPECIALTY HOSPITAL"
+  },
+  {
+    "id": 428,
+    "hospitalName": "GUNNISON VALLEY HOSPITAL"
+  },
+  {
+    "id": 429,
+    "hospitalName": "GUTHRIE CORNING HOSPITAL"
+  },
+  {
+    "id": 430,
+    "hospitalName": "GUTHRIE COUNTY HOSPITAL"
+  },
+  {
+    "id": 431,
+    "hospitalName": "GUTHRIE TOWANDA MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 432,
+    "hospitalName": "GUTTENBERG MUNICIPAL HOSPITAL"
+  },
+  {
+    "id": 433,
+    "hospitalName": "GWINNETT HOSPITAL SYSTEM"
+  },
+  {
+    "id": 434,
+    "hospitalName": "H B MAGRUDER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 435,
+    "hospitalName": "H LEE MOFFITT CANCER CTR & RESEARCH INST"
+  },
+  {
+    "id": 436,
+    "hospitalName": "H. C. WATKINS MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 437,
+    "hospitalName": "HABERSHAM COUNTY MEDICAL CTR"
+  },
+  {
+    "id": 438,
+    "hospitalName": "HARDY WILSON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 439,
+    "hospitalName": "HARLAN ARH HOSPITAL"
+  },
+  {
+    "id": 440,
+    "hospitalName": "HARLAN COUNTY HEALTH SYSTEM"
+  },
+  {
+    "id": 441,
+    "hospitalName": "HARLEM HOSPITAL CENTER"
+  },
+  {
+    "id": 442,
+    "hospitalName": "HARLINGEN MEDICAL CENTER"
+  },
+  {
+    "id": 443,
+    "hospitalName": "HARMON HOSPTAL"
+  },
+  {
+    "id": 444,
+    "hospitalName": "HARMON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 445,
+    "hospitalName": "HARNEY DISTRICT HOSPITAL"
+  },
+  {
+    "id": 446,
+    "hospitalName": "HARPER COUNTY COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 447,
+    "hospitalName": "HILLSDALE COMMUNITY HEALTH CENTER"
+  },
+  {
+    "id": 448,
+    "hospitalName": "HILLSIDE HOSPITAL"
+  },
+  {
+    "id": 449,
+    "hospitalName": "HILO MEDICAL CENTER"
+  },
+  {
+    "id": 450,
+    "hospitalName": "HILTON HEAD HOSPITAL"
+  },
+  {
+    "id": 451,
+    "hospitalName": "HIND GENERAL HOSPITAL LLC"
+  },
+  {
+    "id": 452,
+    "hospitalName": "HOAG HOSPITAL IRVINE"
+  },
+  {
+    "id": 453,
+    "hospitalName": "HOAG MEMORIAL HOSPITAL PRESBYTERIAN"
+  },
+  {
+    "id": 454,
+    "hospitalName": "HOSP PEDIATRICO UNIVERSITARIO DR ANTONIO ORTIZ"
+  },
+  {
+    "id": 455,
+    "hospitalName": "HOSP PEREA"
+  },
+  {
+    "id": 456,
+    "hospitalName": "HOSP PSIQUIATRIA FORENSE DE PONCE"
+  },
+  {
+    "id": 457,
+    "hospitalName": "HOSP PSIQUIATRIA FORENSE DE RIO PIEDRAS"
+  },
+  {
+    "id": 458,
+    "hospitalName": "HOSP PSIQUIATRICO CORRECCIONAL"
+  },
+  {
+    "id": 459,
+    "hospitalName": "HOSP PSIQUIATRICO DR RAMON FERNANDEZ MARINA"
+  },
+  {
+    "id": 460,
+    "hospitalName": "HOSP RYDER MEMORIAL INC"
+  },
+  {
+    "id": 461,
+    "hospitalName": "HOSP SAN ANTONIO INC"
+  },
+  {
+    "id": 462,
+    "hospitalName": "HOSP SAN CARLOS BORROMEO"
+  },
+  {
+    "id": 463,
+    "hospitalName": "HOSP SAN CRISTOBAL"
+  },
+  {
+    "id": 464,
+    "hospitalName": "HOSP SAN FRANCISCO"
+  },
+  {
+    "id": 465,
+    "hospitalName": "HOSP SAN GERARDO"
+  },
+  {
+    "id": 466,
+    "hospitalName": "HOSP UNIVERSITARIO DE ADULTOS"
+  },
+  {
+    "id": 467,
+    "hospitalName": "HOSP UNIVERSITARIO DR RAMON RUIZ ARNAU"
+  },
+  {
+    "id": 468,
+    "hospitalName": "HOSP UPR CAROLINA"
+  },
+  {
+    "id": 469,
+    "hospitalName": "HOSPITAL AT HEBREW HEALTH CARE"
+  },
+  {
+    "id": 470,
+    "hospitalName": "HOSPITAL BUEN SAMARITANO"
+  },
+  {
+    "id": 471,
+    "hospitalName": "HOSPITAL DISTRICT 1 OF RICE COUNTY"
+  },
+  {
+    "id": 472,
+    "hospitalName": "HOSPITAL FOR EXTENDED RECOVERY"
+  },
+  {
+    "id": 473,
+    "hospitalName": "HOSPITAL FOR SICK CHILDREN"
+  },
+  {
+    "id": 474,
+    "hospitalName": "HOSPITAL FOR SPECIAL CARE"
+  },
+  {
+    "id": 475,
+    "hospitalName": "HOSPITAL FOR SPECIAL SURGERY"
+  },
+  {
+    "id": 476,
+    "hospitalName": "HOSPITAL FOR SURGICAL EXCELLENCE OF OAKBEND MEDICAL CENTER"
+  },
+  {
+    "id": 477,
+    "hospitalName": "HOSPITAL INTERAMERICANO DE MEDICINA AVANZADA"
+  },
+  {
+    "id": 478,
+    "hospitalName": "HOSPITAL OF FOX CHASE CANCER CENTER"
+  },
+  {
+    "id": 479,
+    "hospitalName": "HOSPITAL OF THE UNIVERSITY OF PENNSYLVANIA"
+  },
+  {
+    "id": 480,
+    "hospitalName": "HURON REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 481,
+    "hospitalName": "HUTCHINGS PSYCHIATRIC CENTER"
+  },
+  {
+    "id": 482,
+    "hospitalName": "HUTCHINSON AREA HEALTH CARE"
+  },
+  {
+    "id": 483,
+    "hospitalName": "HUTCHINSON REGIONAL MEDICAL CENTER INC"
+  },
+  {
+    "id": 484,
+    "hospitalName": "HUTZEL WOMEN'S HOSPITAL"
+  },
+  {
+    "id": 485,
+    "hospitalName": "IBERIA MEDICAL CENTER"
+  },
+  {
+    "id": 486,
+    "hospitalName": "IBERIA REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 487,
+    "hospitalName": "ICARE REHABILTATION HOSPITAL"
+  },
+  {
+    "id": 488,
+    "hospitalName": "ICON HOSPITAL"
+  },
+  {
+    "id": 489,
+    "hospitalName": "IOWA MEDICAL AND CLASSIFICATION CENTER"
+  },
+  {
+    "id": 490,
+    "hospitalName": "IOWA METHODIST MEDICAL CENTER"
+  },
+  {
+    "id": 491,
+    "hospitalName": "IRA DAVENPORT MEMORIAL HOSPITAL INC"
+  },
+  {
+    "id": 492,
+    "hospitalName": "IRAAN GENERAL HOSPITAL"
+  },
+  {
+    "id": 493,
+    "hospitalName": "IREDELL MEMORIAL HOSPITAL, INCORPORATED"
+  },
+  {
+    "id": 494,
+    "hospitalName": "IRON COUNTY HOSPITAL"
+  },
+  {
+    "id": 495,
+    "hospitalName": "IROQUOIS MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 496,
+    "hospitalName": "IRWIN ARMY COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 497,
+    "hospitalName": "IRWIN COUNTY HOSPITAL"
+  },
+  {
+    "id": 498,
+    "hospitalName": "ISLAND HOSPITAL"
+  },
+  {
+    "id": 499,
+    "hospitalName": "IU HEALTH GOSHEN HOSPITAL"
+  },
+  {
+    "id": 500,
+    "hospitalName": "IU HEALTH UNIVERSITY HOSPITAL"
+  },
+  {
+    "id": 501,
+    "hospitalName": "IVINSON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 502,
+    "hospitalName": "J C BLAIR MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 503,
+    "hospitalName": "J. ARTHUR DOSHER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 504,
+    "hospitalName": "J. D. MCCARTY CENTER FOR CHILDREN WITH DEVELOPMENTAL"
+  },
+  {
+    "id": 505,
+    "hospitalName": "J. PAUL JONES HOSPITAL"
+  },
+  {
+    "id": 506,
+    "hospitalName": "JACK C. MONTGOMERY VA MEDICAL CENTER"
+  },
+  {
+    "id": 507,
+    "hospitalName": "JACK HUGHSTON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 508,
+    "hospitalName": "JANE PHILLIPS MEDICAL CENTER"
+  },
+  {
+    "id": 509,
+    "hospitalName": "JANE PHILLIPS NOWATA HEALTH CENTER"
+  },
+  {
+    "id": 510,
+    "hospitalName": "JANE TODD CRAWFORD MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 511,
+    "hospitalName": "JASPER GENERAL HOSPITAL"
+  },
+  {
+    "id": 512,
+    "hospitalName": "JASPER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 513,
+    "hospitalName": "JAY COUNTY HOSPITAL"
+  },
+  {
+    "id": 514,
+    "hospitalName": "JAY HOSPITAL"
+  },
+  {
+    "id": 515,
+    "hospitalName": "JEANES HOSPITAL"
+  },
+  {
+    "id": 516,
+    "hospitalName": "JEFF DAVIS HOSPITAL"
+  },
+  {
+    "id": 517,
+    "hospitalName": "JEFFERSON COMMUNITY HEALTH CENTER"
+  },
+  {
+    "id": 518,
+    "hospitalName": "JEFFERSON COUNTY HEALTH CENTER"
+  },
+  {
+    "id": 519,
+    "hospitalName": "JEFFERSON COUNTY HOSPITAL"
+  },
+  {
+    "id": 520,
+    "hospitalName": "JEFFERSON DAVIS COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 521,
+    "hospitalName": "JEFFERSON HEALTHCARE"
+  },
+  {
+    "id": 522,
+    "hospitalName": "JEFFERSON HOSPITAL"
+  },
+  {
+    "id": 523,
+    "hospitalName": "JEFFERSON MEDICAL CENTER"
+  },
+  {
+    "id": 524,
+    "hospitalName": "JEFFERSON REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 525,
+    "hospitalName": "JELLICO COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 526,
+    "hospitalName": "JENNERSVILLE REGIONAL HOSPITAL"
+  },
+  {
+    "id": 527,
+    "hospitalName": "JENNIE M MELHAM MEMORIAL MEDICAL CENTER"
+  },
+  {
+    "id": 528,
+    "hospitalName": "JOHN PETER SMITH HOSPITAL"
+  },
+  {
+    "id": 529,
+    "hospitalName": "JOHN RANDOLPH MEDICAL CENTER"
+  },
+  {
+    "id": 530,
+    "hospitalName": "JOHN T MATHER MEMORIAL HOSPITAL OF PORT JEFFERSON NEW YORK INC"
+  },
+  {
+    "id": 531,
+    "hospitalName": "JOHNS HOPKINS BAYVIEW MEDICAL CENTER"
+  },
+  {
+    "id": 532,
+    "hospitalName": "JOHNS HOPKINS HOSPITAL"
+  },
+  {
+    "id": 533,
+    "hospitalName": "JOHNSON CITY MEDICAL CENTER"
+  },
+  {
+    "id": 534,
+    "hospitalName": "JOHNSON REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 535,
+    "hospitalName": "JOHNSTON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 536,
+    "hospitalName": "JOINT TOWNSHIP DISTRICT MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 537,
+    "hospitalName": "JONATHAN M. WAINWRIGHT MEMORIAL VA MEDICAL CENTER"
+  },
+  {
+    "id": 538,
+    "hospitalName": "JONES MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 539,
+    "hospitalName": "JONES REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 540,
+    "hospitalName": "JORDAN VALLEY MEDICAL CENTER"
+  },
+  {
+    "id": 541,
+    "hospitalName": "JOYCE EISENBERG KEEFER MEDICAL CENTER"
+  },
+  {
+    "id": 542,
+    "hospitalName": "JUPITER MEDICAL CENTER"
+  },
+  {
+    "id": 543,
+    "hospitalName": "K HOVNANIAN CHILDRENS HOSPITAL"
+  },
+  {
+    "id": 544,
+    "hospitalName": "KADLEC MEDICAL CENTER"
+  },
+  {
+    "id": 545,
+    "hospitalName": "KAHI MOHALA"
+  },
+  {
+    "id": 546,
+    "hospitalName": "KAHUKU MEDICAL CENTER"
+  },
+  {
+    "id": 547,
+    "hospitalName": "KAILO BEHAVIORAL HOSPITAL"
+  },
+  {
+    "id": 548,
+    "hospitalName": "KARMANOS CANCER CENTER"
+  },
+  {
+    "id": 549,
+    "hospitalName": "KATE DISHMAN REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 550,
+    "hospitalName": "KATHERINE SHAW BETHEA HOSPITAL"
+  },
+  {
+    "id": 551,
+    "hospitalName": "KAU HOSPITAL"
+  },
+  {
+    "id": 552,
+    "hospitalName": "KAWEAH DELTA  MENTAL HEALTH HOSPITAL D/P APH"
+  },
+  {
+    "id": 553,
+    "hospitalName": "KINGS DAUGHTERS MEDICAL CENTER OHIO"
+  },
+  {
+    "id": 554,
+    "hospitalName": "KINGSBORO PSYCHIATRIC CENTER"
+  },
+  {
+    "id": 555,
+    "hospitalName": "KINGSBROOK JEWISH MEDICAL CENTER"
+  },
+  {
+    "id": 556,
+    "hospitalName": "KINGWOOD MEDICAL CENTER"
+  },
+  {
+    "id": 557,
+    "hospitalName": "KINGWOOD PINES HOSPITAL"
+  },
+  {
+    "id": 558,
+    "hospitalName": "KIOWA COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 559,
+    "hospitalName": "KIOWA DISTRICT HOSPITAL"
+  },
+  {
+    "id": 560,
+    "hospitalName": "KIRBY FORENSIC PSYCHIATRIC CENTER"
+  },
+  {
+    "id": 561,
+    "hospitalName": "KIRBY MEDICAL CENTER"
+  },
+  {
+    "id": 562,
+    "hospitalName": "KIRKBRIDE CENTER"
+  },
+  {
+    "id": 563,
+    "hospitalName": "KIRKLAND CORRECTIONAL INSTITUTION INFIRMARY"
+  },
+  {
+    "id": 564,
+    "hospitalName": "KISHWAUKEE COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 565,
+    "hospitalName": "KIT CARSON COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 566,
+    "hospitalName": "KITTITAS VALLEY COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 567,
+    "hospitalName": "KITTSON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 568,
+    "hospitalName": "KLICKITAT VALLEY HEALTH"
+  },
+  {
+    "id": 569,
+    "hospitalName": "KNAPP MEDICAL CENTER"
+  },
+  {
+    "id": 570,
+    "hospitalName": "KNOX COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 571,
+    "hospitalName": "KNOX COUNTY HOSPITAL"
+  },
+  {
+    "id": 572,
+    "hospitalName": "KNOXVILLE AREA COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 573,
+    "hospitalName": "KOHALA HOSPITAL"
+  },
+  {
+    "id": 574,
+    "hospitalName": "KONA COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 575,
+    "hospitalName": "KOOTENAI MEDICAL CENTER"
+  },
+  {
+    "id": 576,
+    "hospitalName": "KOSAIR CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 577,
+    "hospitalName": "KOSCIUSKO COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 578,
+    "hospitalName": "KOSSUTH COUNTY HOSPITAL"
+  },
+  {
+    "id": 579,
+    "hospitalName": "KUAKINI MEDICAL CENTER"
+  },
+  {
+    "id": 580,
+    "hospitalName": "KULA HOSPITAL"
+  },
+  {
+    "id": 581,
+    "hospitalName": "L. V. STABLER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 582,
+    "hospitalName": "LA AMISTAD RESIDENTIAL TREATMENT CENTER"
+  },
+  {
+    "id": 583,
+    "hospitalName": "LA CASA PSYCHIATRIC HEALTH FACILITY"
+  },
+  {
+    "id": 584,
+    "hospitalName": "LA PALMA INTERCOMMUNITY HOSPITAL"
+  },
+  {
+    "id": 585,
+    "hospitalName": "LA PAZ REGIONAL"
+  },
+  {
+    "id": 586,
+    "hospitalName": "LABETTE HEALTH"
+  },
+  {
+    "id": 587,
+    "hospitalName": "LAC/RANCHO LOS AMIGOS NATIONAL REHAB CENTER"
+  },
+  {
+    "id": 588,
+    "hospitalName": "LAC+USC MEDICAL CENTER"
+  },
+  {
+    "id": 589,
+    "hospitalName": "LADD MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 590,
+    "hospitalName": "LADY OF THE SEA GENERAL HOSPITAL"
+  },
+  {
+    "id": 591,
+    "hospitalName": "LAFAYETTE BEHAVIORAL HEALTH UNIT"
+  },
+  {
+    "id": 592,
+    "hospitalName": "LAFAYETTE GENERAL MEDICAL CENTER"
+  },
+  {
+    "id": 593,
+    "hospitalName": "LAFAYETTE GENERAL SURGICAL HOSPITAL"
+  },
+  {
+    "id": 594,
+    "hospitalName": "LAFAYETTE HOSPITAL"
+  },
+  {
+    "id": 595,
+    "hospitalName": "LAFAYETTE PHYSICAL REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 596,
+    "hospitalName": "LANDMARK MEDICAL CENTER"
+  },
+  {
+    "id": 597,
+    "hospitalName": "LANE COUNTY HOSPITAL"
+  },
+  {
+    "id": 598,
+    "hospitalName": "LANE FROST HEALTH AND REHABILITATION CENTER"
+  },
+  {
+    "id": 599,
+    "hospitalName": "LANE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 600,
+    "hospitalName": "LANGLEY PORTER PSYCHIATRIC INSTITUTE"
+  },
+  {
+    "id": 601,
+    "hospitalName": "LANSDALE HOSPITAL"
+  },
+  {
+    "id": 602,
+    "hospitalName": "LONE PEAK HOSPITAL"
+  },
+  {
+    "id": 603,
+    "hospitalName": "LONE STAR BEHAVIORAL HEALTH CYPRESS"
+  },
+  {
+    "id": 604,
+    "hospitalName": "LONG BEACH MEDICAL CENTER"
+  },
+  {
+    "id": 605,
+    "hospitalName": "LONG BEACH MEMORIAL MEDICAL CENTER"
+  },
+  {
+    "id": 606,
+    "hospitalName": "LONG ISLAND COLLEGE HOSPITAL"
+  },
+  {
+    "id": 607,
+    "hospitalName": "LONG ISLAND JEWISH MEDICAL CENTER"
+  },
+  {
+    "id": 608,
+    "hospitalName": "LONG ISLAND JEWISH VALLEY STREAM"
+  },
+  {
+    "id": 609,
+    "hospitalName": "LONG TERM ACUTE CARE HOSPITAL MOSAIC LIFE CARE AT ST. JOSEPH"
+  },
+  {
+    "id": 610,
+    "hospitalName": "LONGLEAF HOSPITAL"
+  },
+  {
+    "id": 611,
+    "hospitalName": "LONGMONT UNITED HOSPITAL"
+  },
+  {
+    "id": 612,
+    "hospitalName": "LONGVIEW REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 613,
+    "hospitalName": "LORETTO HOSPITAL"
+  },
+  {
+    "id": 614,
+    "hospitalName": "LORING HOSPITAL"
+  },
+  {
+    "id": 615,
+    "hospitalName": "LOS ALAMITOS MEDICAL CENTER"
+  },
+  {
+    "id": 616,
+    "hospitalName": "LOS ALAMOS MEDICAL CENTER"
+  },
+  {
+    "id": 617,
+    "hospitalName": "LOS ANGELES AMBULATORY CARE CENTER"
+  },
+  {
+    "id": 618,
+    "hospitalName": "LOS ANGELES COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 619,
+    "hospitalName": "LOS ANGELES COMMUNITY HOSPITAL AT BELLFLOWER"
+  },
+  {
+    "id": 620,
+    "hospitalName": "LOS ANGELES METROPOLITAN MEDICAL CENTER"
+  },
+  {
+    "id": 621,
+    "hospitalName": "LOS NINOS HOSPITAL"
+  },
+  {
+    "id": 622,
+    "hospitalName": "LOS ROBLES HOSPITAL & MEDICAL CENTER"
+  },
+  {
+    "id": 623,
+    "hospitalName": "LOURDES MEDICAL CENTER"
+  },
+  {
+    "id": 624,
+    "hospitalName": "LOURDES MEDICAL CENTER OF BURLINGTON COUNTY"
+  },
+  {
+    "id": 625,
+    "hospitalName": "LOURDES SPECIALTY HOSPITAL OF SOUTHERN NEW JERSEY"
+  },
+  {
+    "id": 626,
+    "hospitalName": "LOVELACE MEDICAL CENTER"
+  },
+  {
+    "id": 627,
+    "hospitalName": "LOVELACE REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 628,
+    "hospitalName": "LOVELACE WESTSIDE HOSPITAL"
+  },
+  {
+    "id": 629,
+    "hospitalName": "LOVELACE WOMENS HOSPITAL"
+  },
+  {
+    "id": 630,
+    "hospitalName": "LOWELL GENERAL HOSPITAL"
+  },
+  {
+    "id": 631,
+    "hospitalName": "LOWER BUCKS HOSPITAL"
+  },
+  {
+    "id": 632,
+    "hospitalName": "LOWER CONEE COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 633,
+    "hospitalName": "LOWER KEYS MEDICAL CENTER"
+  },
+  {
+    "id": 634,
+    "hospitalName": "LOWER UMPQUA HOSPITAL DISTRICT"
+  },
+  {
+    "id": 635,
+    "hospitalName": "LOYOLA GOTTLIEB MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 636,
+    "hospitalName": "LOYOLA UNIVERSITY MEDICAL CENTER"
+  },
+  {
+    "id": 637,
+    "hospitalName": "LSU BOGALUSA MEDICAL CENTER (OUTPATIENT CAMPUS)"
+  },
+  {
+    "id": 638,
+    "hospitalName": "MARION IL VA MEDICAL CENTER"
+  },
+  {
+    "id": 639,
+    "hospitalName": "MARK REED HEALTH CARE CLINIC"
+  },
+  {
+    "id": 640,
+    "hospitalName": "MARK TWAIN ST. JOSEPH'S HOSPITAL"
+  },
+  {
+    "id": 641,
+    "hospitalName": "MARLBORO PARK HOSPITAL"
+  },
+  {
+    "id": 642,
+    "hospitalName": "MARLBOROUGH HOSPITAL"
+  },
+  {
+    "id": 643,
+    "hospitalName": "MARLETTE REGIONAL HOSPITAL"
+  },
+  {
+    "id": 644,
+    "hospitalName": "MARLTON REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 645,
+    "hospitalName": "MARSHALL BROWNING HOSPITAL"
+  },
+  {
+    "id": 646,
+    "hospitalName": "MARTIN MEMORIAL MEDICAL CENTER"
+  },
+  {
+    "id": 647,
+    "hospitalName": "MARY BLACK HEALTH SYSTEM GAFFNEY"
+  },
+  {
+    "id": 648,
+    "hospitalName": "MARY BLACK HEALTH SYSTEM SPARTANBURG"
+  },
+  {
+    "id": 649,
+    "hospitalName": "MCBRIDE ORTHOPEDIC HOSPITAL"
+  },
+  {
+    "id": 650,
+    "hospitalName": "MCCALLEN MEDICAL CENTER"
+  },
+  {
+    "id": 651,
+    "hospitalName": "MCCAMEY HOSPITAL"
+  },
+  {
+    "id": 652,
+    "hospitalName": "MCCONE COUNTY HEALTH CENTER"
+  },
+  {
+    "id": 653,
+    "hospitalName": "MCCURTAIN MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 654,
+    "hospitalName": "MCDONALD ARMY COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 655,
+    "hospitalName": "MCDOWELL ARH HOSPITAL"
+  },
+  {
+    "id": 656,
+    "hospitalName": "MCDOWELL HOSPITAL"
+  },
+  {
+    "id": 657,
+    "hospitalName": "MCHS NEW PRAGUE"
+  },
+  {
+    "id": 658,
+    "hospitalName": "MCKEE MEDICAL CENTER"
+  },
+  {
+    "id": 659,
+    "hospitalName": "MCKENZIE COUNTY HEALTHCARE SYSTEMS"
+  },
+  {
+    "id": 660,
+    "hospitalName": "MCKENZIE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 661,
+    "hospitalName": "MCKENZIE REGIONAL HOSPITAL"
+  },
+  {
+    "id": 662,
+    "hospitalName": "MCLAREN BAY REGION"
+  },
+  {
+    "id": 663,
+    "hospitalName": "MCLAREN BAY REGIONAL"
+  },
+  {
+    "id": 664,
+    "hospitalName": "MCPHERSON HOSPITAL INC"
+  },
+  {
+    "id": 665,
+    "hospitalName": "MEMORIAL HOSPITAL OF CARBON COUNTY"
+  },
+  {
+    "id": 666,
+    "hospitalName": "MEMORIAL HOSPITAL OF CARBONDALE"
+  },
+  {
+    "id": 667,
+    "hospitalName": "MERIT HEALTH WESLEY"
+  },
+  {
+    "id": 668,
+    "hospitalName": "MERIT HEALTH WOMEN'S HOSPITAL"
+  },
+  {
+    "id": 669,
+    "hospitalName": "MERITER CHILD AND ADOLESCENT PSYCH HOSPITAL"
+  },
+  {
+    "id": 670,
+    "hospitalName": "MERITER HSPTL"
+  },
+  {
+    "id": 671,
+    "hospitalName": "MERITUS MEDICAL CENTER"
+  },
+  {
+    "id": 672,
+    "hospitalName": "MERRICK MEDICAL CENTER"
+  },
+  {
+    "id": 673,
+    "hospitalName": "MERRIMACK VALLEY HOSPITAL"
+  },
+  {
+    "id": 674,
+    "hospitalName": "MERWICK REHABILITATION HOSPITAL AND NURSING CARE CENTER"
+  },
+  {
+    "id": 675,
+    "hospitalName": "MESA HILL SPECIALTY HOSPITAL"
+  },
+  {
+    "id": 676,
+    "hospitalName": "MESA SPRINGS"
+  },
+  {
+    "id": 677,
+    "hospitalName": "MESA VIEW REGIONAL HOSPITAL"
+  },
+  {
+    "id": 678,
+    "hospitalName": "MESCALERO PUBLIC HEALTH SERVICES INDIAN HOSPITAL"
+  },
+  {
+    "id": 679,
+    "hospitalName": "MESQUITE REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 680,
+    "hospitalName": "MESQUITE SPECIALTY HOSPITAL"
+  },
+  {
+    "id": 681,
+    "hospitalName": "METHODIST CHARLTON MEDICAL CENTER"
+  },
+  {
+    "id": 682,
+    "hospitalName": "METHODIST DALLAS MEDICAL CENTER"
+  },
+  {
+    "id": 683,
+    "hospitalName": "MUENSTER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 684,
+    "hospitalName": "MUHLENBERG COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 685,
+    "hospitalName": "MULESHOE AREA MEDICAL CENTER"
+  },
+  {
+    "id": 686,
+    "hospitalName": "MULTICARE AUBURN REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 687,
+    "hospitalName": "MULTICARE GOOD SAMARITAN HOSPITAL"
+  },
+  {
+    "id": 688,
+    "hospitalName": "MUNCY VALLEY HOSPITAL"
+  },
+  {
+    "id": 689,
+    "hospitalName": "MUNICIPAL HOSP & GRANITE MANOR"
+  },
+  {
+    "id": 690,
+    "hospitalName": "MUNISING MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 691,
+    "hospitalName": "MUNROE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 692,
+    "hospitalName": "MUNSON HEALTHCARE CADILLAC"
+  },
+  {
+    "id": 693,
+    "hospitalName": "MUNSON HEALTHCARE CHARLEVOIX HOSPITAL"
+  },
+  {
+    "id": 694,
+    "hospitalName": "MUNSON HEALTHCARE GRAYLING"
+  },
+  {
+    "id": 695,
+    "hospitalName": "MUNSON HEALTHCARE MANISTEE HOSPITAL"
+  },
+  {
+    "id": 696,
+    "hospitalName": "MUNSON MEDICAL CENTER"
+  },
+  {
+    "id": 697,
+    "hospitalName": "MURPHY MEDICAL CENTER"
+  },
+  {
+    "id": 698,
+    "hospitalName": "MURRAY CALLOWAY COUNTY HOSPITAL"
+  },
+  {
+    "id": 699,
+    "hospitalName": "MURRAY COUNTY MEM HOSP"
+  },
+  {
+    "id": 700,
+    "hospitalName": "MURRAY MEDICAL CENTER"
+  },
+  {
+    "id": 701,
+    "hospitalName": "MUSC MEDICAL CENTER"
+  },
+  {
+    "id": 702,
+    "hospitalName": "MUSCOGEE (CREEK) NATION LONG TERM ACUTE CARE HOSPITAL"
+  },
+  {
+    "id": 703,
+    "hospitalName": "MUSCOGEE (CREEK) NATION MEDICAL CENTER"
+  },
+  {
+    "id": 704,
+    "hospitalName": "MUSCOGEE (CREEK) NATION PHYSICAL REHABILITATION CENTER"
+  },
+  {
+    "id": 705,
+    "hospitalName": "MYRTUE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 706,
+    "hospitalName": "NACOGDOCHES MEDICAL CENTER"
+  },
+  {
+    "id": 707,
+    "hospitalName": "NACOGDOCHES MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 708,
+    "hospitalName": "NAME"
+  },
+  {
+    "id": 709,
+    "hospitalName": "NANTICOKE MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 710,
+    "hospitalName": "NANTUCKET COTTAGE HOSPITAL"
+  },
+  {
+    "id": 711,
+    "hospitalName": "NAPA STATE HOSPITAL"
+  },
+  {
+    "id": 712,
+    "hospitalName": "NAPLES COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 713,
+    "hospitalName": "NASH GENERAL HOSPITAL"
+  },
+  {
+    "id": 714,
+    "hospitalName": "NASHOBA VALLEY MEDICAL CENTER"
+  },
+  {
+    "id": 715,
+    "hospitalName": "NASON HOSPITAL"
+  },
+  {
+    "id": 716,
+    "hospitalName": "NASSAU UNIVERSITY MEDICAL CENTER"
+  },
+  {
+    "id": 717,
+    "hospitalName": "NATCHAUG HOSPITAL, INC."
+  },
+  {
+    "id": 718,
+    "hospitalName": "NATCHEZ COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 719,
+    "hospitalName": "NATCHITOCHES REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 720,
+    "hospitalName": "NATHAN LITTAUER HOSPITAL"
+  },
+  {
+    "id": 721,
+    "hospitalName": "NATIONAL JEWISH HEALTH"
+  },
+  {
+    "id": 722,
+    "hospitalName": "NATIONAL PARK MEDICAL CENTER"
+  },
+  {
+    "id": 723,
+    "hospitalName": "NATIONWIDE CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 724,
+    "hospitalName": "NATIVIDAD MEDICAL CENTER"
+  },
+  {
+    "id": 725,
+    "hospitalName": "NAVAL BRANCH HEALTH CLINIC BANGOR"
+  },
+  {
+    "id": 726,
+    "hospitalName": "NAVAL HEALTH CLINIC (JOHN HENRY BALCH)"
+  },
+  {
+    "id": 727,
+    "hospitalName": "NAVAL HEALTH CLINIC CHERRY POINT"
+  },
+  {
+    "id": 728,
+    "hospitalName": "NOVANT HEALTH PRESBYTERIAN MEDICAL CENTER"
+  },
+  {
+    "id": 729,
+    "hospitalName": "NOVANT HEALTH PRINCE WILLIAM MEDICAL CENTER"
+  },
+  {
+    "id": 730,
+    "hospitalName": "NOVANT HEALTH ROWAN MEDICAL CENTER"
+  },
+  {
+    "id": 731,
+    "hospitalName": "NOVANT HEALTH THOMASVILLE MEDICAL CENTER"
+  },
+  {
+    "id": 732,
+    "hospitalName": "NOVANT HOSPITAL CHARLOTTE ORTHOPEDIC HOSPITAL"
+  },
+  {
+    "id": 733,
+    "hospitalName": "NOVATO COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 734,
+    "hospitalName": "NOXUBEE GENERAL CRITICAL ACCESS HOSPITAL"
+  },
+  {
+    "id": 735,
+    "hospitalName": "NYACK HOSPITAL"
+  },
+  {
+    "id": 736,
+    "hospitalName": "NYE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 737,
+    "hospitalName": "NYU HOSPITAL FOR JOINT DISEASES"
+  },
+  {
+    "id": 738,
+    "hospitalName": "NYU HOSPITALS CENTER"
+  },
+  {
+    "id": 739,
+    "hospitalName": "NYU LUTHERAN MEDICAL CENTER"
+  },
+  {
+    "id": 740,
+    "hospitalName": "O'BLENESS MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 741,
+    "hospitalName": "O'CONNOR HOSPITAL"
+  },
+  {
+    "id": 742,
+    "hospitalName": "OAK FOREST HOSPITAL"
+  },
+  {
+    "id": 743,
+    "hospitalName": "OAK HILL HOSPITAL"
+  },
+  {
+    "id": 744,
+    "hospitalName": "OAKBEND MEDICAL CENTER"
+  },
+  {
+    "id": 745,
+    "hospitalName": "OAKDALE COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 746,
+    "hospitalName": "OHIO STATE UNIVERSITY HOSPITALS"
+  },
+  {
+    "id": 747,
+    "hospitalName": "OHIO VALLEY GENERAL HOSPITAL"
+  },
+  {
+    "id": 748,
+    "hospitalName": "OHIO VALLEY MEDICAL CENTER"
+  },
+  {
+    "id": 749,
+    "hospitalName": "OHIOHEALTH MANSFIELD HOSPITAL"
+  },
+  {
+    "id": 750,
+    "hospitalName": "OHIOHEALTH REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 751,
+    "hospitalName": "OHIOHEALTH SHELBY HOSPITAL"
+  },
+  {
+    "id": 752,
+    "hospitalName": "OHSU HOSPITAL AND CLINICS"
+  },
+  {
+    "id": 753,
+    "hospitalName": "OHSU TRANSPLANT HOSPITAL"
+  },
+  {
+    "id": 754,
+    "hospitalName": "OJAI MANOR CONVALESCENT HOSPITAL"
+  },
+  {
+    "id": 755,
+    "hospitalName": "OJAI VALLEY COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 756,
+    "hospitalName": "OUR CHILDRENS HOUSE"
+  },
+  {
+    "id": 757,
+    "hospitalName": "OUR COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 758,
+    "hospitalName": "OUR LADY OF BELLEFONTE HOSPITAL"
+  },
+  {
+    "id": 759,
+    "hospitalName": "OUR LADY OF FATIMA HOSPITAL"
+  },
+  {
+    "id": 760,
+    "hospitalName": "OUR LADY OF LOURDES MEDICAL CENTER"
+  },
+  {
+    "id": 761,
+    "hospitalName": "OUR LADY OF LOURDES MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 762,
+    "hospitalName": "OUR LADY OF LOURDES REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 763,
+    "hospitalName": "OUR LADY OF PEACE"
+  },
+  {
+    "id": 764,
+    "hospitalName": "OUR LADY OF THE ANGELS HOSPITAL"
+  },
+  {
+    "id": 765,
+    "hospitalName": "OUR LADY OF THE LAKE REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 766,
+    "hospitalName": "OUR LADY OF VICTORY HSPTL"
+  },
+  {
+    "id": 767,
+    "hospitalName": "OVERLAKE HOSPITAL MEDICAL CENTER"
+  },
+  {
+    "id": 768,
+    "hospitalName": "OVERLAND PARK REG MED CTR"
+  },
+  {
+    "id": 769,
+    "hospitalName": "OVERLOOK HOSPITAL"
+  },
+  {
+    "id": 770,
+    "hospitalName": "OVERLOOK MEDICAL CENTER"
+  },
+  {
+    "id": 771,
+    "hospitalName": "OVERTON BROOKS VA MEDICAL CENTER"
+  },
+  {
+    "id": 772,
+    "hospitalName": "OVIEDO MEDICAL CENTER"
+  },
+  {
+    "id": 773,
+    "hospitalName": "OWATONNA HOSPITAL"
+  },
+  {
+    "id": 774,
+    "hospitalName": "OWENSBORO HEALTH REGIONAL HOSPITAL"
+  },
+  {
+    "id": 775,
+    "hospitalName": "OZARK HEALTH"
+  },
+  {
+    "id": 776,
+    "hospitalName": "OZARKS COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 777,
+    "hospitalName": "OZARKS COMMUNITY HOSPITAL OF GRAVETTE"
+  },
+  {
+    "id": 778,
+    "hospitalName": "OZARKS MEDICAL CENTER"
+  },
+  {
+    "id": 779,
+    "hospitalName": "P & S SURGICAL HOSPITAL"
+  },
+  {
+    "id": 780,
+    "hospitalName": "PACIFIC ALLIANCE MEDICAL CENTER, INC."
+  },
+  {
+    "id": 781,
+    "hospitalName": "PACIFIC GROVE HOSPITAL"
+  },
+  {
+    "id": 782,
+    "hospitalName": "PACIFIC ORANGE HOSPITAL, LLC"
+  },
+  {
+    "id": 783,
+    "hospitalName": "PACIFIC SHORES HOSPITAL"
+  },
+  {
+    "id": 784,
+    "hospitalName": "PACIFICA HOSPITAL OF THE VALLEY"
+  },
+  {
+    "id": 785,
+    "hospitalName": "PAPPAS REHABILITATION HOSPITAL FOR CHILDREN"
+  },
+  {
+    "id": 786,
+    "hospitalName": "PARADISE VALLEY HOSPITAL"
+  },
+  {
+    "id": 787,
+    "hospitalName": "PARADISE VALLEY HSP D/P APH BAYVIEW BEH HLTH"
+  },
+  {
+    "id": 788,
+    "hospitalName": "PARIS COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 789,
+    "hospitalName": "PARK BRIDGE REHABILITATION AND WELLNESS CENTER"
+  },
+  {
+    "id": 790,
+    "hospitalName": "PARK CENTER, INC"
+  },
+  {
+    "id": 791,
+    "hospitalName": "PARK CITY MEDICAL CENTER"
+  },
+  {
+    "id": 792,
+    "hospitalName": "PARK NICOLLET METHODIST HOSP"
+  },
+  {
+    "id": 793,
+    "hospitalName": "PARK PLACE SURGICAL HOSPITAL"
+  },
+  {
+    "id": 794,
+    "hospitalName": "PARK PLAZA HOSPITAL"
+  },
+  {
+    "id": 795,
+    "hospitalName": "PARK RIDGE HOSPITAL"
+  },
+  {
+    "id": 796,
+    "hospitalName": "PROMISE HOSPITAL OF SAN DIEGO"
+  },
+  {
+    "id": 797,
+    "hospitalName": "PROMISE HOSPITAL OF VICKSBURG"
+  },
+  {
+    "id": 798,
+    "hospitalName": "PROMISE HOSPITAL OF WICHITA FALLS"
+  },
+  {
+    "id": 799,
+    "hospitalName": "PROSSER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 800,
+    "hospitalName": "PROVIDENCE ALASKA MEDICAL CENTER"
+  },
+  {
+    "id": 801,
+    "hospitalName": "PROVIDENCE CENTRALIA HOSPITAL"
+  },
+  {
+    "id": 802,
+    "hospitalName": "PROVIDENCE HEALTH CENTER"
+  },
+  {
+    "id": 803,
+    "hospitalName": "PROVIDENCE HOLY CROSS MEDICAL CENTER"
+  },
+  {
+    "id": 804,
+    "hospitalName": "PROVIDENCE HOLY FAMILY HOSPITAL"
+  },
+  {
+    "id": 805,
+    "hospitalName": "PROVIDENCE HOOD RIVER MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 806,
+    "hospitalName": "PROVIDENCE HOSPITAL"
+  },
+  {
+    "id": 807,
+    "hospitalName": "PROVIDENCE HOSPITAL NORTHEAST"
+  },
+  {
+    "id": 808,
+    "hospitalName": "PROVIDENCE HOSPITAL OF NORTH HOUSTON LLC"
+  },
+  {
+    "id": 809,
+    "hospitalName": "PROVIDENCE KODIAK ISLAND MEDICAL CENTER"
+  },
+  {
+    "id": 810,
+    "hospitalName": "PROVIDENCE LITTLE CO OF MARY SUBACUTE CARE CENTER"
+  },
+  {
+    "id": 811,
+    "hospitalName": "PROVIDENCE LITTLE COMPANY OF MARY SUBACUTE CARE CENTER"
+  },
+  {
+    "id": 812,
+    "hospitalName": "PROVIDENCE LITTLE COMPANY OF MARY TRANSITIONAL CARE CENTER"
+  },
+  {
+    "id": 813,
+    "hospitalName": "PROVIDENCE MEDFORD MEDICAL CENTER"
+  },
+  {
+    "id": 814,
+    "hospitalName": "PROVIDENCE MEDICAL CENTER"
+  },
+  {
+    "id": 815,
+    "hospitalName": "PROVIDENCE MILWAUKIE HOSPITAL"
+  },
+  {
+    "id": 816,
+    "hospitalName": "PROVIDENCE MOUNT CARMEL HOSPITAL"
+  },
+  {
+    "id": 817,
+    "hospitalName": "PROVIDENCE NEWBERG MEDICAL CENTER"
+  },
+  {
+    "id": 818,
+    "hospitalName": "PROVIDENCE PORTLAND MEDICAL CENTER"
+  },
+  {
+    "id": 819,
+    "hospitalName": "PROVIDENCE REGIONAL MEDICAL CENTER EVERETT/PACIFIC CAMPUS"
+  },
+  {
+    "id": 820,
+    "hospitalName": "PROVIDENCE SACRED HEART MEDICAL CENTER AND CHILDREN'S HOSPITAL"
+  },
+  {
+    "id": 821,
+    "hospitalName": "PROVIDENCE SAINT JOSEPH MEDICAL CENTER"
+  },
+  {
+    "id": 822,
+    "hospitalName": "PROVIDENCE SEASIDE HOSPITAL"
+  },
+  {
+    "id": 823,
+    "hospitalName": "PROVIDENCE SEWARD MEDICAL CENTER"
+  },
+  {
+    "id": 824,
+    "hospitalName": "PROVIDENCE ST JOSEPH MEDICAL CENTER"
+  },
+  {
+    "id": 825,
+    "hospitalName": "PROVIDENCE ST VINCENT MEDICAL CENTER"
+  },
+  {
+    "id": 826,
+    "hospitalName": "PROVIDENCE ST. JOHN'S HEALTH CENTER"
+  },
+  {
+    "id": 827,
+    "hospitalName": "PROVIDENCE ST. JOSEPH'S HOSPITAL"
+  },
+  {
+    "id": 828,
+    "hospitalName": "PROVIDENCE ST. MARY MEDICAL CENTER"
+  },
+  {
+    "id": 829,
+    "hospitalName": "PROVIDENCE ST. PETER HOSPITAL"
+  },
+  {
+    "id": 830,
+    "hospitalName": "PROVIDENCE TARZANA MEDICAL CENTER"
+  },
+  {
+    "id": 831,
+    "hospitalName": "PROVIDENCE VALDEZ MEDICAL CENTER"
+  },
+  {
+    "id": 832,
+    "hospitalName": "PROVIDENCE WILLAMETTE FALLS MEDICAL CENTER"
+  },
+  {
+    "id": 833,
+    "hospitalName": "PROVIDENT HOSPITAL OF CHICAGO"
+  },
+  {
+    "id": 834,
+    "hospitalName": "PROVO CANYON BEHAVIORAL HOSPITAL"
+  },
+  {
+    "id": 835,
+    "hospitalName": "PROWERS MEDICAL CENTER"
+  },
+  {
+    "id": 836,
+    "hospitalName": "PSYCHIATRIC INSTITUTE OF WASHINGTON"
+  },
+  {
+    "id": 837,
+    "hospitalName": "PUBLIC HEALTH SERV INDIAN HOSP"
+  },
+  {
+    "id": 838,
+    "hospitalName": "PUERTO RICO CHILDRENS HOSPITAL"
+  },
+  {
+    "id": 839,
+    "hospitalName": "PUGET SOUND BEHAVIORAL HEALTH"
+  },
+  {
+    "id": 840,
+    "hospitalName": "PULASKI MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 841,
+    "hospitalName": "PULLMAN REGIONAL HOSPITAL"
+  },
+  {
+    "id": 842,
+    "hospitalName": "PUNGO DISTRICT HOSPITAL CORPORATION"
+  },
+  {
+    "id": 843,
+    "hospitalName": "PUNXSUTAWNEY AREA HOSPITAL"
+  },
+  {
+    "id": 844,
+    "hospitalName": "PURCELL MUNICIPAL HOSPITAL"
+  },
+  {
+    "id": 845,
+    "hospitalName": "PUTNAM COMMUNITY MEDICAL CENTER"
+  },
+  {
+    "id": 846,
+    "hospitalName": "PUTNAM COUNTY HOSPITAL"
+  },
+  {
+    "id": 847,
+    "hospitalName": "PUTNAM COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 848,
+    "hospitalName": "PUTNAM GENERAL HOSPITAL"
+  },
+  {
+    "id": 849,
+    "hospitalName": "PUTNAM HOSPITAL CENTER"
+  },
+  {
+    "id": 850,
+    "hospitalName": "QUAIL RUN BEHAVIORAL HEALTH"
+  },
+  {
+    "id": 851,
+    "hospitalName": "QUEEN'S MEDICAL CENTER WEST"
+  },
+  {
+    "id": 852,
+    "hospitalName": "QUEENS HOSPITAL CENTER"
+  },
+  {
+    "id": 853,
+    "hospitalName": "QUEENS MEDICAL CENTER"
+  },
+  {
+    "id": 854,
+    "hospitalName": "QUILLEN REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 855,
+    "hospitalName": "QUINCY MEDICAL CENTER"
+  },
+  {
+    "id": 856,
+    "hospitalName": "QUINCY VALLEY MEDICAL CENTER"
+  },
+  {
+    "id": 857,
+    "hospitalName": "QUITMAN COUNTY HOSPITAL"
+  },
+  {
+    "id": 858,
+    "hospitalName": "RAINBOW BABIES AND CHILDRENS HOSPITAL"
+  },
+  {
+    "id": 859,
+    "hospitalName": "RAINBOW MENTAL HLTH FACILITY"
+  },
+  {
+    "id": 860,
+    "hospitalName": "RAINY LAKE MEDICAL CENTER"
+  },
+  {
+    "id": 861,
+    "hospitalName": "RALEIGH GENERAL HOSPITAL"
+  },
+  {
+    "id": 862,
+    "hospitalName": "RALPH H JOHNSON VETERANS AFFAIRS MEDICAL CENTER"
+  },
+  {
+    "id": 863,
+    "hospitalName": "RAMAPO RIDGE PSYCHIATRIC HOSPITAL"
+  },
+  {
+    "id": 864,
+    "hospitalName": "RANDOLPH HOSPITAL"
+  },
+  {
+    "id": 865,
+    "hospitalName": "RANGELY DISTRICT HOSPITAL"
+  },
+  {
+    "id": 866,
+    "hospitalName": "RANKEN JORDAN A PEDIATRIC REHABILITATION CENTER"
+  },
+  {
+    "id": 867,
+    "hospitalName": "RANKIN COUNTY HOSPITAL DISTRICT"
+  },
+  {
+    "id": 868,
+    "hospitalName": "RANSOM MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 869,
+    "hospitalName": "RAPID CITY HOSPITAL"
+  },
+  {
+    "id": 870,
+    "hospitalName": "RAPID CITY REGIONAL HOSPITAL"
+  },
+  {
+    "id": 871,
+    "hospitalName": "RAPIDES REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 872,
+    "hospitalName": "RAULERSON HOSPITAL"
+  },
+  {
+    "id": 873,
+    "hospitalName": "RAWLINS COUNTY HEALTH CENTER"
+  },
+  {
+    "id": 874,
+    "hospitalName": "RAY COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 875,
+    "hospitalName": "RAYMOND G. MURPHY VA MEDICAL CENTER"
+  },
+  {
+    "id": 876,
+    "hospitalName": "READING HOSPITAL"
+  },
+  {
+    "id": 877,
+    "hospitalName": "REAGAN MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 878,
+    "hospitalName": "RIVERVIEW REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 879,
+    "hospitalName": "RIVERWOOD HEALTHCARE CENTER"
+  },
+  {
+    "id": 880,
+    "hospitalName": "RIVERWOODS BEHAVIORAL HEALTH SYSTEM"
+  },
+  {
+    "id": 881,
+    "hospitalName": "RMC JACKSONVILLE"
+  },
+  {
+    "id": 882,
+    "hospitalName": "ROANE GENERAL HOSPITAL"
+  },
+  {
+    "id": 883,
+    "hospitalName": "ROANE MEDICAL CENTER"
+  },
+  {
+    "id": 884,
+    "hospitalName": "ROBERT E. BUSH NAVAL HOSPITAL"
+  },
+  {
+    "id": 885,
+    "hospitalName": "ROBERT J. DOLE VA MEDICAL CENTER"
+  },
+  {
+    "id": 886,
+    "hospitalName": "ROBERT PACKER HOSPITAL"
+  },
+  {
+    "id": 887,
+    "hospitalName": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL"
+  },
+  {
+    "id": 888,
+    "hospitalName": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL AT HAMILTON"
+  },
+  {
+    "id": 889,
+    "hospitalName": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL AT RAHWAY"
+  },
+  {
+    "id": 890,
+    "hospitalName": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL SOMERSET"
+  },
+  {
+    "id": 891,
+    "hospitalName": "ROBINSON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 892,
+    "hospitalName": "ROBLEY REX VA MEDICAL CENTER"
+  },
+  {
+    "id": 893,
+    "hospitalName": "ROCHELLE COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 894,
+    "hospitalName": "ROCHESTER GENERAL HOSPITAL"
+  },
+  {
+    "id": 895,
+    "hospitalName": "ROCHESTER PSYCHIATRIC CENTER"
+  },
+  {
+    "id": 896,
+    "hospitalName": "ROCK COUNTY HOSPITAL"
+  },
+  {
+    "id": 897,
+    "hospitalName": "ROCK PRAIRIE BEHAVIORAL HEALTH"
+  },
+  {
+    "id": 898,
+    "hospitalName": "ROCK SPRINGS"
+  },
+  {
+    "id": 899,
+    "hospitalName": "ROCKCASTLE REGIONAL HOSPITAL & RESPIRATORY CARE CENTER"
+  },
+  {
+    "id": 900,
+    "hospitalName": "SHARP CHULA VISTA MEDICAL CENTER"
+  },
+  {
+    "id": 901,
+    "hospitalName": "SHARP CORONADO HOSPITAL AND HEALTHCARE CENTER"
+  },
+  {
+    "id": 902,
+    "hospitalName": "SHARP MARY BIRCH HOSPITAL FOR WOMEN AND NEWBORNS"
+  },
+  {
+    "id": 903,
+    "hospitalName": "SPECTRUM HEALTH PENNOCK HOSPITAL"
+  },
+  {
+    "id": 904,
+    "hospitalName": "SPECTRUM HEALTH ZEELAND COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 905,
+    "hospitalName": "SPENCER MUNICIPAL HOSPITAL"
+  },
+  {
+    "id": 906,
+    "hospitalName": "SPIRE REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 907,
+    "hospitalName": "SPOKANE VA MEDICAL CENTER"
+  },
+  {
+    "id": 908,
+    "hospitalName": "SPOONER HOSPITAL SYS"
+  },
+  {
+    "id": 909,
+    "hospitalName": "SPOONER HOSPITAL SYSTEM"
+  },
+  {
+    "id": 910,
+    "hospitalName": "SPOTSYLVANIA REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 911,
+    "hospitalName": "ST ANTHONYS HOSPITAL"
+  },
+  {
+    "id": 912,
+    "hospitalName": "ST ANTHONYS MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 913,
+    "hospitalName": "ST BERNARD HOSPITAL"
+  },
+  {
+    "id": 914,
+    "hospitalName": "ST CATHERINE HOSPITAL"
+  },
+  {
+    "id": 915,
+    "hospitalName": "ST CATHERINE HOSPITAL INC"
+  },
+  {
+    "id": 916,
+    "hospitalName": "ST CATHERINE'S REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 917,
+    "hospitalName": "ST CATHERINE'S WEST REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 918,
+    "hospitalName": "ST FRANCIS HOSPITAL"
+  },
+  {
+    "id": 919,
+    "hospitalName": "ST FRANCIS HOSPITAL & MEDICAL CENTER"
+  },
+  {
+    "id": 920,
+    "hospitalName": "ST FRANCIS MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 921,
+    "hospitalName": "ST FRANCIS REGIONAL MED CENTER"
+  },
+  {
+    "id": 922,
+    "hospitalName": "ST JOSEPHS HSPTL"
+  },
+  {
+    "id": 923,
+    "hospitalName": "ST LUCIE MEDICAL CENTER"
+  },
+  {
+    "id": 924,
+    "hospitalName": "ST LUKE'S BAPTIST HOSPITAL"
+  },
+  {
+    "id": 925,
+    "hospitalName": "ST LUKE'S EAST HOSPITAL LEE'S SUMMIT"
+  },
+  {
+    "id": 926,
+    "hospitalName": "ST LUKE'S HOSPITAL"
+  },
+  {
+    "id": 927,
+    "hospitalName": "ST LUKE'S HOSPITAL ANDERSON CAMPUS"
+  },
+  {
+    "id": 928,
+    "hospitalName": "ST LUKE'S MINERS MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 929,
+    "hospitalName": "ST LUKE'S QUAKERTOWN HOSPITAL"
+  },
+  {
+    "id": 930,
+    "hospitalName": "ST LUKES BEHAVIORAL HOSPITAL"
+  },
+  {
+    "id": 931,
+    "hospitalName": "ST LUKES HOSPITAL"
+  },
+  {
+    "id": 932,
+    "hospitalName": "ST LUKES HOSPITAL MONROE CAMPUS"
+  },
+  {
+    "id": 933,
+    "hospitalName": "ST MARGARETS HOSPITAL"
+  },
+  {
+    "id": 934,
+    "hospitalName": "ST MARY MEDICAL CENTER"
+  },
+  {
+    "id": 935,
+    "hospitalName": "ST MARY MEDICAL CENTER INC"
+  },
+  {
+    "id": 936,
+    "hospitalName": "ST MARY MERCY HOSPITAL"
+  },
+  {
+    "id": 937,
+    "hospitalName": "ST MARY REHABILITATION HOSPITAL"
+  },
+  {
+    "id": 938,
+    "hospitalName": "ST MARY'S COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 939,
+    "hospitalName": "ST MARY'S GOOD SAMARITAN HOSPITAL"
+  },
+  {
+    "id": 940,
+    "hospitalName": "ST MARY'S HOSPITAL"
+  },
+  {
+    "id": 941,
+    "hospitalName": "ST VINCENT SALEM HOSPITAL INC"
+  },
+  {
+    "id": 942,
+    "hospitalName": "ST VINCENT SETON SPECIALTY HOSPITAL LAFAYETTE"
+  },
+  {
+    "id": 943,
+    "hospitalName": "ST VINCENT SETON SPECIALTY HOSPITAL, INDIANAPOLIS"
+  },
+  {
+    "id": 944,
+    "hospitalName": "STORY COUNTY HOSPITAL"
+  },
+  {
+    "id": 945,
+    "hospitalName": "SUNRISE HOSPITAL AND MEDICAL CENTER"
+  },
+  {
+    "id": 946,
+    "hospitalName": "SURGERY SPECIALTY HOSPITALS OF AMERICA SOUTHEAST HOUSTON"
+  },
+  {
+    "id": 947,
+    "hospitalName": "SURGICAL HOSPITAL AT SOUTHWOODS"
+  },
+  {
+    "id": 948,
+    "hospitalName": "SURGICAL HOSPITAL OF OKLAHOMA"
+  },
+  {
+    "id": 949,
+    "hospitalName": "SURGICAL INSTITUTE OF READING"
+  },
+  {
+    "id": 950,
+    "hospitalName": "SURGICAL SPECIALTY CENTER AT COORDINATED HEALTH"
+  },
+  {
+    "id": 951,
+    "hospitalName": "SURGICAL SPECIALTY CENTER OF BATON ROUGE"
+  },
+  {
+    "id": 952,
+    "hospitalName": "SURPRISE VALLEY COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 953,
+    "hospitalName": "SUSAN B ALLEN MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 954,
+    "hospitalName": "SUTTER AMADOR HOSPITAL"
+  },
+  {
+    "id": 955,
+    "hospitalName": "SUTTER AUBURN FAITH HOSPITAL"
+  },
+  {
+    "id": 956,
+    "hospitalName": "SUTTER CENTER FOR PSYCHIATRY"
+  },
+  {
+    "id": 957,
+    "hospitalName": "TALLAHATCHIE GENERAL HOSPITAL"
+  },
+  {
+    "id": 958,
+    "hospitalName": "TAMPA COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 959,
+    "hospitalName": "TAMPA GENERAL HOSPITAL"
+  },
+  {
+    "id": 960,
+    "hospitalName": "TANNER MEDICAL CENTER VILLA RICA"
+  },
+  {
+    "id": 961,
+    "hospitalName": "TARZANA TREATMENT CENTER"
+  },
+  {
+    "id": 962,
+    "hospitalName": "TAUNTON STATE HOSPITAL"
+  },
+  {
+    "id": 963,
+    "hospitalName": "TAWAS ST JOSEPH HOSPITAL"
+  },
+  {
+    "id": 964,
+    "hospitalName": "TEXAS CHILDRENS HOSPITAL THE WOODLANDS"
+  },
+  {
+    "id": 965,
+    "hospitalName": "TEXAS COUNTY MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 966,
+    "hospitalName": "TEXAS GENERAL HOSPITAL"
+  },
+  {
+    "id": 967,
+    "hospitalName": "TEXAS HEALTH ARLINGTON MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 968,
+    "hospitalName": "TEXAS HEALTH CENTER FOR DIAGNOSTICS & SURGERY PLANO"
+  },
+  {
+    "id": 969,
+    "hospitalName": "TEXAS HEALTH HARRIS METHODIST HOSPITAL ALLIANCE"
+  },
+  {
+    "id": 970,
+    "hospitalName": "TEXAS INSTITUTE FOR SURGERY AT TEXAS HEALTH PRESBYTERIAN DALLAS"
+  },
+  {
+    "id": 971,
+    "hospitalName": "TEXAS NEUROREHAB CENTER"
+  },
+  {
+    "id": 972,
+    "hospitalName": "TEXAS NEUROREHAB CENTER BEHAVIORAL"
+  },
+  {
+    "id": 973,
+    "hospitalName": "TEXAS ORTHOPEDIC HOSPITAL"
+  },
+  {
+    "id": 974,
+    "hospitalName": "TEXAS REHABILITATION HOSPITAL OF ARLINGTON"
+  },
+  {
+    "id": 975,
+    "hospitalName": "TEXAS REHABILITATION HOSPITAL OF FORT WORTH"
+  },
+  {
+    "id": 976,
+    "hospitalName": "TEXAS RURAL HOSPITAL"
+  },
+  {
+    "id": 977,
+    "hospitalName": "TEXAS SCOTTISH RITE HOSPITAL FOR CHILDREN"
+  },
+  {
+    "id": 978,
+    "hospitalName": "TEXAS SPINE AND JOINT HOSPITAL"
+  },
+  {
+    "id": 979,
+    "hospitalName": "THE MEDICAL CENTER AT FRANKLIN"
+  },
+  {
+    "id": 980,
+    "hospitalName": "THE MEDICAL CENTER AT SCOTTSVILLE"
+  },
+  {
+    "id": 981,
+    "hospitalName": "THE MEDICAL CENTER OF SOUTHEAST TEXAS"
+  },
+  {
+    "id": 982,
+    "hospitalName": "THE MEDICAL CENTER OF SOUTHEAST TEXAS VICTORY CAMPUS"
+  },
+  {
+    "id": 983,
+    "hospitalName": "THEDACARE MEDICAL CENTER SHAWANO INC"
+  },
+  {
+    "id": 984,
+    "hospitalName": "THIBODAUX REGIONAL MEDICAL CENTER"
+  },
+  {
+    "id": 985,
+    "hospitalName": "THOMAS B FINAN CENTER"
+  },
+  {
+    "id": 986,
+    "hospitalName": "THOMAS E. CREEK VA MEDICAL CENTER"
+  },
+  {
+    "id": 987,
+    "hospitalName": "THOMAS H BOYD MEMORIAL HOSPITAL"
+  },
+  {
+    "id": 988,
+    "hospitalName": "THOMAS HOSPITAL"
+  },
+  {
+    "id": 989,
+    "hospitalName": "TOLEDO HOSPITAL THE"
+  },
+  {
+    "id": 990,
+    "hospitalName": "TOM REDGATE MEMORIAL RECOVERY CENTER"
+  },
+  {
+    "id": 991,
+    "hospitalName": "TOMAH MEM HSPTL"
+  },
+  {
+    "id": 992,
+    "hospitalName": "TOMBALL REGIONAL HOSPITAL"
+  },
+  {
+    "id": 993,
+    "hospitalName": "TOPPENISH COMMUNITY HOSPITAL"
+  },
+  {
+    "id": 994,
+    "hospitalName": "TRISTAR ASHLAND CITY MEDICAL CENTER"
+  },
+  {
+    "id": 995,
+    "hospitalName": "TRISTAR CENTENNIAL MEDICAL CENTER"
+  },
+  {
+    "id": 996,
+    "hospitalName": "TRISTAR HENDERSONVILLE MEDICAL CENTER"
+  },
+  {
+    "id": 997,
+    "hospitalName": "TRISTAR HORIZON MEDICAL CENTER"
+  },
+  {
+    "id": 998,
+    "hospitalName": "TRISTAR PORTLAND MEDICAL PARK"
+  },
+  {
+    "id": 999,
+    "hospitalName": "TWO RIVERS BEHAVIORAL HEALTH SYSTEM"
+  },
+  {
+    "id": 1000,
+    "hospitalName": "TY COBB REGIONAL MEDICAL CENTER, LLC"
+  }
+]
