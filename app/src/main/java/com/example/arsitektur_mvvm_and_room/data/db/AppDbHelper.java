@@ -1,7 +1,5 @@
 package com.example.arsitektur_mvvm_and_room.data.db;
 
-import androidx.constraintlayout.helper.widget.Flow;
-
 import com.example.arsitektur_mvvm_and_room.data.db.model.Hospital;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 
