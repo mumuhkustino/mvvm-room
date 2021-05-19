@@ -7,6 +7,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.view.View;
 import android.widget.Toast;
+
+import com.example.arsitektur_mvvm_and_room.BR;
+import com.example.arsitektur_mvvm_and_room.R;
+import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.databinding.FragmentInsertBinding;
+import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
+import com.example.arsitektur_mvvm_and_room.ui.base.BaseFragment;
+
 import java.util.List;
 
 import javax.inject.Inject;

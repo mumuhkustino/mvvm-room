@@ -16,5 +16,5 @@ public class Hospital {
     @Expose
     @SerializedName("hospitalName")
     @ColumnInfo(name = "hospitalName")
-    public String hospitalName;
+    public String name;
 }

@@ -13,4 +13,5 @@ public class UpdateEmptyItemViewModel {
 
     public interface UpdateEmptyItemViewModelListener {
         void onRetryClick();
+    }
 }

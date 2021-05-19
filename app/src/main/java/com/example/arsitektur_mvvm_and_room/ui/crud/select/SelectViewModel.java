@@ -3,6 +3,13 @@ import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
+import com.example.arsitektur_mvvm_and_room.data.DataManager;
+import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
+import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
+import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -33,12 +40,12 @@ public class SelectViewModel extends BaseViewModel<SelectNavigator> {
                 .concatMap(Flowable::fromIterable)
                 //Get All Medicine with same hospital Id
                 .concatMap(hospital -> Flowable.zip(
-                        getDataManager().getMedicineForHospitalId(hospital.getId()),
+                        getDataManager().getMedicinesForHospitalId(hospital.id),
                         Flowable.just(hospital),
                         ((medicineList, h) -> {
                             for (Medicine m : medicineList) {
                                 if (index.get() < numOfData) {
-                                    medicals.add(new Medical(h.getName(), m.getName()));
+                                    medicals.add(new Medical(h.name, m.name));
                                     index.getAndIncrement();
                                 }
                             }

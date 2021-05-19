@@ -2,8 +2,13 @@ package com.example.arsitektur_mvvm_and_room.utils;
 
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.databinding.BindingAdapter;
+import androidx.room.Update;
 
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.ui.crud.delete.DeleteAdapter;
+import com.example.arsitektur_mvvm_and_room.ui.crud.insert.InsertAdapter;
+import com.example.arsitektur_mvvm_and_room.ui.crud.select.SelectAdapter;
+import com.example.arsitektur_mvvm_and_room.ui.crud.update.UpdateAdapter;
 
 import java.util.List;
 
@@ -15,7 +20,7 @@ public final class BindingUtils {
 
     @BindingAdapter({"adapterInsert"})
     public static void addInsertItems(RecyclerView recyclerView, List<Medical> medicalList){
-        CRUDAdapter adapter = (CRUDAdapter) recyclerView.getAdapter();
+        InsertAdapter adapter = (InsertAdapter) recyclerView.getAdapter();
         if(adapter != null){
             adapter.clearItems();
             adapter.addItems(medicalList);
@@ -24,7 +29,7 @@ public final class BindingUtils {
 
     @BindingAdapter({"adapterSelect"})
     public static void addSelectItems(RecyclerView recyclerView, List<Medical> medicalList) {
-        CRUDAdapter adapter = (CRUDAdapter) recyclerView.getAdapter();
+        SelectAdapter adapter = (SelectAdapter) recyclerView.getAdapter();
         if (adapter != null) {
             adapter.clearItems();
             adapter.selectItems(medicalList);
@@ -32,8 +37,8 @@ public final class BindingUtils {
     }
 
     @BindingAdapter({"adapterUpdate"})
-    public static void addSelectItems(RecyclerView recyclerView, List<Medical> medicalList) {
-        CRUDAdapter adapter = (CRUDAdapter) recyclerView.getAdapter();
+    public static void addUpdateItems(RecyclerView recyclerView, List<Medical> medicalList) {
+        UpdateAdapter adapter = (UpdateAdapter) recyclerView.getAdapter();
         if (adapter != null) {
             adapter.clearItems();
             adapter.updateItems(medicalList);
@@ -41,8 +46,8 @@ public final class BindingUtils {
     }
 
     @BindingAdapter({"adapterDelete"})
-    public static void addSelectItems(RecyclerView recyclerView, List<Medical> medicalList) {
-        CRUDAdapter adapter = (CRUDAdapter) recyclerView.getAdapter();
+    public static void addDeleteItems(RecyclerView recyclerView, List<Medical> medicalList) {
+        DeleteAdapter adapter = (DeleteAdapter) recyclerView.getAdapter();
         if (adapter != null) {
             adapter.clearItems();
             adapter.deleteItems(medicalList);

@@ -2,8 +2,11 @@ package com.example.arsitektur_mvvm_and_room.di.module;
 import android.app.Application;
 import android.content.Context;
 
+import androidx.room.Room;
+
 import com.example.arsitektur_mvvm_and_room.data.AppDataManager;
 import com.example.arsitektur_mvvm_and_room.data.DataManager;
+import com.example.arsitektur_mvvm_and_room.data.db.AppDatabase;
 import com.example.arsitektur_mvvm_and_room.data.db.AppDbHelper;
 import com.example.arsitektur_mvvm_and_room.data.db.DbHelper;
 import com.example.arsitektur_mvvm_and_room.di.DatabaseInfo;
@@ -21,6 +24,13 @@ public class ApplicationModule {
     @Provides
     @Singleton
     Context provideContext(Application application) { return application;}
+
+    @Provides
+    @Singleton
+    AppDatabase provideAppDatabase(@DatabaseInfo String dbName, Context context) {
+        return Room.databaseBuilder(context, AppDatabase.class, dbName).fallbackToDestructiveMigration().allowMainThreadQueries()
+                .build();
+    }
 
     @Provides
     @Singleton

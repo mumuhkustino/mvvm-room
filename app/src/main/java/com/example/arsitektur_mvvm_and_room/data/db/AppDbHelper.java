@@ -25,64 +25,52 @@ public class AppDbHelper implements DbHelper{
 
     @Override
     public Flowable<Boolean> insertHospital(final Hospital hospital) {
-        return Flowable.fromCallable(new Callable<Boolean>() {
-            @Override
-            public Boolean call() throws Exception {
-                try {
-                    mAppDatabase.hospitalDao().insert(hospital);
-                    return true;
-                } catch (Exception e){
-                    e.printStackTrace();
-                    return false;
+        return Flowable.fromCallable(() -> {
+            try {
+                mAppDatabase.hospitalDao().insert(hospital);
+                return true;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
             }
-        }
-    });
+        });
     }
 
     @Override
     public Flowable<Boolean> insertMedicine(final Medicine medicine) {
-        return Flowable.fromCallable(new Callable<Boolean>() {
-            @Override
-            public Boolean call() throws Exception {
-                try {
-                    mAppDatabase.medicineDao().insert(medicine);
-                    return true;
-                } catch (Exception e){
-                    e.printStackTrace();
-                    return false;
-                }
+        return Flowable.fromCallable(() -> {
+            try {
+                mAppDatabase.medicineDao().insert(medicine);
+                return true;
+            } catch (Exception e){
+                e.printStackTrace();
+                return false;
             }
         });
     }
 
     @Override
     public Flowable<Boolean> deleteHospital(final Hospital hospital) {
-        return Flowable.fromCallable(new Callable<Boolean>() {
-            @Override
-            public Boolean call() throws Exception {
-                try {
-                    mAppDatabase.hospitalDao().delete(hospital);
-                    return true;
-                } catch (Exception e){
-                    e.printStackTrace();
-                    return false;
-                }
+        return Flowable.fromCallable(() -> {
+            try {
+                mAppDatabase.hospitalDao().delete(hospital);
+                return true;
+            } catch (Exception e){
+                e.printStackTrace();
+                return false;
             }
         });
     }
 
     @Override
     public Flowable<Boolean> deleteMedicine(final Medicine medicine) {
-        return Flowable.fromCallable(new Callable<Boolean>() {
-            @Override
-            public Boolean call() throws Exception {
-                try {
-                    mAppDatabase.medicineDao().delete(medicine);
-                    return true;
-                } catch (Exception e){
-                    e.printStackTrace();
-                    return false;
-                }
+        return Flowable.fromCallable(() -> {
+            try {
+                mAppDatabase.medicineDao().delete(medicine);
+                return true;
+            } catch (Exception e){
+                e.printStackTrace();
+                return false;
             }
         });
     }
@@ -124,32 +112,26 @@ public class AppDbHelper implements DbHelper{
 
     @Override
     public Flowable<Boolean> saveHospital(final Hospital hospital) {
-        return Flowable.fromCallable(new Callable<Boolean>() {
-            @Override
-            public Boolean call() throws Exception {
-                try {
-                    mAppDatabase.hospitalDao().save(hospital);
-                    return true;
-                } catch (Exception e){
-                    e.printStackTrace();
-                    return false;
-                }
+        return Flowable.fromCallable(() -> {
+            try {
+                mAppDatabase.hospitalDao().save(hospital);
+                return true;
+            } catch (Exception e){
+                e.printStackTrace();
+                return false;
             }
         });
     }
 
     @Override
     public Flowable<Boolean> saveMedicine(final Medicine medicine) {
-        return Flowable.fromCallable(new Callable<Boolean>() {
-            @Override
-            public Boolean call() throws Exception {
-                try {
-                    mAppDatabase.medicineDao().save(medicine);
-                    return true;
-                } catch (Exception e){
-                    e.printStackTrace();
-                    return false;
-                }
+        return Flowable.fromCallable(() -> {
+            try {
+                mAppDatabase.medicineDao().save(medicine);
+                return true;
+            } catch (Exception e){
+                e.printStackTrace();
+                return false;
             }
         });
     }

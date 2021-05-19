@@ -3,6 +3,9 @@ import androidx.databinding.ObservableBoolean;
 import androidx.lifecycle.ViewModel;
 
 
+import com.example.arsitektur_mvvm_and_room.data.DataManager;
+import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
+
 import java.lang.ref.WeakReference;
 
 import io.reactivex.disposables.CompositeDisposable;

@@ -2,6 +2,12 @@ package com.example.arsitektur_mvvm_and_room.ui.crud.update;
 import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
+import com.example.arsitektur_mvvm_and_room.data.DataManager;
+import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
+import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -31,7 +37,7 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
                 .concatMap(Flowable::fromIterable)
                 //Get All Medicine with same hospital Id
                 .concatMap(hospital -> Flowable.zip(
-                        getDataManager().getMedicineForHospitalId(hospital.getId()),
+                        getDataManager().getMedicinesForHospitalId(hospital.id),
                         Flowable.just(hospital),
                         ((medicineList, hospital1) -> medicineList)
                 ))
@@ -39,7 +45,7 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
                 .concatMap(medicineList -> {
                     for (int i = 0; i < medicineList.size(); i++) {
                         if (index.get() < numOfData) {
-                            medicineList.get(i).setName(medicineList.get(i).getName() + " NEW");
+                            medicineList.get(i).name = medicineList.get(i).name + " NEW";
                             index.getAndIncrement();
                         } else
                             break;

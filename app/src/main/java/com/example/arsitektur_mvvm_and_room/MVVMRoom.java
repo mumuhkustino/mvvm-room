@@ -1,14 +1,22 @@
 package com.example.arsitektur_mvvm_and_room;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.Application;
 
-import android.os.Bundle;
+import com.example.arsitektur_mvvm_and_room.di.component.ApplicationComponent;
+import com.example.arsitektur_mvvm_and_room.di.component.DaggerApplicationComponent;
 
-public class MVVMRoom extends AppCompatActivity {
+public class MVVMRoom extends Application {
+
+    public ApplicationComponent applicationComponent;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void onCreate() {
+        super.onCreate();
+
+        applicationComponent = DaggerApplicationComponent.builder()
+                .application(this)
+                .build();
+
+        applicationComponent.inject(this);
     }
 }

@@ -1,5 +1,5 @@
 package com.example.arsitektur_mvvm_and_room.di.component;
-import com.example.arsitektur_mvvm_and_room.CRUDActivity;
+import com.example.arsitektur_mvvm_and_room.ui.crud.CRUDActivity;
 import com.example.arsitektur_mvvm_and_room.di.module.ActivityModule;
 import com.example.arsitektur_mvvm_and_room.di.scope.ActivityScope;
 

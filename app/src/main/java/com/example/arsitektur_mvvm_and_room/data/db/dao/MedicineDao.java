@@ -1,5 +1,6 @@
 package com.example.arsitektur_mvvm_and_room.data.db.dao;
 
+import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
@@ -13,6 +14,7 @@ import java.util.List;
 import io.reactivex.Flowable;
 import io.reactivex.Single;
 
+@Dao
 public interface MedicineDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

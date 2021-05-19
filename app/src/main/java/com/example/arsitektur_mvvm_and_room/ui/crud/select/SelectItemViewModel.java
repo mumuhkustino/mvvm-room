@@ -1,6 +1,8 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.select;
 import androidx.databinding.ObservableField;
 
+import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+
 public class SelectItemViewModel {
     public final ObservableField<Long> id;
 

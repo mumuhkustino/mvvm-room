@@ -9,18 +9,14 @@ import com.example.arsitektur_mvvm_and_room.data.db.model.Hospital;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 import com.example.arsitektur_mvvm_and_room.utils.AppConstants;
 import com.example.arsitektur_mvvm_and_room.utils.CommonUtils;
-import com.github.javafaker.App;
-import com.github.javafaker.Bool;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.internal.$Gson$Preconditions;
 import com.google.gson.internal.$Gson$Types;
 import com.google.gson.reflect.TypeToken;
 
 import org.reactivestreams.Publisher;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;

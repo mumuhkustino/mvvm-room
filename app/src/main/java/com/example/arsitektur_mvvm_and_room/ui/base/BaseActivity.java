@@ -13,6 +13,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+
+import com.example.arsitektur_mvvm_and_room.MVVMRoom;
+import com.example.arsitektur_mvvm_and_room.di.component.ActivityComponent;
+import com.example.arsitektur_mvvm_and_room.di.component.DaggerActivityComponent;
+import com.example.arsitektur_mvvm_and_room.di.module.ActivityModule;
+import com.example.arsitektur_mvvm_and_room.utils.CommonUtils;
+
 import javax.inject.Inject;
 
 public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseViewModel> extends AppCompatActivity
@@ -75,7 +82,7 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
 
     private ActivityComponent getBuildComponent() {
         return DaggerActivityComponent.builder()
-                .applicationComponent(((MVVMgreenDao)getApplication()).applicationComponent)
+                .applicationComponent(((MVVMRoom)getApplication()).applicationComponent)
                 .activityModule(new ActivityModule(this))
                 .build();
     }

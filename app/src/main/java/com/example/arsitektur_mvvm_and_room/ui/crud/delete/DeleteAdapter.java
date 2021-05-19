@@ -1,4 +1,5 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.delete;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -7,6 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.databinding.ItemDeleteEmptyViewBinding;
+import com.example.arsitektur_mvvm_and_room.databinding.ItemDeleteViewBinding;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewHolder;
 
 import java.util.List;

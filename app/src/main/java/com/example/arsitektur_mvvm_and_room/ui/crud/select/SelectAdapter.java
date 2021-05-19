@@ -4,6 +4,12 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.databinding.ItemSelectEmptyViewBinding;
+import com.example.arsitektur_mvvm_and_room.databinding.ItemSelectViewBinding;
+import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewHolder;
+
 import java.util.List;
 
 public class SelectAdapter extends RecyclerView.Adapter<BaseViewHolder>{

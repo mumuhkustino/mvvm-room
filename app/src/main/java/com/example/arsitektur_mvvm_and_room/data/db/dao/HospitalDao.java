@@ -14,6 +14,7 @@ import java.util.List;
 
 import io.reactivex.Flowable;
 
+@Dao
 public interface HospitalDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

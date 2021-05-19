@@ -58,7 +58,7 @@ dependencies {
 
 
     // database
-    implementation "androidx.room:room-rxjava2:$rootProject.roomDatabaseVersion"
+    implementation "androidx.room:room-rxjava2:$rootProject.rxRoomDatabaseVersion"
     annotationProcessor "androidx.room:room-compiler:$rootProject.roomDatabaseVersion"
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'

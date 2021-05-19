@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.databinding.ItemInsertEmptyViewBinding;
+import com.example.arsitektur_mvvm_and_room.databinding.ItemInsertViewBinding;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewHolder;
 
 import java.util.List;

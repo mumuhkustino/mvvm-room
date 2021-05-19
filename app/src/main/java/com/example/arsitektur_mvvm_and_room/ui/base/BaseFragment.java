@@ -10,6 +10,12 @@ import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
+
+import com.example.arsitektur_mvvm_and_room.MVVMRoom;
+import com.example.arsitektur_mvvm_and_room.di.component.DaggerFragmentComponent;
+import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
+import com.example.arsitektur_mvvm_and_room.di.module.FragmentModule;
+
 import javax.inject.Inject;
 
 public abstract class BaseFragment<T extends ViewDataBinding, V extends BaseViewModel> extends Fragment {
@@ -80,7 +86,7 @@ public abstract class BaseFragment<T extends ViewDataBinding, V extends BaseView
 
     private FragmentComponent getBuildComponent() {
         return DaggerFragmentComponent.builder()
-                .applicationComponent(((MVVMgreenDao)(getContext().getApplicationContext())).applicationComponent)
+                .applicationComponent(((MVVMRoom)(getContext().getApplicationContext())).applicationComponent)
                 .fragmentModule(new FragmentModule(this))
                 .build();
     }

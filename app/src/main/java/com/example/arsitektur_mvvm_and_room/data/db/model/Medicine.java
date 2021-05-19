@@ -29,5 +29,5 @@ public class Medicine {
         @Expose
         @SerializedName("medicineName")
         @ColumnInfo(name = "name")
-        private String name;
+        public String name;
 }
