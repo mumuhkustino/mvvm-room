@@ -53,6 +53,52 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/headerId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/input_border_bottom"
+                    style="@style/TextStyle.Heading"
+                    android:text="ID"
+                    tools:text="ID"/>
+
+                <TextView
+                    android:id="@+id/headerHospitalName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/input_border_bottom"
+                    style="@style/TextStyle.Heading"
+                    android:text="HOSPITAL NAME"
+                    tools:text="HOSPITAL NAME"/>
+
+                <TextView
+                    android:id="@+id/headerMedicineName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/input_border_bottom"
+                    style="@style/TextStyle.Heading"
+                    android:text="MEDICINE NAME"
+                    tools:text="MEDICINE NAME"/>
+
+            </LinearLayout>
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
