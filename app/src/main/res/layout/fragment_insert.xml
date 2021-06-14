@@ -40,7 +40,7 @@
                     tools:text="RECORD : XXXXXX"/>
 
                 <TextView
-                    android:id="@+id/textViewTime"
+                    android:id="@+id/textViewTimeInsertDB"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
@@ -48,8 +48,38 @@
                     android:paddingRight="15dp"
                     android:layout_marginLeft="10dp"
                     android:gravity="end"
-                    android:text="@{viewModel.executionTime != null ? `TIME (MS) : ` + viewModel.executionTime : `TIME (MS) : 0`}"
-                    tools:text="TIME (MS) : XXXXXX"/>
+                    android:text="@{viewModel.databaseInsertTime != null ? `TIME DB (MS) : ` + viewModel.databaseInsertTime : `TIME DB (MS) : 0`}"
+                    tools:text="TIME DB (MS) : XXXXXX"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTimeInsertView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@{viewModel.viewInsertTime != null ? `TIME VIEW (MS) : ` + viewModel.viewInsertTime : `TIME VIEW (MS) : 0`}"
+                    tools:text="TIME VIEW (MS) : XXXXXX"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeInsertAll"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="end"
+                    android:text="@{viewModel.allInsertTime != null ? `TIME ALL (MS) : ` + viewModel.allInsertTime : `TIME ALL (MS) : 0`}"
+                    tools:text="TIME ALL (MS) : XXXXXX"/>
 
             </LinearLayout>
 

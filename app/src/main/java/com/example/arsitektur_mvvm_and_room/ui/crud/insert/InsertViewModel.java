@@ -9,29 +9,48 @@ import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
 import io.reactivex.Flowable;
 
 public class InsertViewModel extends BaseViewModel<InsertNavigator> {
     private final MutableLiveData<Long> numOfRecord;
 
-    private final MutableLiveData<Long> executionTime;
+    private final MutableLiveData<Long> databaseInsertTime;
+
+    private final MutableLiveData<Long> allInsertTime;
+
+    private final MutableLiveData<Long> viewInsertTime;
 
     private MutableLiveData<List<Medical>> medicalListLiveData;
 
     public InsertViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
         super(dataManager, schedulerProvider);
         this.numOfRecord = new MutableLiveData<>();
-        this.executionTime = new MutableLiveData<>();
+        this.databaseInsertTime = new MutableLiveData<>();
+        this.allInsertTime = new MutableLiveData<>();
+        this.viewInsertTime = new MutableLiveData<>();
         this.medicalListLiveData = new MutableLiveData<>();
     }
 
     public void insertDatabase(Long numOfData) {
-        long startTime = System.currentTimeMillis();
+        AtomicLong viewInsertTime = new AtomicLong(0);
+        AtomicLong insertDbTime = new AtomicLong(0);
+        AtomicLong insertTime = new AtomicLong(0);
+        AtomicLong allInsertTime = new AtomicLong(System.currentTimeMillis());
         //Insert Hospital JSON to DB
         getCompositeDisposable().add(getDataManager()
                 .seedDatabaseHospital(numOfData)
                 .concatMap(Flowable::fromIterable)
-                .concatMap(hospital -> getDataManager().insertHospital(hospital))
+                .concatMap(hospital -> {
+                    insertTime.set(System.currentTimeMillis());
+                    return getDataManager().insertHospital(hospital);
+                })
+                .doOnNext(aBoolean -> {
+                    if (aBoolean) {
+                        insertDbTime.set(insertDbTime.get() + (System.currentTimeMillis() - insertTime.get()));
+                    }
+                })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(aBoolean -> {
                         } , throwable -> Log.d("IVM", "insertDatabase 1: " + throwable.getMessage())
@@ -41,14 +60,25 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
         getCompositeDisposable().add(getDataManager()
                 .seedDatabaseMedicine(numOfData)
                 .concatMap(Flowable::fromIterable)
-                .concatMap(medicine -> getDataManager().insertMedicine(medicine))
+                .concatMap(medicine -> {
+                    insertTime.set(System.currentTimeMillis());
+                    return getDataManager().insertMedicine(medicine);
+                })
+                .doOnNext(aBoolean -> {
+                    if (aBoolean) {
+                        insertDbTime.set(insertDbTime.get() + (System.currentTimeMillis() - insertTime.get()));
+                    }
+                })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(aBoolean -> {
                             if (aBoolean) {
                                 this.numOfRecord.setValue(numOfData); //Change number of record
-                                long endTime = System.currentTimeMillis();
-                                long timeElapsed = endTime - startTime; //In MilliSeconds
-                                this.executionTime.setValue(timeElapsed); //Change execution time
+                                this.databaseInsertTime.setValue(insertDbTime.get()); //Change execution time
+                                AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
+                                AtomicLong timeElapsed = new AtomicLong(endTime.get() - allInsertTime.get());
+                                viewInsertTime.set(timeElapsed.get() - insertDbTime.get());
+                                this.viewInsertTime.setValue(viewInsertTime.get());
+                                this.allInsertTime.setValue(timeElapsed.get());
                             }
                         } , throwable -> Log.d("IVM", "insertDatabase 2: " + throwable.getMessage())
                 )
@@ -67,8 +97,16 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
         return numOfRecord;
     }
 
-    public LiveData<Long> getExecutionTime() {
-        return executionTime;
+    public LiveData<Long> getDatabaseInsertTime() {
+        return databaseInsertTime;
+    }
+
+    public MutableLiveData<Long> getAllInsertTime() {
+        return allInsertTime;
+    }
+
+    public MutableLiveData<Long> getViewInsertTime() {
+        return viewInsertTime;
     }
 
     public void onClick() {
