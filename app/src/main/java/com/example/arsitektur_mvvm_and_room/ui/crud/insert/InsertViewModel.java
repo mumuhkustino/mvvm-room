@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.arsitektur_mvvm_and_room.data.DataManager;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTime;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
@@ -33,7 +35,7 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
         this.medicalListLiveData = new MutableLiveData<>();
     }
 
-    public void insertDatabase(Long numOfData) {
+    public void insertDatabase(ExecutionTimePreference executionTimePreference, Long numOfData) {
         AtomicLong viewInsertTime = new AtomicLong(0);
         AtomicLong insertDbTime = new AtomicLong(0);
         AtomicLong insertTime = new AtomicLong(0);
@@ -48,7 +50,7 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean) {
-                        insertDbTime.set(insertDbTime.get() + (System.currentTimeMillis() - insertTime.get()));
+                        insertDbTime.set(insertDbTime.longValue() + (System.currentTimeMillis() - insertTime.longValue()));
                     }
                 })
                 .observeOn(getSchedulerProvider().ui())
@@ -66,19 +68,26 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean) {
-                        insertDbTime.set(insertDbTime.get() + (System.currentTimeMillis() - insertTime.get()));
+                        insertDbTime.set(insertDbTime.longValue() + (System.currentTimeMillis() - insertTime.longValue()));
                     }
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(aBoolean -> {
                             if (aBoolean) {
                                 this.numOfRecord.setValue(numOfData); //Change number of record
-                                this.databaseInsertTime.setValue(insertDbTime.get()); //Change execution time
+                                this.databaseInsertTime.setValue(insertDbTime.longValue()); //Change execution time
                                 AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
-                                AtomicLong timeElapsed = new AtomicLong(endTime.get() - allInsertTime.get());
-                                viewInsertTime.set(timeElapsed.get() - insertDbTime.get());
-                                this.viewInsertTime.setValue(viewInsertTime.get());
-                                this.allInsertTime.setValue(timeElapsed.get());
+                                AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allInsertTime.longValue());
+                                viewInsertTime.set(timeElapsed.longValue() - insertDbTime.longValue());
+                                this.viewInsertTime.setValue(viewInsertTime.longValue());
+                                this.allInsertTime.setValue(timeElapsed.longValue());
+
+                                ExecutionTime executionTime = executionTimePreference.getExecutionTime();
+                                executionTime.setDatabaseInsertTime(insertDbTime.toString());
+                                executionTime.setAllInsertTime(timeElapsed.toString());
+                                executionTime.setViewInsertTime(viewInsertTime.toString());
+                                executionTime.setNumOfRecordInsert(numOfData.toString());
+                                executionTimePreference.setExecutionTime(executionTime);
                             }
                         } , throwable -> Log.d("IVM", "insertDatabase 2: " + throwable.getMessage())
                 )
