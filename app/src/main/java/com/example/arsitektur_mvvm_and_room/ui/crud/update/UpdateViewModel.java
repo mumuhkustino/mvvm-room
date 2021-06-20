@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.arsitektur_mvvm_and_room.data.DataManager;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTime;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
@@ -34,7 +36,7 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
         this.medicalListLiveData = new MutableLiveData<>();
     }
 
-    public void updateDatabase(Long numOfData) {
+    public void updateDatabase(ExecutionTimePreference executionTimePreference, Long numOfData) {
         AtomicLong viewUpdateTime = new AtomicLong(0);
         AtomicLong updateDbTime = new AtomicLong(0);
         AtomicLong updateTime = new AtomicLong(0);
@@ -68,20 +70,27 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean)
-                        updateDbTime.set(updateDbTime.get() + (System.currentTimeMillis() - updateTime.get()));
+                        updateDbTime.set(updateDbTime.longValue() + (System.currentTimeMillis() - updateTime.longValue()));
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(aBoolean -> {
                             if (index.get() == numOfData) {
                                 this.numOfRecord.setValue(index.longValue()); //Change number of record
-                                this.databaseUpdateTime.setValue(updateDbTime.get()); //Change execution time
+                                this.databaseUpdateTime.setValue(updateDbTime.longValue()); //Change execution time
                                 AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
-                                AtomicLong timeElapsed = new AtomicLong(endTime.get() - allUpdateTime.get());
-                                viewUpdateTime.set(timeElapsed.get() - updateDbTime.get());
-                                this.viewUpdateTime.setValue(viewUpdateTime.get());
-                                this.allUpdateTime.setValue(timeElapsed.get());
-                                Log.d("UVM", "updateDatabase: " + index.get());
+                                AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allUpdateTime.longValue());
+                                viewUpdateTime.set(timeElapsed.longValue() - updateDbTime.longValue());
+                                this.viewUpdateTime.setValue(viewUpdateTime.longValue());
+                                this.allUpdateTime.setValue(timeElapsed.longValue());
+                                Log.d("UVM", "updateDatabase: " + index.longValue());
                                 index.getAndIncrement();
+
+                                ExecutionTime executionTime = executionTimePreference.getExecutionTime();
+                                executionTime.setDatabaseUpdateTime(updateDbTime.toString());
+                                executionTime.setAllUpdateTime(timeElapsed.toString());
+                                executionTime.setViewUpdateTime(viewUpdateTime.toString());
+                                executionTime.setNumOfRecordUpdate(numOfData.toString());
+                                executionTimePreference.setExecutionTime(executionTime);
                             }
                         }, throwable -> Log.d("UVM", "updateDatabase: " + throwable.getMessage())
                 )

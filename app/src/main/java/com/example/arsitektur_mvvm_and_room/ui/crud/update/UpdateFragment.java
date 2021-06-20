@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.databinding.FragmentUpdateBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
@@ -31,6 +32,8 @@ public class UpdateFragment extends BaseFragment<FragmentUpdateBinding, UpdateVi
 
     @Inject
     LinearLayoutManager linearLayoutManager;
+
+    private ExecutionTimePreference executionTimePreference;
 
     public static UpdateFragment newInstance() {
         Bundle args = new Bundle();
@@ -54,6 +57,7 @@ public class UpdateFragment extends BaseFragment<FragmentUpdateBinding, UpdateVi
         super.onCreate(savedInstanceState);
         viewModel.setNavigator(this);
         updateAdapter.setListener(this);
+        executionTimePreference = new ExecutionTimePreference(getBaseActivity());
     }
 
     @Override
@@ -91,7 +95,7 @@ public class UpdateFragment extends BaseFragment<FragmentUpdateBinding, UpdateVi
         if (fragmentUpdateBinding.editTextNumData.getText() != null) {
             try {
                 Long numOfData = Long.valueOf(fragmentUpdateBinding.editTextNumData.getText().toString());
-                viewModel.updateDatabase(numOfData);
+                viewModel.updateDatabase(executionTimePreference, numOfData);
             } catch (Exception e) {
                 Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
             }
@@ -110,5 +114,22 @@ public class UpdateFragment extends BaseFragment<FragmentUpdateBinding, UpdateVi
         fragmentUpdateBinding.updateRecyclerView.setLayoutManager(linearLayoutManager);
         fragmentUpdateBinding.updateRecyclerView.setItemAnimator(new DefaultItemAnimator());
         fragmentUpdateBinding.updateRecyclerView.setAdapter(updateAdapter);
+
+        if (!executionTimePreference.getExecutionTime().getDatabaseUpdateTime().isEmpty())
+            fragmentUpdateBinding.textViewTimeUpdateDB
+                    .setText("TIME DB (MS) : " +
+                            executionTimePreference.getExecutionTime().getDatabaseUpdateTime());
+        if (!executionTimePreference.getExecutionTime().getAllUpdateTime().isEmpty())
+            fragmentUpdateBinding.textViewTimeUpdateAll
+                    .setText("TIME ALL (MS) : " +
+                            executionTimePreference.getExecutionTime().getAllUpdateTime());
+        if (!executionTimePreference.getExecutionTime().getViewUpdateTime().isEmpty())
+            fragmentUpdateBinding.textViewTimeUpdateView
+                    .setText("TIME VIEW (MS) : " +
+                            executionTimePreference.getExecutionTime().getViewUpdateTime());
+        if (!executionTimePreference.getExecutionTime().getNumOfRecordUpdate().isEmpty())
+            fragmentUpdateBinding.textViewRecord
+                    .setText("RECORD : " +
+                            executionTimePreference.getExecutionTime().getNumOfRecordUpdate());
     }
 }
