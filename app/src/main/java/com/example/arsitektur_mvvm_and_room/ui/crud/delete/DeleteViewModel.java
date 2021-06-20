@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.arsitektur_mvvm_and_room.data.DataManager;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTime;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
@@ -34,7 +36,7 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
         this.medicalListLiveData = new MutableLiveData<>();
     }
 
-    public void deleteDatabase(Long numOfData) {
+    public void deleteDatabase(ExecutionTimePreference executionTimePreference, Long numOfData) {
         AtomicLong viewDeleteTime = new AtomicLong(0);
         AtomicLong deleteDbTime = new AtomicLong(0);
         AtomicLong deleteTime = new AtomicLong(0);
@@ -62,21 +64,28 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean) {
-                        deleteDbTime.set(deleteDbTime.get() + (System.currentTimeMillis() - deleteTime.get()));
+                        deleteDbTime.set(deleteDbTime.longValue() + (System.currentTimeMillis() - deleteTime.longValue()));
                     }
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(aBoolean -> {
                             if (index.get() == numOfData) {
                                 this.numOfRecord.setValue(index.longValue()); //Change number of record
-                                this.databaseDeleteTime.setValue(deleteDbTime.get()); //Change execution time
+                                this.databaseDeleteTime.setValue(deleteDbTime.longValue()); //Change execution time
                                 AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
-                                AtomicLong timeElapsed = new AtomicLong(endTime.get() - allDeleteTime.get());
-                                viewDeleteTime.set(timeElapsed.get() - deleteDbTime.get());
-                                this.viewDeleteTime.setValue(viewDeleteTime.get());
-                                this.allDeleteTime.setValue(timeElapsed.get());
-                                Log.d("DVM", "deleteDatabase: " + index.get());
+                                AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allDeleteTime.longValue());
+                                viewDeleteTime.set(timeElapsed.longValue() - deleteDbTime.longValue());
+                                this.viewDeleteTime.setValue(viewDeleteTime.longValue());
+                                this.allDeleteTime.setValue(timeElapsed.longValue());
+                                Log.d("DVM", "deleteDatabase: " + index.longValue());
                                 index.getAndIncrement();
+
+                                ExecutionTime executionTime = executionTimePreference.getExecutionTime();
+                                executionTime.setDatabaseDeleteTime(deleteDbTime.toString());
+                                executionTime.setAllDeleteTime(timeElapsed.toString());
+                                executionTime.setViewDeleteTime(viewDeleteTime.toString());
+                                executionTime.setNumOfRecordDelete(numOfData.toString());
+                                executionTimePreference.setExecutionTime(executionTime);
                             }
                         }, throwable -> Log.d("DVM", "deleteDatabase: " + throwable.getMessage())
                 )

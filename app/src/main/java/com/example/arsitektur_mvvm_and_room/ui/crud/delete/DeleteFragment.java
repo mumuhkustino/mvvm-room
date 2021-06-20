@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.databinding.FragmentDeleteBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
@@ -31,6 +32,8 @@ public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteVi
 
     @Inject
     LinearLayoutManager linearLayoutManager;
+
+    private ExecutionTimePreference executionTimePreference;
 
     public static DeleteFragment newInstance() {
         Bundle args = new Bundle();
@@ -54,6 +57,7 @@ public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteVi
         super.onCreate(savedInstanceState);
         viewModel.setNavigator(this);
         deleteAdapter.setListener(this);
+        executionTimePreference = new ExecutionTimePreference(getBaseActivity());
     }
 
     @Override
@@ -78,7 +82,7 @@ public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteVi
         if (fragmentDeleteBinding.editTextNumData.getText() != null) {
             try {
                 Long numOfData = Long.valueOf(fragmentDeleteBinding.editTextNumData.getText().toString());
-                viewModel.deleteDatabase(numOfData);
+                viewModel.deleteDatabase(executionTimePreference, numOfData);
             } catch (Exception e) {
                 Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
             }
@@ -97,6 +101,26 @@ public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteVi
         fragmentDeleteBinding.deleteRecyclerView.setLayoutManager(linearLayoutManager);
         fragmentDeleteBinding.deleteRecyclerView.setItemAnimator(new DefaultItemAnimator());
         fragmentDeleteBinding.deleteRecyclerView.setAdapter(deleteAdapter);
+
+        if (!executionTimePreference.getExecutionTime().getDatabaseDeleteTime().isEmpty())
+            fragmentDeleteBinding.textViewTimeDeleteDB
+                    .setText("TIME DB (MS) : " +
+                            executionTimePreference.getExecutionTime().getDatabaseDeleteTime());
+
+        if (!executionTimePreference.getExecutionTime().getAllDeleteTime().isEmpty())
+            fragmentDeleteBinding.textViewTimeDeleteAll
+                    .setText("TIME ALL (MS) : " +
+                            executionTimePreference.getExecutionTime().getAllDeleteTime());
+
+        if (!executionTimePreference.getExecutionTime().getViewDeleteTime().isEmpty())
+            fragmentDeleteBinding.textViewTimeDeleteView
+                    .setText("TIME VIEW (MS) : " +
+                            executionTimePreference.getExecutionTime().getViewDeleteTime());
+
+        if (!executionTimePreference.getExecutionTime().getNumOfRecordDelete().isEmpty())
+            fragmentDeleteBinding.textViewRecord
+                    .setText("RECORD : " +
+                            executionTimePreference.getExecutionTime().getNumOfRecordDelete());
     }
 
     @Override
@@ -105,7 +129,7 @@ public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteVi
             try {
                 Long numOfData = Long.valueOf(fragmentDeleteBinding.editTextNumData.getText().toString());
 //                viewModel.selectDatabase(numOfData);
-                viewModel.deleteDatabase(numOfData);
+                viewModel.deleteDatabase(executionTimePreference, numOfData);
             } catch (Exception e) {
                 Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
             }
