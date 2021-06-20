@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.databinding.FragmentSelectBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
@@ -32,6 +33,8 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
 
     @Inject
     LinearLayoutManager linearLayoutManager;
+
+    private ExecutionTimePreference executionTimePreference;
 
     public static SelectFragment newInstance() {
         Bundle args = new Bundle();
@@ -55,6 +58,8 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
         super.onCreate(savedInstanceState);
         viewModel.setNavigator(this);
         selectAdapter.setListener(this);
+
+        executionTimePreference = new ExecutionTimePreference(getBaseActivity());
     }
 
 
@@ -94,6 +99,26 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
         selectFragmentBinding.selectRecyclerView.setItemAnimator(new DefaultItemAnimator());
         selectFragmentBinding.selectRecyclerView.setAdapter(selectAdapter);
 
+        if (!executionTimePreference.getExecutionTime().getDatabaseSelectTime().isEmpty())
+            selectFragmentBinding.textViewTimeSelectDB
+                    .setText("TIME DB (MS) : " +
+                            executionTimePreference.getExecutionTime().getDatabaseSelectTime());
+
+        if (!executionTimePreference.getExecutionTime().getAllSelectTime().isEmpty())
+            selectFragmentBinding.textViewTimeSelectAll
+                    .setText("TIME ALL (MS) : " +
+                            executionTimePreference.getExecutionTime().getAllSelectTime());
+
+        if (!executionTimePreference.getExecutionTime().getViewSelectTime().isEmpty())
+            selectFragmentBinding.textViewTimeSelectView
+                    .setText("TIME VIEW (MS) : " +
+                            executionTimePreference.getExecutionTime().getViewSelectTime());
+
+        if (!executionTimePreference.getExecutionTime().getNumOfRecordSelect().isEmpty())
+            selectFragmentBinding.textViewRecord
+                    .setText("RECORD : " +
+                            executionTimePreference.getExecutionTime().getNumOfRecordSelect());
+
         selectFragmentBinding.fabDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -112,7 +137,7 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
         if (selectFragmentBinding.editTextNumData.getText() != null) {
             try {
                 Long numOfData = Long.valueOf(selectFragmentBinding.editTextNumData.getText().toString());
-                viewModel.selectDatabase(numOfData);
+                viewModel.selectDatabase(executionTimePreference, numOfData);
             } catch (Exception e) {
                 Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
             }

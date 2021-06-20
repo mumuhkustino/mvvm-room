@@ -40,7 +40,7 @@
                     tools:text="RECORD : XXXXXX"/>
 
                 <TextView
-                    android:id="@+id/textViewTimeDeleteDB"
+                    android:id="@+id/textViewTimeSelectDB"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
@@ -59,7 +59,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textViewTimeDeleteView"
+                    android:id="@+id/textViewTimeSelectView"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
@@ -70,7 +70,7 @@
                     tools:text="TIME VIEW (MS) : XXXXXX"/>
 
                 <TextView
-                    android:id="@+id/textViewTimeUpdateAll"
+                    android:id="@+id/textViewTimeSelectAll"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"

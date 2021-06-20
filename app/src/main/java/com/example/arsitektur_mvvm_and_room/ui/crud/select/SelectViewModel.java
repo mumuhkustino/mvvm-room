@@ -6,6 +6,8 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.example.arsitektur_mvvm_and_room.data.DataManager;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTime;
+import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
@@ -37,7 +39,7 @@ public class SelectViewModel extends BaseViewModel<SelectNavigator> {
         this.medicalListLiveData = new MutableLiveData<>();
     }
 
-    public void selectDatabase(Long numOfData) {
+    public void selectDatabase(ExecutionTimePreference executionTimePreference, Long numOfData) {
         AtomicLong viewSelectTime = new AtomicLong(0);
         AtomicLong selectDbTime = new AtomicLong(0);
         AtomicLong selectTime = new AtomicLong(0);
@@ -67,21 +69,28 @@ public class SelectViewModel extends BaseViewModel<SelectNavigator> {
                 })
                 .doOnNext(medicalList -> {
                     if (!medicalList.isEmpty())
-                        selectDbTime.set(selectDbTime.get() + (System.currentTimeMillis() - selectTime.get()));
+                        selectDbTime.set(selectDbTime.longValue() + (System.currentTimeMillis() - selectTime.longValue()));
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(medicalList -> {
                             if (medicalList != null && index.get() == numOfData) {
                                 this.medicalListLiveData.setValue(medicalList); //Change data list
                                 this.numOfRecord.setValue(index.longValue()); //Change number of record
-                                this.databaseSelectTime.setValue(selectDbTime.get()); //Change execution time
+                                this.databaseSelectTime.setValue(selectDbTime.longValue()); //Change execution time
                                 AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
-                                AtomicLong timeElapsed = new AtomicLong(endTime.get() - allSelectTime.get());
-                                viewSelectTime.set(timeElapsed.get() - selectDbTime.get());
-                                this.viewSelectTime.setValue(viewSelectTime.get());
-                                this.allSelectTime.setValue(timeElapsed.get());
-                                Log.d("SVM", "selectDatabase: " + index.get());
+                                AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allSelectTime.longValue());
+                                viewSelectTime.set(timeElapsed.longValue() - selectDbTime.longValue());
+                                this.viewSelectTime.setValue(viewSelectTime.longValue());
+                                this.allSelectTime.setValue(timeElapsed.longValue());
+                                Log.d("SVM", "selectDatabase: " + index.longValue());
                                 index.getAndIncrement();
+
+                                ExecutionTime executionTime = executionTimePreference.getExecutionTime();
+                                executionTime.setDatabaseSelectTime(selectDbTime.toString());
+                                executionTime.setAllSelectTime(timeElapsed.toString());
+                                executionTime.setViewSelectTime(viewSelectTime.toString());
+                                executionTime.setNumOfRecordSelect(numOfData.toString());
+                                executionTimePreference.setExecutionTime(executionTime);
                             }
                         }, throwable -> Log.d("SVM", "selectDatabase: " + throwable.getMessage())
                 )
