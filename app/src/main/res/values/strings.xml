@@ -9,5 +9,6 @@
     <string name="empty_screen">We do not have anything\nhere right now.</string>
     <string name="num_of_data">NUM OF DATA</string>
     <string name="execute">EXECUTE</string>
+    <string name="export">EXPORT</string>
 
 </resources>
