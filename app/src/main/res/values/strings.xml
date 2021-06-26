@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Arsitektur MVVM dan Room</string>
+    <string name="app_name">MVVM dan Room</string>
     <string name="tab_text_1">INSERT</string>
     <string name="tab_text_2">SELECT</string>
     <string name="tab_text_3">UPDATE</string>
