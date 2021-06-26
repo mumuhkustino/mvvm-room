@@ -36,8 +36,8 @@
                     android:layout_marginTop="5dp"
                     android:paddingLeft="15dp"
                     android:layout_marginRight="10dp"
-                    android:text="@{viewModel.numOfRecord != null ? `RECORD : ` + viewModel.numOfRecord : `RECORD : 0`}"
-                    tools:text="RECORD : XXXXXX"/>
+                    android:text="@{viewModel.numOfRecord != null ? `RECORDS : ` + viewModel.numOfRecord : `RECORDS : 0`}"
+                    tools:text="RECORDS : XXXXXX"/>
 
                 <TextView
                     android:id="@+id/textViewTimeInsertDB"
