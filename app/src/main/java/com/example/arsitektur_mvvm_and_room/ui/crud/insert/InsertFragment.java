@@ -108,7 +108,7 @@ public class InsertFragment extends BaseFragment<FragmentInsertBinding, InsertVi
                             executionTimePreference.getExecutionTime().getViewInsertTime());
         if (!executionTimePreference.getExecutionTime().getNumOfRecordInsert().isEmpty())
             insertFragmentBinding.textViewRecord
-                    .setText("RECORD : " +
+                    .setText("RECORDS : " +
                             executionTimePreference.getExecutionTime().getNumOfRecordInsert());
     }
 
@@ -119,10 +119,10 @@ public class InsertFragment extends BaseFragment<FragmentInsertBinding, InsertVi
                 Long numOfData = Long.valueOf(insertFragmentBinding.editTextNumData.getText().toString());
                 viewModel.insertDatabase(executionTimePreference, numOfData);
             } catch (Exception e) {
-                Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Amount Of Data is Not Valid", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Amount Of Data is Not Valid", Toast.LENGTH_SHORT).show();
         }
     }
 

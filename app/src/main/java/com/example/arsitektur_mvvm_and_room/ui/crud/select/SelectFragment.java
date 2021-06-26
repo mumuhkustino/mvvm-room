@@ -116,7 +116,7 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
 
         if (!executionTimePreference.getExecutionTime().getNumOfRecordSelect().isEmpty())
             selectFragmentBinding.textViewRecord
-                    .setText("RECORD : " +
+                    .setText("RECORDS : " +
                             executionTimePreference.getExecutionTime().getNumOfRecordSelect());
 
         selectFragmentBinding.fabDown.setOnClickListener(new View.OnClickListener() {
@@ -139,10 +139,10 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
                 Long numOfData = Long.valueOf(selectFragmentBinding.editTextNumData.getText().toString());
                 viewModel.selectDatabase(executionTimePreference, numOfData);
             } catch (Exception e) {
-                Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Amount Of Data is Not Valid", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(getContext(), "Num Of Data is Not Valid", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Amount Of Data is Not Valid", Toast.LENGTH_SHORT).show();
         }
     }
 }
