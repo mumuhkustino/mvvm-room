@@ -5,5 +5,10 @@
         android:id="@+id/action_export"
         android:icon="@drawable/ic_file_export_white"
         android:title="@string/export"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/ic_info_white"
+        android:title="Information"
+        app:showAsAction="always"/>
 </menu>
