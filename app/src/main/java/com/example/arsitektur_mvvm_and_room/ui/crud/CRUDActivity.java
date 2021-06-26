@@ -2,6 +2,7 @@ package com.example.arsitektur_mvvm_and_room.ui.crud;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
@@ -21,6 +24,7 @@ import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreferen
 import com.example.arsitektur_mvvm_and_room.databinding.ActivityCrudBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.ActivityComponent;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseActivity;
+import com.example.arsitektur_mvvm_and_room.utils.InformationDialogFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -63,6 +67,7 @@ public class CRUDActivity extends BaseActivity<ActivityCrudBinding, CRUDViewMode
         super.onCreate(savedInstanceState);
         this.crudBinding = getViewDataBinding();
         setUp();
+        showInformationDialog();
     }
 
     @Override
@@ -83,6 +88,9 @@ public class CRUDActivity extends BaseActivity<ActivityCrudBinding, CRUDViewMode
         if (drawable instanceof Animatable)
             ((Animatable) drawable).start();
         switch (item.getItemId()) {
+            case R.id.action_info:
+                showInformationDialog();
+                return true;
             case R.id.action_export:
                 HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
                 SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yy HH.mm.ss");
@@ -160,6 +168,13 @@ public class CRUDActivity extends BaseActivity<ActivityCrudBinding, CRUDViewMode
         }
     }
 
+    private void showInformationDialog() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        InformationDialogFragment dialogFragment = InformationDialogFragment.newInstance();
+        dialogFragment.show(fragmentManager, "information_dialog");
+    }
+
     private void setUp() {
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE},
@@ -168,6 +183,8 @@ public class CRUDActivity extends BaseActivity<ActivityCrudBinding, CRUDViewMode
         executionTimePreference = new ExecutionTimePreference(this);
 
         mToolbar = crudBinding.toolbar;
+        mToolbar.getOverflowIcon().setColorFilter(
+                ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
         setSupportActionBar(mToolbar);
 
         pagerAdapter.setCount(4);
