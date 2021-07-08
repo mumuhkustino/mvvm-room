@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
-import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTimePreference;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 import com.example.arsitektur_mvvm_and_room.databinding.FragmentDeleteBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseFragment;
@@ -24,9 +24,10 @@ import javax.inject.Named;
 
 public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteViewModel> implements DeleteNavigator,
         DeleteAdapter.DeleteAdapterListener {
-    @Inject
+
+    @Inject //Penggunaan dependency injection untuk adapter delete
     @Named("delete")
-    DeleteAdapter deleteAdapter;
+    DeleteAdapter deleteAdapter; //Deklarasi Adapter pada view Delete
 
     FragmentDeleteBinding fragmentDeleteBinding;
 
@@ -73,11 +74,6 @@ public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteVi
     }
 
     @Override
-    public void handleError(Throwable throwable) {
-
-    }
-
-    @Override
     public void onClick() {
         if (fragmentDeleteBinding.editTextNumData.getText() != null) {
             try {
@@ -89,11 +85,6 @@ public class DeleteFragment extends BaseFragment<FragmentDeleteBinding, DeleteVi
         } else {
             Toast.makeText(getContext(), "Amount Of Data is Not Valid", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    @Override
-    public void updateMedical(List<Medical> medicalList) {
-        deleteAdapter.deleteItems(medicalList);
     }
 
     private void setUp() {

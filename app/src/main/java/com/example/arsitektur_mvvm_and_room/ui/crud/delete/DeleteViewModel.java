@@ -1,12 +1,13 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.delete;
+
 import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.arsitektur_mvvm_and_room.data.DataManager;
-import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTime;
-import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTime;
+import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTimePreference;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
 
@@ -36,6 +37,7 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
         this.medicalListLiveData = new MutableLiveData<>();
     }
 
+    // Method yang digunakan untuk delete data
     public void deleteDatabase(ExecutionTimePreference executionTimePreference, Long numOfData) {
         AtomicLong viewDeleteTime = new AtomicLong(0);
         AtomicLong deleteDbTime = new AtomicLong(0);

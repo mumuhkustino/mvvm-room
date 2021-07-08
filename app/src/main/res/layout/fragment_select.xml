@@ -98,8 +98,8 @@
                     android:gravity="center"
                     android:background="@drawable/input_border_bottom"
                     style="@style/TextStyle.Heading"
-                    android:text="ID"
-                    tools:text="ID"/>
+                    android:text="@string/id"
+                    tools:text="@string/id"/>
 
                 <TextView
                     android:id="@+id/headerHospitalName"
@@ -111,8 +111,8 @@
                     android:gravity="center"
                     android:background="@drawable/input_border_bottom"
                     style="@style/TextStyle.Heading"
-                    android:text="HOSPITAL NAME"
-                    tools:text="HOSPITAL NAME"/>
+                    android:text="@string/hospital_name"
+                    tools:text="@string/hospital_name"/>
 
                 <TextView
                     android:id="@+id/headerMedicineName"
@@ -124,8 +124,8 @@
                     android:gravity="center"
                     android:background="@drawable/input_border_bottom"
                     style="@style/TextStyle.Heading"
-                    android:text="MEDICINE NAME"
-                    tools:text="MEDICINE NAME"/>
+                    android:text="@string/medicine_name"
+                    tools:text="@string/medicine_name"/>
 
             </LinearLayout>
 
@@ -180,7 +180,7 @@
                     android:id="@+id/fabDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_menu_send"
+                    android:src="@android:drawable/ic_menu_send"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="100dp"
                     android:layout_gravity="bottom"/>

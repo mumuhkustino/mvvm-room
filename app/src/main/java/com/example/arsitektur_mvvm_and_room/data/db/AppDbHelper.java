@@ -4,8 +4,6 @@ import com.example.arsitektur_mvvm_and_room.data.db.model.Hospital;
 import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 
 import java.util.List;
-import java.util.Observable;
-import java.util.concurrent.Callable;
 
 import javax.inject.Inject;
 

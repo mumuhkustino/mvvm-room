@@ -1,11 +1,12 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.update;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 import com.example.arsitektur_mvvm_and_room.databinding.ItemUpdateEmptyViewBinding;
 import com.example.arsitektur_mvvm_and_room.databinding.ItemUpdateViewBinding;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewHolder;

@@ -2,9 +2,8 @@ package com.example.arsitektur_mvvm_and_room.utils;
 
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.databinding.BindingAdapter;
-import androidx.room.Update;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.crud.delete.DeleteAdapter;
 import com.example.arsitektur_mvvm_and_room.ui.crud.insert.InsertAdapter;
 import com.example.arsitektur_mvvm_and_room.ui.crud.select.SelectAdapter;

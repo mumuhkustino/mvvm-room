@@ -20,7 +20,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
-import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
+import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.databinding.ActivityCrudBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.ActivityComponent;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseActivity;

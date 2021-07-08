@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
-import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTimePreference;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 import com.example.arsitektur_mvvm_and_room.databinding.FragmentUpdateBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseFragment;
@@ -24,9 +24,10 @@ import javax.inject.Named;
 
 public class UpdateFragment extends BaseFragment<FragmentUpdateBinding, UpdateViewModel> implements UpdateNavigator,
         UpdateAdapter.UpdateAdapterListener {
-    @Inject
+
+    @Inject //Penggunaan dependency injection untuk adapter update
     @Named("update")
-    UpdateAdapter updateAdapter;
+    UpdateAdapter updateAdapter; //Deklarasi Adapter pada view Update
 
     FragmentUpdateBinding fragmentUpdateBinding;
 
@@ -86,11 +87,6 @@ public class UpdateFragment extends BaseFragment<FragmentUpdateBinding, UpdateVi
     }
 
     @Override
-    public void handleError(Throwable throwable) {
-
-    }
-
-    @Override
     public void onClick() {
         if (fragmentUpdateBinding.editTextNumData.getText() != null) {
             try {
@@ -102,11 +98,6 @@ public class UpdateFragment extends BaseFragment<FragmentUpdateBinding, UpdateVi
         } else {
             Toast.makeText(getContext(), "Amount Of Data is Not Valid", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    @Override
-    public void updateMedical(List<Medical> medicalList) {
-        updateAdapter.updateItems(medicalList);
     }
 
     private void setUp() {

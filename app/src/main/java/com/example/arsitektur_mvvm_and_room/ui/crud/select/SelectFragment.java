@@ -12,22 +12,20 @@ import android.widget.Toast;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
-import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.databinding.FragmentSelectBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseFragment;
-
-import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
 public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectViewModel> implements SelectNavigator,
         SelectAdapter.SelectAdapterListener {
-    @Inject
+
+    @Inject //Penggunaan dependency injection untuk adapter select
     @Named("select")
-    SelectAdapter selectAdapter;
+    SelectAdapter selectAdapter; //Deklarasi Adapter pada view Select
 
     FragmentSelectBinding selectFragmentBinding;
 
@@ -62,8 +60,6 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
         executionTimePreference = new ExecutionTimePreference(getBaseActivity());
     }
 
-
-
     @Override
     public void performDependencyInjection(FragmentComponent buildComponent) {
         buildComponent.inject(this);
@@ -74,23 +70,11 @@ public class SelectFragment extends BaseFragment<FragmentSelectBinding, SelectVi
 
     }
 
-
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         selectFragmentBinding = getViewDataBinding();
         setUp();
-    }
-
-    @Override
-    public void handleError(Throwable throwable) {
-
-    }
-
-    @Override
-    public void updateMedical(List<Medical> medicalList) {
-        selectAdapter.selectItems(medicalList);
     }
 
     private void setUp() {

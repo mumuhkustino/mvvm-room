@@ -9,6 +9,6 @@
     <item
         android:id="@+id/action_info"
         android:icon="@drawable/ic_info_white"
-        android:title="Information"
-        app:showAsAction="always"/>
+        android:title="@string/information"
+        app:showAsAction="ifRoom"/>
 </menu>

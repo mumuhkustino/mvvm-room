@@ -7,7 +7,6 @@ import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 import java.util.List;
 
 import io.reactivex.Flowable;
-import io.reactivex.Observable;
 
 public interface DataManager extends DbHelper {
 

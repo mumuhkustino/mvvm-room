@@ -1,7 +1,8 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.insert;
+
 import androidx.databinding.ObservableField;
 
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 
 public class InsertItemViewModel {
 

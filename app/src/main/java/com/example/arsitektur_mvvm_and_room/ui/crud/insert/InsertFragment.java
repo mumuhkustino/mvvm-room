@@ -1,4 +1,5 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.insert;
+
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -10,8 +11,8 @@ import android.widget.Toast;
 
 import com.example.arsitektur_mvvm_and_room.BR;
 import com.example.arsitektur_mvvm_and_room.R;
-import com.example.arsitektur_mvvm_and_room.data.db.others.ExecutionTimePreference;
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTimePreference;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 import com.example.arsitektur_mvvm_and_room.databinding.FragmentInsertBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.FragmentComponent;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseFragment;
@@ -24,9 +25,9 @@ import javax.inject.Named;
 public class InsertFragment extends BaseFragment<FragmentInsertBinding, InsertViewModel> implements InsertNavigator,
         InsertAdapter.InsertAdapterListener {
 
-    @Inject
+    @Inject //Penggunaan dependency injection untuk adapter insert
     @Named("insert")
-    InsertAdapter insertAdapter;
+    InsertAdapter insertAdapter; //Deklarasi Adapter pada view Insert
 
     FragmentInsertBinding insertFragmentBinding;
 
@@ -75,17 +76,6 @@ public class InsertFragment extends BaseFragment<FragmentInsertBinding, InsertVi
         super.onViewCreated(view, savedInstanceState);
         insertFragmentBinding = getViewDataBinding();
         setUp();
-    }
-
-    @Override
-    public void handleError(Throwable throwable) {
-
-    }
-
-    @Override
-    public void updateMedical(List<Medical> medicalList) {
-        insertAdapter.clearItems();
-        insertAdapter.addItems(medicalList);
     }
 
     private void setUp() {

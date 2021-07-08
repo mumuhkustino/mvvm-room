@@ -19,5 +19,9 @@
 5. \"Time DB(MS)\" adalah variabel untuk menyimpan waktu eksekusi proses database dalam satuan milidetik\n\n
 6. \"Time View(MS)\" adalah variabel untuk menyimpan waktu eksekusi proses menampilkan data dalam satuan milidetik\n\n
 7. \"Time All(MS)\" adalah variabel untuk menyimpan waktu eksekusi proses database dan menampilkan data dalam satuan milidetik.\n</string>
+    <string name="id">ID</string>
+    <string name="hospital_name">HOSPITAL NAME</string>
+    <string name="medicine_name">MEDICINE NAME</string>
+    <string name="information">Information</string>
 
 </resources>

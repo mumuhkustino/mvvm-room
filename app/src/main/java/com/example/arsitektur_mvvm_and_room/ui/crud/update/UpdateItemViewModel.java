@@ -2,7 +2,7 @@ package com.example.arsitektur_mvvm_and_room.ui.crud.update;
 
 import androidx.databinding.ObservableField;
 
-import com.example.arsitektur_mvvm_and_room.data.db.others.Medical;
+import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 
 public class UpdateItemViewModel {
     public final ObservableField<Long> id;
