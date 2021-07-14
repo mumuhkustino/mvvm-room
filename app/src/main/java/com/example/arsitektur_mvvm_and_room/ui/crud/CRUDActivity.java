@@ -24,6 +24,7 @@ import com.example.arsitektur_mvvm_and_room.data.others.ExecutionTimePreference;
 import com.example.arsitektur_mvvm_and_room.databinding.ActivityCrudBinding;
 import com.example.arsitektur_mvvm_and_room.di.component.ActivityComponent;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseActivity;
+import com.example.arsitektur_mvvm_and_room.utils.CommonUtils;
 import com.example.arsitektur_mvvm_and_room.utils.InformationDialogFragment;
 import com.google.android.material.tabs.TabLayout;
 
@@ -93,9 +94,7 @@ public class CRUDActivity extends BaseActivity<ActivityCrudBinding, CRUDViewMode
                 return true;
             case R.id.action_export:
                 HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
-                SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yy HH.mm.ss");
-                Date date = new Date();
-                HSSFSheet hssfSheet = hssfWorkbook.createSheet(formatter.format(date));
+                HSSFSheet hssfSheet = hssfWorkbook.createSheet(CommonUtils.getTimeStamp());
 
                 List<List<String>> listExecutionTime = new ArrayList<>();
                 List<String> dataExecutionTime = new ArrayList<>();
