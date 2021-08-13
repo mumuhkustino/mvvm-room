@@ -74,26 +74,24 @@ public class SelectViewModel extends BaseViewModel<SelectNavigator> {
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(medicalList -> {
-                            if (medicalList != null && index.get() == numOfData) {
-                                this.medicalListLiveData.setValue(medicalList); //Change data list
-                                this.numOfRecord.setValue(index.longValue()); //Change number of record
-                                this.databaseSelectTime.setValue(selectDbTime.longValue()); //Change execution time
-                                AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
-                                AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allSelectTime.longValue());
-                                viewSelectTime.set(timeElapsed.longValue() - selectDbTime.longValue());
-                                this.viewSelectTime.setValue(viewSelectTime.longValue());
-                                this.allSelectTime.setValue(timeElapsed.longValue());
-                                Log.d("SVM", "selectDatabase: " + index.longValue());
-                                index.getAndIncrement();
+                    this.medicalListLiveData.setValue(medicalList); //Change data list
+                    this.numOfRecord.setValue(index.longValue()); //Change number of record
+                    this.databaseSelectTime.setValue(selectDbTime.longValue()); //Change execution time
+                    AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
+                    AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allSelectTime.longValue());
+                    viewSelectTime.set(timeElapsed.longValue() - selectDbTime.longValue());
+                    this.viewSelectTime.setValue(viewSelectTime.longValue());
+                    this.allSelectTime.setValue(timeElapsed.longValue());
+                    Log.d("SVM", "selectDatabase: " + index.longValue());
+                    index.getAndIncrement();
 
-                                ExecutionTime executionTime = executionTimePreference.getExecutionTime();
-                                executionTime.setDatabaseSelectTime(selectDbTime.toString());
-                                executionTime.setAllSelectTime(timeElapsed.toString());
-                                executionTime.setViewSelectTime(viewSelectTime.toString());
-                                executionTime.setNumOfRecordSelect(numOfData.toString());
-                                executionTimePreference.setExecutionTime(executionTime);
-                            }
-                        }, throwable -> Log.d("SVM", "selectDatabase: " + throwable.getMessage())
+                    ExecutionTime executionTime = executionTimePreference.getExecutionTime();
+                    executionTime.setDatabaseSelectTime(selectDbTime.toString());
+                    executionTime.setAllSelectTime(timeElapsed.toString());
+                    executionTime.setViewSelectTime(viewSelectTime.toString());
+                    executionTime.setNumOfRecordSelect(numOfData.toString());
+                    executionTimePreference.setExecutionTime(executionTime);
+                }, throwable -> Log.d("SVM", "selectDatabase: " + throwable.getMessage())
                 )
         );
     }
