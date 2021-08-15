@@ -9,13 +9,13 @@ import io.reactivex.Flowable;
 
 public interface DbHelper {
 
-    Flowable<Boolean> insertHospital(Hospital hospital);
+    Flowable<Boolean> insertHospitals(List<Hospital> hospitals);
 
-    Flowable<Boolean> insertMedicine(Medicine medicine);
+    Flowable<Boolean> insertMedicines(List<Medicine> medicines);
 
-    Flowable<Boolean> deleteHospital(Hospital hospital);
+    Flowable<Boolean> deleteHospitals(List<Hospital> hospitals);
 
-    Flowable<Boolean> deleteMedicine(Medicine medicine);
+    Flowable<Boolean> deleteMedicines(List<Medicine> medicines);
 
     Flowable<Hospital> loadHospital(Hospital hospital);
 
@@ -31,8 +31,8 @@ public interface DbHelper {
 
     Flowable<List<Medicine>> getMedicinesForHospitalId(Long hospitalId);
 
-    Flowable<Boolean> saveHospital(Hospital hospital);
+    Flowable<Boolean> saveHospitals(List<Hospital> hospitals);
 
-    Flowable<Boolean> saveMedicine(Medicine medicine);
+    Flowable<Boolean> saveMedicines(List<Medicine> medicines);
 
 }

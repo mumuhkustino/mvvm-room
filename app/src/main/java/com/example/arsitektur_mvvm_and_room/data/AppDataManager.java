@@ -12,8 +12,6 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.internal.$Gson$Types;
 import com.google.gson.reflect.TypeToken;
 
-import org.reactivestreams.Publisher;
-
 import java.lang.reflect.Type;
 import java.util.List;
 
@@ -21,7 +19,6 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import io.reactivex.Flowable;
-import io.reactivex.functions.Function;
 
 @Singleton
 public class AppDataManager implements DataManager {
@@ -31,13 +28,13 @@ public class AppDataManager implements DataManager {
     private final DbHelper dbHelper;
 
     @Inject
-    public AppDataManager(Context context, DbHelper dbHelper){
+    public AppDataManager(Context context, DbHelper dbHelper) {
         this.context = context;
         this.dbHelper = dbHelper;
     }
 
     @Override
-    public Flowable<List<Hospital>> seedDatabaseHospital(Long numOfData){
+    public Flowable<List<Hospital>> seedDatabaseHospital(Long numOfData) {
         GsonBuilder builder = new GsonBuilder().excludeFieldsWithoutExposeAnnotation();
         final Gson gson = builder.create();
 
@@ -55,33 +52,23 @@ public class AppDataManager implements DataManager {
             Type type = $Gson$Types.newParameterizedTypeWithOwner(null, List.class, Hospital.class);
             List<Hospital> hospitalList = gson.fromJson(CommonUtils.loadJSONFromAsset(context, pathJson), type);
             return Flowable.just(hospitalList);
-        } catch (Exception e){
+        } catch (Exception e) {
             return Flowable.just(null);
         }
     }
 
     @Override
-    public Flowable<Boolean> updateDatabaseHospital(Hospital hospital){
-        return dbHelper.loadHospital(hospital).concatMap(new Function<Hospital, Publisher<? extends Boolean>>() {
-            @Override
-            public Publisher<? extends Boolean> apply(Hospital hospital) throws Exception {
-                return dbHelper.saveHospital(hospital);
-            }
-        }) ;
+    public Flowable<Boolean> updateDatabaseHospital(List<Hospital> hospitals) {
+        return dbHelper.saveHospitals(hospitals);
     }
 
     @Override
-    public Flowable<Boolean> deleteDatabaseHospital(Hospital hospital){
-        return dbHelper.loadHospital(hospital).concatMap(new Function<Hospital, Publisher<? extends Boolean>>() {
-            @Override
-            public Publisher<? extends Boolean> apply(Hospital hospital) throws Exception {
-                return dbHelper.deleteHospital(hospital);
-            }
-        });
+    public Flowable<Boolean> deleteDatabaseHospital(List<Hospital> hospitals) {
+        return dbHelper.deleteHospitals(hospitals);
     }
 
     @Override
-    public Flowable<List<Medicine>> seedDatabaseMedicine(Long numOfData){
+    public Flowable<List<Medicine>> seedDatabaseMedicine(Long numOfData) {
         GsonBuilder builder = new GsonBuilder().excludeFieldsWithoutExposeAnnotation();
         final Gson gson = builder.create();
 
@@ -96,42 +83,43 @@ public class AppDataManager implements DataManager {
             pathJson = AppConstants.SEED_DATABASE_MEDICINES_1000;
         }
         try {
-            Type type = new TypeToken<List<Medicine>>(){}.getType();
+            Type type = new TypeToken<List<Medicine>>() {
+            }.getType();
             List<Medicine> medicineList = gson.fromJson(CommonUtils.loadJSONFromAsset(context, pathJson), type);
             return Flowable.just(medicineList);
-        } catch (Exception e){
+        } catch (Exception e) {
             return Flowable.just(null);
         }
     }
 
     @Override
-    public Flowable<Boolean> updateDatabaseMedicine(Medicine medicine){
-        return dbHelper.saveMedicine(medicine);
+    public Flowable<Boolean> updateDatabaseMedicine(List<Medicine> medicines) {
+        return dbHelper.saveMedicines(medicines);
     }
 
     @Override
-    public Flowable<Boolean> deleteDatabaseMedicine(Medicine medicine){
-        return dbHelper.deleteMedicine(medicine);
+    public Flowable<Boolean> deleteDatabaseMedicine(List<Medicine> medicines) {
+        return dbHelper.deleteMedicines(medicines);
     }
 
     @Override
-    public Flowable<Boolean> insertHospital(Hospital hospital){
-        return dbHelper.insertHospital(hospital);
+    public Flowable<Boolean> insertHospitals(List<Hospital> hospitals) {
+        return dbHelper.insertHospitals(hospitals);
     }
 
     @Override
-    public Flowable<Boolean> insertMedicine(Medicine medicine) {
-        return dbHelper.insertMedicine(medicine);
+    public Flowable<Boolean> insertMedicines(List<Medicine> medicines) {
+        return dbHelper.insertMedicines(medicines);
     }
 
     @Override
-    public Flowable<Boolean> deleteHospital(Hospital hospital) {
-        return dbHelper.deleteHospital(hospital);
+    public Flowable<Boolean> deleteHospitals(List<Hospital> hospitals) {
+        return dbHelper.deleteHospitals(hospitals);
     }
 
     @Override
-    public Flowable<Boolean> deleteMedicine(Medicine medicine) {
-        return dbHelper.deleteMedicine(medicine);
+    public Flowable<Boolean> deleteMedicines(List<Medicine> medicines) {
+        return dbHelper.deleteMedicines(medicines);
     }
 
     @Override
@@ -146,7 +134,7 @@ public class AppDataManager implements DataManager {
 
     @Override
     public Flowable<List<Hospital>> getAllHospital() {
-        return null;
+        return dbHelper.getAllHospital();
     }
 
     @Override
@@ -170,13 +158,13 @@ public class AppDataManager implements DataManager {
     }
 
     @Override
-    public Flowable<Boolean> saveHospital(Hospital hospital) {
-        return dbHelper.saveHospital(hospital);
+    public Flowable<Boolean> saveHospitals(List<Hospital> hospitals) {
+        return dbHelper.saveHospitals(hospitals);
     }
 
     @Override
-    public Flowable<Boolean> saveMedicine(Medicine medicine) {
-        return dbHelper.saveMedicine(medicine);
+    public Flowable<Boolean> saveMedicines(List<Medicine> medicines) {
+        return dbHelper.saveMedicines(medicines);
     }
 
 }

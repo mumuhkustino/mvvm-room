@@ -12,13 +12,13 @@ public interface DataManager extends DbHelper {
 
     Flowable<List<Hospital>> seedDatabaseHospital(Long numOfData);
 
-    Flowable<Boolean> updateDatabaseHospital(Hospital hospital);
+    Flowable<Boolean> updateDatabaseHospital(List<Hospital> hospitals);
 
-    Flowable<Boolean> deleteDatabaseHospital(Hospital hospital);
+    Flowable<Boolean> deleteDatabaseHospital(List<Hospital> hospitals);
 
     Flowable<List<Medicine>> seedDatabaseMedicine(Long numOfData);
 
-    Flowable<Boolean> updateDatabaseMedicine(Medicine medicine);
+    Flowable<Boolean> updateDatabaseMedicine(List<Medicine> medicines);
 
-    Flowable<Boolean> deleteDatabaseMedicine(Medicine medicine);
+    Flowable<Boolean> deleteDatabaseMedicine(List<Medicine> medicines);
 }

@@ -1,5 +1,7 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.insert;
+
 import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
@@ -12,8 +14,6 @@ import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
-
-import io.reactivex.Flowable;
 
 public class InsertViewModel extends BaseViewModel<InsertNavigator> {
     private final MutableLiveData<Long> numOfRecord;
@@ -44,10 +44,9 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
         //Insert Hospital JSON to DB
         getCompositeDisposable().add(getDataManager()
                 .seedDatabaseHospital(numOfData)
-                .concatMap(Flowable::fromIterable)
-                .concatMap(hospital -> {
+                .concatMap(hospitals -> {
                     insertTime.set(System.currentTimeMillis());
-                    return getDataManager().insertHospital(hospital);
+                    return getDataManager().insertHospitals(hospitals);
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean) {
@@ -56,16 +55,15 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(aBoolean -> {
-                        } , throwable -> Log.d("IVM", "insertDatabase 1: " + throwable.getMessage())
+                        }, throwable -> Log.d("IVM", "insertDatabase 1: " + throwable.getMessage())
                 )
         );
         //Insert Medicine JSON to DB
         getCompositeDisposable().add(getDataManager()
                 .seedDatabaseMedicine(numOfData)
-                .concatMap(Flowable::fromIterable)
-                .concatMap(medicine -> {
+                .concatMap(medicines -> {
                     insertTime.set(System.currentTimeMillis());
-                    return getDataManager().insertMedicine(medicine);
+                    return getDataManager().insertMedicines(medicines);
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean) {
@@ -90,17 +88,17 @@ public class InsertViewModel extends BaseViewModel<InsertNavigator> {
                                 executionTime.setNumOfRecordInsert(numOfData.toString());
                                 executionTimePreference.setExecutionTime(executionTime);
                             }
-                        } , throwable -> Log.d("IVM", "insertDatabase 2: " + throwable.getMessage())
+                        }, throwable -> Log.d("IVM", "insertDatabase 2: " + throwable.getMessage())
                 )
         );
     }
 
-    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
-        this.medicalListLiveData = medicalListLiveData;
-    }
-
     public LiveData<List<Medical>> getMedicalListLiveData() {
         return medicalListLiveData;
+    }
+
+    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
+        this.medicalListLiveData = medicalListLiveData;
     }
 
     public LiveData<Long> getNumOfRecord() {

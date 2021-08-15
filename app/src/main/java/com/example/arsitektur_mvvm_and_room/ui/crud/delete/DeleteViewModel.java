@@ -1,6 +1,7 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.delete;
 
 import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
@@ -43,7 +44,7 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
         AtomicLong deleteDbTime = new AtomicLong(0);
         AtomicLong deleteTime = new AtomicLong(0);
         AtomicLong allDeleteTime = new AtomicLong(System.currentTimeMillis());
-        AtomicInteger index = new AtomicInteger(0);
+        AtomicInteger index = new AtomicInteger(numOfData.intValue());
         getCompositeDisposable().add(getDataManager()
                 //Get All Hospital with Limit
                 .getAllHospital(numOfData >= 1000 ? numOfData / 1000 : 1)
@@ -54,15 +55,11 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
                         Flowable.just(hospital),
                         ((medicineList, hospital1) -> medicineList)
                 ))
-                //Delete medicine name with object
-                .concatMap(Flowable::fromIterable)
-                .concatMap(medicine -> {
-                    if (index.get() < numOfData) {
-                        index.getAndIncrement();
-                        deleteTime.set(System.currentTimeMillis());
-                        return getDataManager().deleteDatabaseMedicine(medicine);
-                    }
-                    return Flowable.just(false);
+                //Delete All Medicine
+                .concatMap(medicines -> {
+                    deleteTime.set(System.currentTimeMillis());
+                    index.set(index.get() - medicines.size());
+                    return getDataManager().deleteDatabaseMedicine(medicines);
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean) {
@@ -71,7 +68,7 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(aBoolean -> {
-                            if (index.get() == numOfData) {
+                            if (index.get() == 0) {
                                 this.numOfRecord.setValue(index.longValue()); //Change number of record
                                 this.databaseDeleteTime.setValue(deleteDbTime.longValue()); //Change execution time
                                 AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
@@ -79,8 +76,6 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
                                 viewDeleteTime.set(timeElapsed.longValue() - deleteDbTime.longValue());
                                 this.viewDeleteTime.setValue(viewDeleteTime.longValue());
                                 this.allDeleteTime.setValue(timeElapsed.longValue());
-                                Log.d("DVM", "deleteDatabase: " + index.longValue());
-                                index.getAndIncrement();
 
                                 ExecutionTime executionTime = executionTimePreference.getExecutionTime();
                                 executionTime.setDatabaseDeleteTime(deleteDbTime.toString());
@@ -88,18 +83,21 @@ public class DeleteViewModel extends BaseViewModel<DeleteNavigator> {
                                 executionTime.setViewDeleteTime(viewDeleteTime.toString());
                                 executionTime.setNumOfRecordDelete(numOfData.toString());
                                 executionTimePreference.setExecutionTime(executionTime);
+
+                                Log.d("DVM", "deleteDatabase: " + index.longValue());
+                                index.getAndDecrement();
                             }
                         }, throwable -> Log.d("DVM", "deleteDatabase: " + throwable.getMessage())
                 )
         );
     }
 
-    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
-        this.medicalListLiveData = medicalListLiveData;
-    }
-
     public LiveData<List<Medical>> getMedicalListLiveData() {
         return medicalListLiveData;
+    }
+
+    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
+        this.medicalListLiveData = medicalListLiveData;
     }
 
     public LiveData<Long> getNumOfRecord() {

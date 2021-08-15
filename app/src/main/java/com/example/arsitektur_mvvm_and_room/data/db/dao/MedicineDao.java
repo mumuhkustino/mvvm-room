@@ -11,30 +11,28 @@ import com.example.arsitektur_mvvm_and_room.data.db.model.Medicine;
 
 import java.util.List;
 
-import io.reactivex.Flowable;
-
 @Dao
 //Interface untuk model Hospital pada database
 public interface MedicineDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE) //Annotation untuk insert
-    void insert(Medicine medicine);
+    void insert(List<Medicine> medicines);
 
     @Delete //Annotation untuk delete
-    void delete(Medicine medicine);
+    void delete(List<Medicine> medicines);
 
     @Query("SELECT * FROM medicines WHERE id = :id") //Annotation untuk select
-    Flowable<Medicine> load(long id);
+    Medicine load(Long id);
 
     @Query("SELECT * FROM medicines WHERE hospitalId = :hospitalId") //Annotation untuk select
-    Flowable<List<Medicine>> loadAllByHospitalId(Long hospitalId);
+    List<Medicine> loadAllByHospitalId(Long hospitalId);
 
     @Query("SELECT * FROM medicines") //Annotation untuk select all
-    Flowable<List<Medicine>> loadAll();
+    List<Medicine> loadAll();
 
     @Query("SELECT * FROM medicines LIMIT :numOfData") //Annotation untuk select limit
-    Flowable<List<Medicine>> loadList(Long numOfData);
+    List<Medicine> loadList(Long numOfData);
 
     @Update //Annotation untuk update
-    void save(Medicine medicine);
+    void save(List<Medicine> medicines);
 }

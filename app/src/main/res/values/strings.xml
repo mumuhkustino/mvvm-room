@@ -12,7 +12,7 @@
     <string name="export">EXPORT ALL</string>
     <string name="close">CLOSE</string>
     <string name="information_text">Informasi Penggunaan Aplikasi Eksperimen :\n\n
-1.    Field input pada bagian bawah screen berfungsi untuk menentukan jumlah data yang akan diproses. Angka yang dapat diproses hanya 10.000, 100.000, 500.000 dan 1.000.000.\n\n
+1.    Field input pada bagian bawah screen berfungsi untuk menentukan jumlah data yang akan diproses. Angka yang dapat diproses hanya 1.000, 10.000, 100.000 dan 1.000.000.\n\n
 2.    Icon titik tiga pada bagian ujung kanan atas layar berfungsi untuk menyimpan fitur export. Fitur export berfungsi untuk menyimpan data waktu eksekusi proses CRUD dalam bentuk (.xls).\n\n
 3.    Header (Insert, Select, Update, Delete) berfungsi untuk menentukan jenis CRUD yang akan dilakukan eksperimen.\n\n
 4. \"Records\" adalah variabel untuk menyimpan jumlah data yang ada didalam database\n\n

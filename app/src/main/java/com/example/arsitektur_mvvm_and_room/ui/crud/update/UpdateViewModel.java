@@ -1,5 +1,7 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.update;
+
 import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
@@ -10,12 +12,12 @@ import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 import io.reactivex.Flowable;
+
 public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
     private final MutableLiveData<Long> numOfRecord;
 
@@ -43,7 +45,6 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
         AtomicLong updateTime = new AtomicLong(0);
         AtomicLong allUpdateTime = new AtomicLong(System.currentTimeMillis());
         AtomicInteger index = new AtomicInteger(0);
-        List<Medical> medicals = new ArrayList<>();
         getCompositeDisposable().add(getDataManager()
                 //Get All Hospital with Limit
                 .getAllHospital(numOfData >= 1000 ? numOfData / 1000 : 1)
@@ -63,11 +64,11 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
                         } else
                             break;
                     }
-                    return Flowable.fromIterable(medicineList);
+                    return Flowable.just(medicineList);
                 })
-                .concatMap(medicine -> {
+                .concatMap(medicines -> {
                     updateTime.set(System.currentTimeMillis());
-                    return getDataManager().updateDatabaseMedicine(medicine);
+                    return getDataManager().updateDatabaseMedicine(medicines);
                 })
                 .doOnNext(aBoolean -> {
                     if (aBoolean)
@@ -83,8 +84,6 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
                                 viewUpdateTime.set(timeElapsed.longValue() - updateDbTime.longValue());
                                 this.viewUpdateTime.setValue(viewUpdateTime.longValue());
                                 this.allUpdateTime.setValue(timeElapsed.longValue());
-                                Log.d("UVM", "updateDatabase: " + index.longValue());
-                                index.getAndIncrement();
 
                                 ExecutionTime executionTime = executionTimePreference.getExecutionTime();
                                 executionTime.setDatabaseUpdateTime(updateDbTime.toString());
@@ -92,18 +91,21 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
                                 executionTime.setViewUpdateTime(viewUpdateTime.toString());
                                 executionTime.setNumOfRecordUpdate(numOfData.toString());
                                 executionTimePreference.setExecutionTime(executionTime);
+
+                                Log.d("UVM", "updateDatabase: " + index.longValue());
+                                index.getAndIncrement();
                             }
                         }, throwable -> Log.d("UVM", "updateDatabase: " + throwable.getMessage())
                 )
         );
     }
 
-    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
-        this.medicalListLiveData = medicalListLiveData;
-    }
-
     public LiveData<List<Medical>> getMedicalListLiveData() {
         return medicalListLiveData;
+    }
+
+    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
+        this.medicalListLiveData = medicalListLiveData;
     }
 
     public LiveData<Long> getNumOfRecord() {

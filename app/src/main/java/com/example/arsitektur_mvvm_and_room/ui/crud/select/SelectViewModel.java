@@ -1,5 +1,4 @@
 package com.example.arsitektur_mvvm_and_room.ui.crud.select;
-import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -58,6 +57,7 @@ public class SelectViewModel extends BaseViewModel<SelectNavigator> {
                             getDataManager().getMedicinesForHospitalId(hospital.id),
                             Flowable.just(hospital),
                             ((medicineList, h) -> {
+
                                 for (Medicine m : medicineList) {
                                     if (index.get() < numOfData) {
                                         medicals.add(new Medical(h.name, m.name));
@@ -74,34 +74,35 @@ public class SelectViewModel extends BaseViewModel<SelectNavigator> {
                 })
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(medicalList -> {
-                    this.medicalListLiveData.setValue(medicalList); //Change data list
-                    this.numOfRecord.setValue(index.longValue()); //Change number of record
-                    this.databaseSelectTime.setValue(selectDbTime.longValue()); //Change execution time
-                    AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
-                    AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allSelectTime.longValue());
-                    viewSelectTime.set(timeElapsed.longValue() - selectDbTime.longValue());
-                    this.viewSelectTime.setValue(viewSelectTime.longValue());
-                    this.allSelectTime.setValue(timeElapsed.longValue());
-                    Log.d("SVM", "selectDatabase: " + index.longValue());
-                    index.getAndIncrement();
+                    if (index.longValue() == numOfData || medicalList.size() == 0) {
+                        this.medicalListLiveData.setValue(medicalList); //Change data list
+                        this.numOfRecord.setValue(index.longValue()); //Change number of record
+                        this.databaseSelectTime.setValue(selectDbTime.longValue()); //Change execution time
+                        AtomicLong endTime = new AtomicLong(System.currentTimeMillis());
+                        AtomicLong timeElapsed = new AtomicLong(endTime.longValue() - allSelectTime.longValue());
+                        viewSelectTime.set(timeElapsed.longValue() - selectDbTime.longValue());
+                        this.viewSelectTime.setValue(viewSelectTime.longValue());
+                        this.allSelectTime.setValue(timeElapsed.longValue());
 
-                    ExecutionTime executionTime = executionTimePreference.getExecutionTime();
-                    executionTime.setDatabaseSelectTime(selectDbTime.toString());
-                    executionTime.setAllSelectTime(timeElapsed.toString());
-                    executionTime.setViewSelectTime(viewSelectTime.toString());
-                    executionTime.setNumOfRecordSelect(numOfData.toString());
-                    executionTimePreference.setExecutionTime(executionTime);
-                }, throwable -> Log.d("SVM", "selectDatabase: " + throwable.getMessage())
-                )
-        );
-    }
+                        ExecutionTime executionTime = executionTimePreference.getExecutionTime();
+                        executionTime.setDatabaseSelectTime(selectDbTime.toString());
+                        executionTime.setAllSelectTime(timeElapsed.toString());
+                        executionTime.setViewSelectTime(viewSelectTime.toString());
+                        executionTime.setNumOfRecordSelect(numOfData.toString());
+                        executionTimePreference.setExecutionTime(executionTime);
 
-    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
-        this.medicalListLiveData = medicalListLiveData;
+                        if (medicalList.size() != 0)
+                            index.getAndIncrement();
+                    }
+                }));
     }
 
     public LiveData<List<Medical>> getMedicalListLiveData() {
         return medicalListLiveData;
+    }
+
+    public void setMedicalListLiveData(MutableLiveData<List<Medical>> medicalListLiveData) {
+        this.medicalListLiveData = medicalListLiveData;
     }
 
     public LiveData<Long> getNumOfRecord() {
