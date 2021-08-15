@@ -10,7 +10,6 @@ import com.example.arsitektur_mvvm_and_room.data.others.Medical;
 import com.example.arsitektur_mvvm_and_room.ui.base.BaseViewModel;
 import com.example.arsitektur_mvvm_and_room.utils.rx.SchedulerProvider;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
@@ -43,7 +42,6 @@ public class UpdateViewModel extends BaseViewModel<UpdateNavigator> {
         AtomicLong updateTime = new AtomicLong(0);
         AtomicLong allUpdateTime = new AtomicLong(System.currentTimeMillis());
         AtomicInteger index = new AtomicInteger(0);
-        List<Medical> medicals = new ArrayList<>();
         getCompositeDisposable().add(getDataManager()
                 //Get All Hospital with Limit
                 .getAllHospital(numOfData >= 1000 ? numOfData / 1000 : 1)

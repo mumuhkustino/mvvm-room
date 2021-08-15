@@ -73,37 +73,86 @@ public class AppDbHelper implements DbHelper{
 
     @Override
     public Flowable<Hospital> loadHospital(Hospital hospital) {
-        return mAppDatabase.hospitalDao().load(hospital.id);
+        return Flowable.fromCallable(() -> {
+            try {
+                return mAppDatabase.hospitalDao().load(hospital.id);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        });
     }
 
     @Override
     public Flowable<Medicine> loadMedicine(Medicine medicine) {
-        return mAppDatabase.medicineDao().load(medicine.id);
+        return Flowable.fromCallable(() -> {
+            try {
+                return mAppDatabase.medicineDao().load(medicine.id);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        });
     }
 
     @Override
     public Flowable<List<Hospital>> getAllHospital() {
-        return mAppDatabase.hospitalDao().loadAll();
+        return Flowable.fromCallable(() -> {
+            try {
+                return mAppDatabase.hospitalDao().loadAll();
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        });
     }
 
     @Override
     public Flowable<List<Hospital>> getAllHospital(Long numOfData) {
-        return mAppDatabase.hospitalDao().loadList(numOfData);
+        return Flowable.fromCallable(() -> {
+            try {
+                return mAppDatabase.hospitalDao().loadList(numOfData);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        });
     }
 
     @Override
     public Flowable<List<Medicine>> getAllMedicine() {
-        return mAppDatabase.medicineDao().loadAll();
+        return Flowable.fromCallable(() -> {
+            try {
+                return mAppDatabase.medicineDao().loadAll();
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        });
     }
 
     @Override
     public Flowable<List<Medicine>> getAllMedicine(Long numOfData) {
-        return mAppDatabase.medicineDao().loadList(numOfData);
+        return Flowable.fromCallable(() -> {
+            try {
+                return mAppDatabase.medicineDao().loadList(numOfData);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        });
     }
 
     @Override
     public Flowable<List<Medicine>> getMedicinesForHospitalId(Long hospitalId) {
-        return mAppDatabase.medicineDao().loadAllByHospitalId(hospitalId);
+        return Flowable.fromCallable(() -> {
+            try {
+                return mAppDatabase.medicineDao().loadAllByHospitalId(hospitalId);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        });
     }
 
     @Override

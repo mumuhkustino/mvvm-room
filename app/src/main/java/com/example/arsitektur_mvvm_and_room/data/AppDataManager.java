@@ -62,22 +62,12 @@ public class AppDataManager implements DataManager {
 
     @Override
     public Flowable<Boolean> updateDatabaseHospital(Hospital hospital){
-        return dbHelper.loadHospital(hospital).concatMap(new Function<Hospital, Publisher<? extends Boolean>>() {
-            @Override
-            public Publisher<? extends Boolean> apply(Hospital hospital) throws Exception {
-                return dbHelper.saveHospital(hospital);
-            }
-        }) ;
+        return dbHelper.saveHospital(hospital);
     }
 
     @Override
     public Flowable<Boolean> deleteDatabaseHospital(Hospital hospital){
-        return dbHelper.loadHospital(hospital).concatMap(new Function<Hospital, Publisher<? extends Boolean>>() {
-            @Override
-            public Publisher<? extends Boolean> apply(Hospital hospital) throws Exception {
-                return dbHelper.deleteHospital(hospital);
-            }
-        });
+        return dbHelper.deleteHospital(hospital);
     }
 
     @Override
@@ -146,7 +136,7 @@ public class AppDataManager implements DataManager {
 
     @Override
     public Flowable<List<Hospital>> getAllHospital() {
-        return null;
+        return dbHelper.getAllHospital();
     }
 
     @Override

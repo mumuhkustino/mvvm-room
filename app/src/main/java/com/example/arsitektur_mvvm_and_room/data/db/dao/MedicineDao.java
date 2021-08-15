@@ -24,16 +24,16 @@ public interface MedicineDao {
     void delete(Medicine medicine);
 
     @Query("SELECT * FROM medicines WHERE id = :id") //Annotation untuk select
-    Flowable<Medicine> load(long id);
+    Medicine load(long id);
 
     @Query("SELECT * FROM medicines WHERE hospitalId = :hospitalId") //Annotation untuk select
-    Flowable<List<Medicine>> loadAllByHospitalId(Long hospitalId);
+    List<Medicine> loadAllByHospitalId(Long hospitalId);
 
     @Query("SELECT * FROM medicines") //Annotation untuk select all
-    Flowable<List<Medicine>> loadAll();
+    List<Medicine> loadAll();
 
     @Query("SELECT * FROM medicines LIMIT :numOfData") //Annotation untuk select limit
-    Flowable<List<Medicine>> loadList(Long numOfData);
+    List<Medicine> loadList(Long numOfData);
 
     @Update //Annotation untuk update
     void save(Medicine medicine);

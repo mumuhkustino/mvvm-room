@@ -24,13 +24,13 @@ public interface HospitalDao {
     void delete(Hospital hospital);
 
     @Query("SELECT * FROM hospitals WHERE id = :hospitalId") //Annotation untuk select
-    Flowable<Hospital> load(long hospitalId);
+    Hospital load(long hospitalId);
 
     @Query("SELECT * FROM hospitals") //Annotation untuk select all
-    Flowable<List<Hospital>> loadAll();
+    List<Hospital> loadAll();
 
     @Query("SELECT * FROM hospitals LIMIT :numofData") //Annotation untuk select limit
-    Flowable<List<Hospital>> loadList(Long numofData);
+    List<Hospital> loadList(Long numofData);
 
     @Update //Annotation untuk update
     void save(Hospital hospital);
